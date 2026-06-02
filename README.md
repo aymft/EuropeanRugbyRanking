@@ -46,7 +46,7 @@ Each club starts with an initial Elo rating. After every match, the ratings of b
 European competitions can use a different update factor from domestic competitions, allowing high-stakes cross-league matches to have a stronger impact on the ranking.
 
 ## Repository structure 
-'''text
+```text
 EuropeanRugbyRanking/
 │
 ├── src/
