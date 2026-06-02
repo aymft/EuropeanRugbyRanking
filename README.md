@@ -19,12 +19,10 @@ https://aymft.github.io/EuropeanRugbyRanking/
 The ranking is computed in Python and displayed through a static website built with HTML, CSS and JavaScript.
 
 The current pipeline is:
-
-```text
-match results
-→ Elo computation
-→ rankings.csv / rankings.json
-→ dynamic ranking table on the website
+- match results
+- Elo computation
+- rankings.csv / rankings.json
+- dynamic ranking table on the website
 
 The website displays:
 
