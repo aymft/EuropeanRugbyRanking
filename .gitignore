@@ -4,3 +4,7 @@ __pycache__/
 .DS_Store
 .env
 .venv/
+
+data/raw/
+data/processed/matches_clean.csv
+data/processed/logos_report.json

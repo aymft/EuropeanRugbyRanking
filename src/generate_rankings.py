@@ -7,11 +7,14 @@ the resulting rankings to CSV and JSON files.
 
 import csv
 import json
+import re
+import unicodedata
 from pathlib import Path
 
 from src.elo import elo_update
 from src.matches import get_all_matches
 from src.teams import get_initial_teams
+from src.competitions import COMPETITION_LOGOS, TEAM_DOMESTIC_COMPETITION
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -24,6 +27,72 @@ DOCS_CSV_PATH = DOCS_DATA_DIR / "rankings.csv"
 DOCS_JSON_PATH = DOCS_DATA_DIR / "rankings.json"
 
 
+def slugify_team_name(team_name: str) -> str:
+    """
+    Convert a team name into a filesystem-friendly slug.
+
+    Examples
+    --------
+    "Union Bordeaux Bègles" -> "union-bordeaux-begles"
+    "Racing Métro 92" -> "racing-metro-92"
+    """
+
+    normalized = unicodedata.normalize("NFKD", team_name)
+    ascii_name = normalized.encode("ascii", "ignore").decode("ascii")
+    lower_name = ascii_name.lower()
+    slug = re.sub(r"[^a-z0-9]+", "-", lower_name)
+    slug = slug.strip("-")
+
+    return slug
+
+def get_logo_path(team_name: str) -> str:
+    """
+    Return the best available local logo path for a team.
+
+    SVG files are preferred over PNG files when both exist.
+    """
+
+    slug = slugify_team_name(team_name)
+
+    svg_path = ROOT_DIR / "docs" / "assets" / "img" / "clubs" / f"{slug}.svg"
+    png_path = ROOT_DIR / "docs" / "assets" / "img" / "clubs" / f"{slug}.png"
+
+    if svg_path.exists():
+        return f"assets/img/clubs/{slug}.svg"
+
+    if png_path.exists():
+        return f"assets/img/clubs/{slug}.png"
+
+    return f"assets/img/clubs/{slug}.png"
+
+
+def build_rank_lookup(teams: dict[str, int]) -> dict[str, int]:
+    """
+    Build a dictionary giving the rank of each team.
+
+    Parameters
+    ----------
+    teams : dict[str, int]
+        Dictionary of team Elo ratings.
+
+    Returns
+    -------
+    dict[str, int]
+        Dictionary where keys are team names and values are ranks.
+    """
+
+    sorted_teams = sorted(
+        teams.items(),
+        key=lambda item: item[1],
+        reverse=True,
+    )
+
+    return {
+        team: index + 1
+        for index, (team, _) in enumerate(sorted_teams)
+    }
+
+
 def compute_rankings() -> list[dict]:
     """
     Compute the current Elo ranking from the initial teams and match results.
@@ -31,11 +100,16 @@ def compute_rankings() -> list[dict]:
     Returns
     -------
     list[dict]
-        Sorted ranking table. Each item contains rank, team, and points.
+        Sorted ranking table. Each item contains the current rank, previous
+        rank, rank change, team name, current points, previous points,
+        Elo points change, and logo path.
     """
 
+    initial_teams = get_initial_teams()
     teams = get_initial_teams()
     matches = get_all_matches()
+
+    previous_ranks = build_rank_lookup(initial_teams)
 
     for match in matches:
         if match.team_a not in teams:
@@ -62,14 +136,28 @@ def compute_rankings() -> list[dict]:
         reverse=True,
     )
 
-    rankings = [
-        {
-            "rank": index + 1,
-            "team": team,
-            "points": points,
-        }
-        for index, (team, points) in enumerate(sorted_teams)
-    ]
+    rankings = []
+
+    for index, (team, points) in enumerate(sorted_teams):
+        current_rank = index + 1
+        previous_rank = previous_ranks[team]
+        previous_points = initial_teams[team]
+        league = TEAM_DOMESTIC_COMPETITION.get(team, "INVITED")
+
+        rankings.append(
+            {
+                "rank": current_rank,
+                "previous_rank": previous_rank,
+                "rank_change": previous_rank - current_rank,
+                "team": team,
+                "points": points,
+                "previous_points": previous_points,
+                "points_change": points - previous_points,
+                "logo": get_logo_path(team),
+                "league": league,
+                "league_logo": COMPETITION_LOGOS[league],
+            }
+        )
 
     return rankings
 
@@ -84,7 +172,18 @@ def export_csv(rankings: list[dict], output_path: Path) -> None:
     with output_path.open("w", newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(
             csv_file,
-            fieldnames=["rank", "team", "points"],
+            fieldnames=[
+                "rank",
+                "previous_rank",
+                "rank_change",
+                "team",
+                "points",
+                "previous_points",
+                "points_change",
+                "logo",
+                "league",
+                "league_logo",
+            ],
         )
         writer.writeheader()
         writer.writerows(rankings)
@@ -118,7 +217,16 @@ def main() -> None:
 
     print("\nTop 10:")
     for row in rankings[:10]:
-        print(f"{row['rank']:>2}. {row['team']:<20} {row['points']}")
+        points_change = row["points_change"]
+        rank_change = row["rank_change"]
+
+        print(
+            f"{row['rank']:>2}. "
+            f"{row['team']:<28} "
+            f"{row['points']:>4} "
+            f"({points_change:+}) "
+            f"rank change: {rank_change:+}"
+        )
 
 
 if __name__ == "__main__":

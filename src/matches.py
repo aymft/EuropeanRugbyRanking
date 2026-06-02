@@ -39,29 +39,29 @@ class Match:
 
 
 TOP14_MATCHES = [
-    Match("Montauban", "La Rochelle", "home", 15, 71, "TOP14"),
-    Match("Toulouse", "Lyon", "home", 39, 31, "TOP14"),
-    Match("Perpignan", "Castres", "home", 29, 27, "TOP14"),
-    Match("Stade Francais", "Bayonne", "home", 38, 21, "TOP14"),
-    Match("Montpellier", "Pau", "home", 26, 18, "TOP14"),
-    Match("Toulon", "Bordeaux-Begles", "home", 27, 22, "TOP14"),
-    Match("Clermont", "Racing 92", "home", 13, 41, "TOP14"),
+    Match("US Montauban", "Stade Rochelais", "home", 15, 71, "TOP14"),
+    Match("Stade Toulousain", "Lyon OU", "home", 39, 31, "TOP14"),
+    Match("USA Perpignan", "Castres Olympique", "home", 29, 27, "TOP14"),
+    Match("Stade Français Paris", "Aviron Bayonnais", "home", 38, 21, "TOP14"),
+    Match("Montpellier Hérault Rugby", "Section Paloise", "home", 26, 18, "TOP14"),
+    Match("RC Toulonnais", "Union Bordeaux Bègles", "home", 27, 22, "TOP14"),
+    Match("ASM Clermont Auvergne", "Racing Métro 92", "home", 13, 41, "TOP14"),
 ]
 
 
 PREMIERSHIP_MATCHES = [
-    Match("Bristol", "Bath", "home", 21, 19, "Premiership"),
+    Match("Bristol Bears", "Bath Rugby", "home", 21, 19, "Premiership"),
     Match("Saracens", "Harlequins", "home", 26, 12, "Premiership"),
-    Match("Northampton", "Gloucester", "home", 36, 32, "Premiership"),
-    Match("Newcastle", "Sale", "home", 45, 42, "Premiership"),
-    Match("Leicester", "Exeter", "home", 26, 35, "Premiership"),
+    Match("Northampton Saints", "Gloucester", "home", 36, 32, "Premiership"),
+    Match("Newcastle Red Bulls", "Sale Sharks", "home", 45, 42, "Premiership"),
+    Match("Leicester Tigers", "Exeter Chiefs", "home", 26, 35, "Premiership"),
 ]
 
 
 URC_MATCHES = [
     Match("Glasgow", "Connacht", "home", 33, 21, "URC"),
     Match("Bulls", "Munster", "home", 45, 14, "URC"),
-    Match("Stormers", "Cardiff", "home", 44, 21, "URC"),
+    Match("Stormers", "Cardiff Rugby", "home", 44, 21, "URC"),
     Match("Leinster", "Lions", "home", 59, 10, "URC"),
 ]
 

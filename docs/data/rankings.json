@@ -1,212 +1,506 @@
 [
   {
     "rank": 1,
-    "team": "Bordeaux-Begles",
-    "points": 1770
+    "previous_rank": 1,
+    "rank_change": 0,
+    "team": "Union Bordeaux Bègles",
+    "points": 1770,
+    "previous_points": 1789,
+    "points_change": -19,
+    "logo": "assets/img/clubs/union-bordeaux-begles.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 2,
-    "team": "Toulouse",
-    "points": 1755
+    "previous_rank": 2,
+    "rank_change": 0,
+    "team": "Stade Toulousain",
+    "points": 1755,
+    "previous_points": 1752,
+    "points_change": 3,
+    "logo": "assets/img/clubs/stade-toulousain.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 3,
+    "previous_rank": 3,
+    "rank_change": 0,
     "team": "Leinster",
-    "points": 1714
+    "points": 1714,
+    "previous_points": 1709,
+    "points_change": 5,
+    "logo": "assets/img/clubs/leinster.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 4,
-    "team": "Northampton",
-    "points": 1704
+    "previous_rank": 4,
+    "rank_change": 0,
+    "team": "Northampton Saints",
+    "points": 1704,
+    "previous_points": 1701,
+    "points_change": 3,
+    "logo": "assets/img/clubs/northampton-saints.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 5,
-    "team": "Montpellier",
-    "points": 1684
+    "previous_rank": 6,
+    "rank_change": 1,
+    "team": "Montpellier Hérault Rugby",
+    "points": 1684,
+    "previous_points": 1677,
+    "points_change": 7,
+    "logo": "assets/img/clubs/montpellier-herault-rugby.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 6,
-    "team": "Bath",
-    "points": 1677
+    "previous_rank": 5,
+    "rank_change": -1,
+    "team": "Bath Rugby",
+    "points": 1677,
+    "previous_points": 1693,
+    "points_change": -16,
+    "logo": "assets/img/clubs/bath-rugby.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 7,
+    "previous_rank": 8,
+    "rank_change": 1,
     "team": "Glasgow",
-    "points": 1663
+    "points": 1663,
+    "previous_points": 1658,
+    "points_change": 5,
+    "logo": "assets/img/clubs/glasgow.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 8,
-    "team": "Leicester",
-    "points": 1650
+    "previous_rank": 7,
+    "rank_change": -1,
+    "team": "Leicester Tigers",
+    "points": 1650,
+    "previous_points": 1668,
+    "points_change": -18,
+    "logo": "assets/img/clubs/leicester-tigers.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 9,
+    "previous_rank": 9,
+    "rank_change": 0,
     "team": "Bulls",
-    "points": 1636
+    "points": 1636,
+    "previous_points": 1625,
+    "points_change": 11,
+    "logo": "assets/img/clubs/bulls.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 10,
-    "team": "La Rochelle",
-    "points": 1578
+    "previous_rank": 10,
+    "rank_change": 0,
+    "team": "Stade Rochelais",
+    "points": 1578,
+    "previous_points": 1574,
+    "points_change": 4,
+    "logo": "assets/img/clubs/stade-rochelais.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 11,
-    "team": "Stade Francais",
-    "points": 1574
+    "previous_rank": 11,
+    "rank_change": 0,
+    "team": "Stade Français Paris",
+    "points": 1574,
+    "previous_points": 1565,
+    "points_change": 9,
+    "logo": "assets/img/clubs/stade-francais-paris.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 12,
+    "previous_rank": 12,
+    "rank_change": 0,
     "team": "Saracens",
-    "points": 1572
+    "points": 1572,
+    "previous_points": 1565,
+    "points_change": 7,
+    "logo": "assets/img/clubs/saracens.svg",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 13,
+    "previous_rank": 13,
+    "rank_change": 0,
     "team": "Stormers",
-    "points": 1571
+    "points": 1571,
+    "previous_points": 1561,
+    "points_change": 10,
+    "logo": "assets/img/clubs/stormers.svg",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 14,
-    "team": "Exeter",
-    "points": 1570
+    "previous_rank": 15,
+    "rank_change": 1,
+    "team": "Exeter Chiefs",
+    "points": 1570,
+    "previous_points": 1552,
+    "points_change": 18,
+    "logo": "assets/img/clubs/exeter-chiefs.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 15,
-    "team": "Toulon",
-    "points": 1561
+    "previous_rank": 16,
+    "rank_change": 1,
+    "team": "RC Toulonnais",
+    "points": 1561,
+    "previous_points": 1542,
+    "points_change": 19,
+    "logo": "assets/img/clubs/rc-toulonnais.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 16,
-    "team": "Racing 92",
-    "points": 1555
+    "previous_rank": 18,
+    "rank_change": 2,
+    "team": "Racing Métro 92",
+    "points": 1555,
+    "previous_points": 1533,
+    "points_change": 22,
+    "logo": "assets/img/clubs/racing-metro-92.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 17,
-    "team": "Pau",
-    "points": 1550
+    "previous_rank": 14,
+    "rank_change": -3,
+    "team": "Section Paloise",
+    "points": 1550,
+    "previous_points": 1557,
+    "points_change": -7,
+    "logo": "assets/img/clubs/section-paloise.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 18,
-    "team": "Bristol",
-    "points": 1547
+    "previous_rank": 19,
+    "rank_change": 1,
+    "team": "Bristol Bears",
+    "points": 1547,
+    "previous_points": 1531,
+    "points_change": 16,
+    "logo": "assets/img/clubs/bristol-bears.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 19,
-    "team": "Clermont",
-    "points": 1518
+    "previous_rank": 17,
+    "rank_change": -2,
+    "team": "ASM Clermont Auvergne",
+    "points": 1518,
+    "previous_points": 1540,
+    "points_change": -22,
+    "logo": "assets/img/clubs/asm-clermont-auvergne.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 20,
+    "previous_rank": 20,
+    "rank_change": 0,
     "team": "Munster",
-    "points": 1516
+    "points": 1516,
+    "previous_points": 1527,
+    "points_change": -11,
+    "logo": "assets/img/clubs/munster.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 21,
+    "previous_rank": 21,
+    "rank_change": 0,
     "team": "Ulster",
-    "points": 1498
+    "points": 1498,
+    "previous_points": 1498,
+    "points_change": 0,
+    "logo": "assets/img/clubs/ulster.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 22,
+    "previous_rank": 22,
+    "rank_change": 0,
     "team": "Connacht",
-    "points": 1482
+    "points": 1482,
+    "previous_points": 1487,
+    "points_change": -5,
+    "logo": "assets/img/clubs/connacht.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 23,
-    "team": "Sharks",
-    "points": 1479
+    "previous_rank": 24,
+    "rank_change": 1,
+    "team": "The Sharks",
+    "points": 1479,
+    "previous_points": 1479,
+    "points_change": 0,
+    "logo": "assets/img/clubs/the-sharks.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 24,
+    "previous_rank": 26,
+    "rank_change": 2,
     "team": "Harlequins",
-    "points": 1468
+    "points": 1468,
+    "previous_points": 1475,
+    "points_change": -7,
+    "logo": "assets/img/clubs/harlequins.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 25,
-    "team": "Castres",
-    "points": 1463
+    "previous_rank": 25,
+    "rank_change": 0,
+    "team": "Castres Olympique",
+    "points": 1463,
+    "previous_points": 1478,
+    "points_change": -15,
+    "logo": "assets/img/clubs/castres-olympique.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 26,
-    "team": "Sale",
-    "points": 1458
+    "previous_rank": 23,
+    "rank_change": -3,
+    "team": "Sale Sharks",
+    "points": 1458,
+    "previous_points": 1479,
+    "points_change": -21,
+    "logo": "assets/img/clubs/sale-sharks.svg",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 27,
+    "previous_rank": 27,
+    "rank_change": 0,
     "team": "Lions",
-    "points": 1457
+    "points": 1457,
+    "previous_points": 1462,
+    "points_change": -5,
+    "logo": "assets/img/clubs/lions.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 28,
-    "team": "Trevise",
-    "points": 1453
+    "previous_rank": 28,
+    "rank_change": 0,
+    "team": "Benetton",
+    "points": 1453,
+    "previous_points": 1453,
+    "points_change": 0,
+    "logo": "assets/img/clubs/benetton.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 29,
-    "team": "Cardiff",
-    "points": 1442
+    "previous_rank": 29,
+    "rank_change": 0,
+    "team": "Cardiff Rugby",
+    "points": 1442,
+    "previous_points": 1452,
+    "points_change": -10,
+    "logo": "assets/img/clubs/cardiff-rugby.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 30,
+    "previous_rank": 30,
+    "rank_change": 0,
     "team": "Gloucester",
-    "points": 1439
+    "points": 1439,
+    "previous_points": 1442,
+    "points_change": -3,
+    "logo": "assets/img/clubs/gloucester.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 31,
-    "team": "Lyon",
-    "points": 1437
+    "previous_rank": 31,
+    "rank_change": 0,
+    "team": "Lyon OU",
+    "points": 1437,
+    "previous_points": 1440,
+    "points_change": -3,
+    "logo": "assets/img/clubs/lyon-ou.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 32,
-    "team": "Edimbourg",
-    "points": 1430
+    "previous_rank": 33,
+    "rank_change": 1,
+    "team": "Edinburgh",
+    "points": 1430,
+    "previous_points": 1430,
+    "points_change": 0,
+    "logo": "assets/img/clubs/edinburgh.svg",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 33,
-    "team": "Bayonne",
-    "points": 1422
+    "previous_rank": 32,
+    "rank_change": -1,
+    "team": "Aviron Bayonnais",
+    "points": 1422,
+    "previous_points": 1431,
+    "points_change": -9,
+    "logo": "assets/img/clubs/aviron-bayonnais.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 34,
+    "previous_rank": 34,
+    "rank_change": 0,
     "team": "Scarlets",
-    "points": 1369
+    "points": 1369,
+    "previous_points": 1369,
+    "points_change": 0,
+    "logo": "assets/img/clubs/scarlets.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 35,
+    "previous_rank": 35,
+    "rank_change": 0,
     "team": "Ospreys",
-    "points": 1366
+    "points": 1366,
+    "previous_points": 1366,
+    "points_change": 0,
+    "logo": "assets/img/clubs/ospreys.svg",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 36,
-    "team": "Perpignan",
-    "points": 1363
+    "previous_rank": 36,
+    "rank_change": 0,
+    "team": "USA Perpignan",
+    "points": 1363,
+    "previous_points": 1348,
+    "points_change": 15,
+    "logo": "assets/img/clubs/usa-perpignan.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 37,
+    "previous_rank": 37,
+    "rank_change": 0,
     "team": "Dragons",
-    "points": 1242
+    "points": 1242,
+    "previous_points": 1242,
+    "points_change": 0,
+    "logo": "assets/img/clubs/dragons.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 38,
+    "previous_rank": 38,
+    "rank_change": 0,
     "team": "Cheetahs",
-    "points": 1238
+    "points": 1238,
+    "previous_points": 1238,
+    "points_change": 0,
+    "logo": "assets/img/clubs/cheetahs.png",
+    "league": "INVITED",
+    "league_logo": "assets/img/competitions/invited.png"
   },
   {
     "rank": 39,
+    "previous_rank": 39,
+    "rank_change": 0,
     "team": "Zebre",
-    "points": 1216
+    "points": 1216,
+    "previous_points": 1216,
+    "points_change": 0,
+    "logo": "assets/img/clubs/zebre.svg",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
   },
   {
     "rank": 40,
+    "previous_rank": 40,
+    "rank_change": 0,
     "team": "Black Lion",
-    "points": 1211
+    "points": 1211,
+    "previous_points": 1211,
+    "points_change": 0,
+    "logo": "assets/img/clubs/black-lion.svg",
+    "league": "INVITED",
+    "league_logo": "assets/img/competitions/invited.png"
   },
   {
     "rank": 41,
-    "team": "Newcastle",
-    "points": 1165
+    "previous_rank": 42,
+    "rank_change": 1,
+    "team": "Newcastle Red Bulls",
+    "points": 1165,
+    "previous_points": 1144,
+    "points_change": 21,
+    "logo": "assets/img/clubs/newcastle-red-bulls.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 42,
-    "team": "Montauban",
-    "points": 1150
+    "previous_rank": 41,
+    "rank_change": -1,
+    "team": "US Montauban",
+    "points": 1150,
+    "previous_points": 1154,
+    "points_change": -4,
+    "logo": "assets/img/clubs/us-montauban.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   }
 ]

@@ -252,3 +252,159 @@ footer {
     width: 48px;
   }
 }
+
+
+/* =========================
+   Team logos and ranking indicators
+   ========================= */
+
+.team-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 260px;
+}
+
+.team-logo {
+  display: block !important;
+  width: 38px !important;
+  height: 38px !important;
+  max-width: 38px !important;
+  max-height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+  flex: 0 0 38px !important;
+
+  padding: 0;
+  box-sizing: border-box;
+
+  object-fit: contain;
+  object-position: center;
+
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  filter: none;
+}
+
+.team-logo-placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  flex: 0 0 34px;
+  border-radius: 50%;
+  background: #e8eef6;
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.team-name {
+  font-weight: 650;
+  white-space: normal;
+}
+
+.rank-change,
+.points-change {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.rank-change-up,
+.points-change-positive {
+  color: #137333 !important;
+  background: #e6f4ea !important;
+}
+
+.rank-change-down,
+.points-change-negative {
+  color: #b3261e !important;
+  background: #fce8e6 !important;
+}
+
+.rank-change-neutral,
+.points-change-neutral {
+  color: #6b7280 !important;
+  background: #f3f4f6 !important;
+}
+
+/* =========================
+   League logos
+   ========================= */
+
+.league-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.league-logo {
+  display: block;
+  width: 54px;
+  height: 26px;
+  max-width: 54px;
+  max-height: 26px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.league-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #4b5563;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+/* =========================
+   Column alignment
+   ========================= */
+
+/* League column */
+th:nth-child(4),
+td:nth-child(4) {
+  text-align: center;
+}
+
+/* Elo points column */
+th:nth-child(5),
+td:nth-child(5) {
+  text-align: center;
+}
+
+/* Elo diff column */
+th:nth-child(6),
+td:nth-child(6) {
+  text-align: center;
+}
+
+/* Ensure league logo is centered inside its cell */
+.league-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Ensure Elo diff badge is centered inside its cell */
+td:nth-child(6) {
+  vertical-align: middle;
+}
