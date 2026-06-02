@@ -25,3 +25,54 @@ match results
 → Elo computation
 → rankings.csv / rankings.json
 → dynamic ranking table on the website
+
+The website displays:
+
+- current Elo ranking
+- club logos
+- domestic league logos
+- Elo point variation
+- rank movement compared to the previous ranking
+
+
+## Method
+
+Each club starts with an initial Elo rating. After every match, the ratings of both teams are updated according to:
+
+- the match result
+- the Elo difference between the two teams
+- home advantage
+- score margin
+- competition type
+
+European competitions can use a different update factor from domestic competitions, allowing high-stakes cross-league matches to have a stronger impact on the ranking.
+
+## Repository structure 
+
+EuropeanRugbyRanking/
+│
+├── src/
+│   ├── elo.py
+│   ├── teams.py
+│   ├── matches.py
+│   ├── competitions.py
+│   ├── generate_rankings.py
+│   └── fetch_logos.py
+│
+├── data/
+│   └── processed/
+│       └── rankings.csv
+│
+├── docs/
+│   ├── index.html
+│   ├── data/
+│   │   ├── rankings.csv
+│   │   └── rankings.json
+│   └── assets/
+│       ├── css/
+│       ├── js/
+│       └── img/
+│
+└── README.md
+
+
