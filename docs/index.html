@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>European Rugby Ranking</title>
+
+  <meta
+    name="description"
+    content="European rugby club ranking based on an Elo rating system."
+  >
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>European Rugby Ranking</h1>
+
+    <p>
+      A data-driven ranking of European rugby clubs based on an Elo rating
+      system.
+    </p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#ranking">Ranking</a></li>
+      <li><a href="#method">Method</a></li>
+      <li><a href="data/rankings.csv">Download CSV</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="ranking">
+      <h2>Current ranking</h2>
+
+      <p>
+        The table below will display the latest generated ranking from
+        <code>website/data/rankings.json</code>.
+      </p>
+
+      <table>
+        <caption>
+          European rugby club Elo ranking
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Club</th>
+            <th scope="col">Elo points</th>
+          </tr>
+        </thead>
+
+        <tbody id="ranking-table-body">
+          <tr>
+            <td colspan="3">
+              Ranking data will be loaded here.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="method">
+      <h2>Method</h2>
+
+      <p>
+        The ranking is computed using an Elo rating system. Each match updates
+        the rating of both teams according to the result, the location of the
+        match, the score difference, and the competition.
+      </p>
+
+      <p>
+        Match data are currently entered manually. The next development step
+        will be to automate match retrieval for the main European rugby
+        competitions.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      European Rugby Ranking — built with Python and GitHub Pages.
+    </p>
+  </footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
