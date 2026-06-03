@@ -8,3 +8,10 @@ __pycache__/
 data/raw/
 data/processed/matches_clean.csv
 data/processed/logos_report.json
+
+# Experimental scraper outputs
+data/processed/team_name_inventory.csv
+data/processed/top14_official_matches.csv
+data/processed/premiership_official_team_names.csv
+data/processed/urc_official_team_names.json
+data/processed/urc_official_team_names.csv

@@ -408,3 +408,17 @@ td:nth-child(6) {
 td:nth-child(6) {
   vertical-align: middle;
 }
+
+/* =========================
+   Footer links
+   ========================= */
+
+footer a {
+  color: var(--color-primary);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

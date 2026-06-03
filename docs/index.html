@@ -38,8 +38,11 @@
       <h2>Current ranking</h2>
 
       <p>
-        The table below will display the latest generated ranking from
-        <code>website/data/rankings.json</code>.
+        <p>
+          This ranking compares European rugby clubs using an Elo-based rating system.
+          Each team gains or loses points after a match depending on the result, the
+          opponent strength, the score margin and the match context.
+        </p>
       </p>
 
       <table>
@@ -69,18 +72,26 @@
     </section>
 
     <section id="method">
-      <h2>Method</h2>
+      <h2>How the ranking works</h2>
 
       <p>
-        The ranking is computed using an Elo rating system. Each match updates
-        the rating of both teams according to the result, the location of the
-        match, the score difference, and the competition.
+        The ranking is based on an Elo rating system adapted to European club
+        rugby. Each club has a numerical rating, which is updated after every
+        match. Beating a highly rated opponent increases a club's rating more than
+        beating a lower-rated opponent, while losing to a lower-rated team has a
+        stronger negative impact.
       </p>
 
       <p>
-        Match data are currently entered manually. The next development step
-        will be to automate match retrieval for the main European rugby
-        competitions.
+        The model also accounts for home advantage, score margin and competition
+        type. European fixtures can therefore have a different weight from domestic
+        league matches, reflecting their cross-league importance.
+      </p>
+
+      <p>
+        The arrows in the table show how many positions a club has gained or lost
+        compared to the previous ranking. The Elo difference shows the point
+        variation between the previous rating and the current computed rating.
       </p>
     </section>
   </main>
@@ -88,6 +99,9 @@
   <footer>
     <p>
       European Rugby Ranking — built with Python and GitHub Pages.
+      <a href="https://github.com/aymft/EuropeanRugbyRanking" target="_blank" rel="noopener noreferrer">
+        View source on GitHub
+      </a>
     </p>
   </footer>
   <script src="assets/js/app.js"></script>

@@ -14,7 +14,13 @@ from pathlib import Path
 from src.elo import elo_update
 from src.matches import get_all_matches
 from src.teams import get_initial_teams
-from src.competitions import COMPETITION_LOGOS, TEAM_DOMESTIC_COMPETITION
+from src.competitions import COMPETITION_LOGOS
+
+from src.team_registry import (
+    get_club_id_from_model_name,
+    get_display_name,
+    get_domestic_competition,
+)
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -45,26 +51,23 @@ def slugify_team_name(team_name: str) -> str:
 
     return slug
 
-def get_logo_path(team_name: str) -> str:
+def get_logo_path(club_id: str) -> str:
     """
-    Return the best available local logo path for a team.
+    Return the best available local logo path for a club_id.
 
     SVG files are preferred over PNG files when both exist.
     """
 
-    slug = slugify_team_name(team_name)
-
-    svg_path = ROOT_DIR / "docs" / "assets" / "img" / "clubs" / f"{slug}.svg"
-    png_path = ROOT_DIR / "docs" / "assets" / "img" / "clubs" / f"{slug}.png"
+    svg_path = ROOT_DIR / "docs" / "assets" / "img" / "clubs" / f"{club_id}.svg"
+    png_path = ROOT_DIR / "docs" / "assets" / "img" / "clubs" / f"{club_id}.png"
 
     if svg_path.exists():
-        return f"assets/img/clubs/{slug}.svg"
+        return f"assets/img/clubs/{club_id}.svg"
 
     if png_path.exists():
-        return f"assets/img/clubs/{slug}.png"
+        return f"assets/img/clubs/{club_id}.png"
 
-    return f"assets/img/clubs/{slug}.png"
-
+    return f"assets/img/clubs/{club_id}.png"
 
 def build_rank_lookup(teams: dict[str, int]) -> dict[str, int]:
     """
@@ -142,18 +145,26 @@ def compute_rankings() -> list[dict]:
         current_rank = index + 1
         previous_rank = previous_ranks[team]
         previous_points = initial_teams[team]
-        league = TEAM_DOMESTIC_COMPETITION.get(team, "INVITED")
+
+        club_id = get_club_id_from_model_name(team)
+        display_name = get_display_name(club_id)
+        league = get_domestic_competition(club_id)
 
         rankings.append(
             {
                 "rank": current_rank,
                 "previous_rank": previous_rank,
                 "rank_change": previous_rank - current_rank,
-                "team": team,
+
+                "club_id": club_id,
+                "team": display_name,
+                "model_name": team,
+
                 "points": points,
                 "previous_points": previous_points,
                 "points_change": points - previous_points,
-                "logo": get_logo_path(team),
+
+                "logo": get_logo_path(club_id),
                 "league": league,
                 "league_logo": COMPETITION_LOGOS[league],
             }
@@ -176,7 +187,9 @@ def export_csv(rankings: list[dict], output_path: Path) -> None:
                 "rank",
                 "previous_rank",
                 "rank_change",
+                "club_id",
                 "team",
+                "model_name",
                 "points",
                 "previous_points",
                 "points_change",
