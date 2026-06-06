@@ -12,7 +12,7 @@ import unicodedata
 from pathlib import Path
 
 from src.elo import elo_update
-from src.matches import get_all_matches
+from src.matches import Match, get_all_matches
 from src.teams import get_initial_teams
 from src.competitions import COMPETITION_LOGOS
 
@@ -32,6 +32,9 @@ PROCESSED_CSV_PATH = PROCESSED_DATA_DIR / "rankings.csv"
 DOCS_CSV_PATH = DOCS_DATA_DIR / "rankings.csv"
 DOCS_JSON_PATH = DOCS_DATA_DIR / "rankings.json"
 
+MATCH_HISTORY_PATH = ROOT_DIR / "data" / "processed" / "matches_history.csv"
+
+PREVIOUS_RANKINGS_PATH = ROOT_DIR / "data" / "processed" / "previous_rankings.json"
 
 def slugify_team_name(team_name: str) -> str:
     """
@@ -95,6 +98,37 @@ def build_rank_lookup(teams: dict[str, int]) -> dict[str, int]:
         for index, (team, _) in enumerate(sorted_teams)
     }
 
+def load_previous_rankings_snapshot() -> dict[str, dict]:
+    """
+    Load the previous published ranking snapshot.
+
+    This snapshot is used only to compute:
+    - rank_change
+    - points_change
+
+    Elo values themselves remain cumulative.
+    """
+
+    if not PREVIOUS_RANKINGS_PATH.exists():
+        return {}
+
+    with PREVIOUS_RANKINGS_PATH.open("r", encoding="utf-8") as json_file:
+        rows = json.load(json_file)
+
+    snapshot = {}
+
+    for row in rows:
+        club_id = row.get("club_id")
+
+        if not club_id:
+            continue
+
+        snapshot[club_id] = {
+            "rank": int(row["rank"]),
+            "points": int(row["points"]),
+        }
+
+    return snapshot
 
 def compute_rankings() -> list[dict]:
     """
@@ -110,7 +144,7 @@ def compute_rankings() -> list[dict]:
 
     initial_teams = get_initial_teams()
     teams = get_initial_teams()
-    matches = get_all_matches()
+    matches = get_matches_for_ranking()
 
     previous_ranks = build_rank_lookup(initial_teams)
 
@@ -141,14 +175,19 @@ def compute_rankings() -> list[dict]:
 
     rankings = []
 
+    previous_snapshot = load_previous_rankings_snapshot()
+
     for index, (team, points) in enumerate(sorted_teams):
         current_rank = index + 1
-        previous_rank = previous_ranks[team]
-        previous_points = initial_teams[team]
 
         club_id = get_club_id_from_model_name(team)
         display_name = get_display_name(club_id)
         league = get_domestic_competition(club_id)
+
+        previous_row = previous_snapshot.get(club_id, {})
+
+        previous_rank = previous_row.get("rank", current_rank)
+        previous_points = previous_row.get("points", points)
 
         rankings.append(
             {
@@ -212,6 +251,66 @@ def export_json(rankings: list[dict], output_path: Path) -> None:
     with output_path.open("w", encoding="utf-8") as json_file:
         json.dump(rankings, json_file, indent=2, ensure_ascii=False)
 
+def load_history_matches() -> list[Match]:
+    """
+    Load finished matches from data/processed/matches_history.csv.
+
+    This file becomes the authoritative source for competitions progressively
+    migrated to official scrapers.
+    """
+
+    if not MATCH_HISTORY_PATH.exists():
+        return []
+
+    matches = []
+
+    with MATCH_HISTORY_PATH.open("r", encoding="utf-8") as csv_file:
+        reader = csv.DictReader(csv_file)
+
+        for row in reader:
+            if row["status"] != "finished":
+                continue
+
+            matches.append(
+                Match(
+                    team_a=row["team_a"],
+                    team_b=row["team_b"],
+                    location=row["location"],
+                    score_a=int(row["score_a"]),
+                    score_b=int(row["score_b"]),
+                    competition=row["competition"],
+                )
+            )
+
+    return matches
+
+
+def get_matches_for_ranking() -> list[Match]:
+    """
+    Return matches used for Elo computation.
+
+    For competitions already present in matches_history.csv, the history file
+    becomes authoritative. Manual matches for those competitions are excluded
+    to avoid double counting.
+    """
+
+    manual_matches = get_all_matches()
+    history_matches = load_history_matches()
+
+    if not history_matches:
+        return manual_matches
+
+    competitions_from_history = {
+        match.competition
+        for match in history_matches
+    }
+
+    manual_matches_to_keep = [
+        match for match in manual_matches
+        if match.competition not in competitions_from_history
+    ]
+
+    return manual_matches_to_keep + history_matches
 
 def main() -> None:
     """
@@ -240,6 +339,7 @@ def main() -> None:
             f"({points_change:+}) "
             f"rank change: {rank_change:+}"
         )
+
 
 
 if __name__ == "__main__":

@@ -1,0 +1,13 @@
+source,competition,round,match_id,team_a_id,team_b_id,team_a,team_b,team_a_display,team_b_display,location,score_a,score_b,status,link
+lnr_top14,TOP14,j25,11479,stade-toulousain,lyon-ou,Stade Toulousain,Lyon OU,Stade Toulousain,LOU Rugby,home,39,31,finished,https://top14.lnr.fr/feuille-de-match/2025-2026/j25/11479-toulouse-lyon
+lnr_top14,TOP14,j25,11481,usa-perpignan,castres-olympique,USA Perpignan,Castres Olympique,USA Perpignan,Castres Olympique,home,29,27,finished,https://top14.lnr.fr/feuille-de-match/2025-2026/j25/11481-perpignan-castres
+lnr_top14,TOP14,j25,11478,stade-francais-paris,aviron-bayonnais,Stade Français Paris,Aviron Bayonnais,Stade Français Paris,Aviron Bayonnais,home,38,21,finished,https://top14.lnr.fr/feuille-de-match/2025-2026/j25/11478-paris-bayonne
+lnr_top14,TOP14,j25,11480,us-montauban,stade-rochelais,US Montauban,Stade Rochelais,US Montauban,Stade Rochelais,home,15,71,finished,https://top14.lnr.fr/feuille-de-match/2025-2026/j25/11480-montauban-la-rochelle
+lnr_top14,TOP14,j25,11476,montpellier-herault-rugby,section-paloise,Montpellier Hérault Rugby,Section Paloise,Montpellier Hérault Rugby,Section Paloise,home,26,18,finished,https://top14.lnr.fr/feuille-de-match/2025-2026/j25/11476-montpellier-pau
+lnr_top14,TOP14,j25,11477,rc-toulonnais,union-bordeaux-begles,RC Toulonnais,Union Bordeaux Bègles,RC Toulon,Union Bordeaux-Bègles,home,27,22,finished,https://top14.lnr.fr/feuille-de-match/2025-2026/j25/11477-toulon-bordeaux-begles
+lnr_top14,TOP14,j25,11475,asm-clermont-auvergne,racing-metro-92,ASM Clermont Auvergne,Racing Métro 92,ASM Clermont,Racing 92,home,13,41,finished,https://top14.lnr.fr/feuille-de-match/2025-2026/j25/11475-clermont-racing-92
+urc_graphql,URC,urc_weekend_2026-05-29,287999,glasgow,connacht,Glasgow,Connacht,Glasgow Warriors,Connacht Rugby,home,33,21,finished,
+urc_graphql,URC,urc_weekend_2026-05-30,288002,bulls,munster,Bulls,Munster,Bulls,Munster Rugby,home,45,14,finished,
+urc_graphql,URC,urc_weekend_2026-05-30,288001,stormers,cardiff-rugby,Stormers,Cardiff Rugby,Stormers,Cardiff Rugby,home,44,21,finished,
+urc_graphql,URC,urc_weekend_2026-05-30,288000,leinster,lions,Leinster,Lions,Leinster Rugby,Lions,home,59,10,finished,
+urc_graphql,URC,urc_weekend_2026-06-06,288003,glasgow,bulls,Glasgow,Bulls,Glasgow Warriors,Bulls,home,21,22,finished,
