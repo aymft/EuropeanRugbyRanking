@@ -1,0 +1,54 @@
+name: Update rugby rankings
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-rankings
+  cancel-in-progress: false
+
+jobs:
+  update-rankings:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Update latest TOP 14 results
+        run: python -m src.update_latest_top14
+
+      - name: Update latest URC results
+        run: python -m src.update_latest_urc
+
+      - name: Update latest Premiership results
+        run: python -m src.update_latest_premiership
+
+      - name: Generate rankings
+        run: python -m src.generate_rankings
+
+      - name: Commit changes if needed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add data/processed/matches_history.csv
+            git add data/processed/rankings.csv
+            git add docs/data/rankings.csv
+            git add docs/data/rankings.json
+            git commit -m "Auto-update rugby rankings"
+            git push
+          else
+            echo "No ranking update to commit."
+          fi
