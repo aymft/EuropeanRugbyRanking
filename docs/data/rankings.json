@@ -43,8 +43,22 @@
   },
   {
     "rank": 4,
+    "previous_rank": 5,
+    "rank_change": 1,
+    "club_id": "northampton-saints",
+    "team": "Northampton Saints",
+    "model_name": "Northampton Saints",
+    "points": 1695,
+    "previous_points": 1686,
+    "points_change": 9,
+    "logo": "assets/img/clubs/northampton-saints.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
+  },
+  {
+    "rank": 5,
     "previous_rank": 4,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "montpellier-herault-rugby",
     "team": "Montpellier Hérault Rugby",
     "model_name": "Montpellier Hérault Rugby",
@@ -54,20 +68,6 @@
     "logo": "assets/img/clubs/montpellier-herault-rugby.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 5,
-    "previous_rank": 5,
-    "rank_change": 0,
-    "club_id": "northampton-saints",
-    "team": "Northampton Saints",
-    "model_name": "Northampton Saints",
-    "points": 1686,
-    "previous_points": 1686,
-    "points_change": 0,
-    "logo": "assets/img/clubs/northampton-saints.png",
-    "league": "PREMIERSHIP",
-    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 6,
@@ -118,9 +118,9 @@
     "club_id": "leicester-tigers",
     "team": "Leicester Tigers",
     "model_name": "Leicester Tigers",
-    "points": 1641,
+    "points": 1632,
     "previous_points": 1641,
-    "points_change": 0,
+    "points_change": -9,
     "logo": "assets/img/clubs/leicester-tigers.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
