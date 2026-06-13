@@ -4,12 +4,12 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 3,3,0,leinster,Leinster Rugby,Leinster,1720,1720,0,assets/img/clubs/leinster.png,URC,assets/img/competitions/urc.svg
 4,5,1,northampton-saints,Northampton Saints,Northampton Saints,1695,1686,9,assets/img/clubs/northampton-saints.png,PREMIERSHIP,assets/img/competitions/premiership.png
 5,4,-1,montpellier-herault-rugby,Montpellier Hérault Rugby,Montpellier Hérault Rugby,1690,1690,0,assets/img/clubs/montpellier-herault-rugby.png,TOP14,assets/img/competitions/top14.png
-6,6,0,bath-rugby,Bath Rugby,Bath Rugby,1686,1686,0,assets/img/clubs/bath-rugby.png,PREMIERSHIP,assets/img/competitions/premiership.png
+6,6,0,bath-rugby,Bath Rugby,Bath Rugby,1668,1686,-18,assets/img/clubs/bath-rugby.png,PREMIERSHIP,assets/img/competitions/premiership.png
 7,7,0,bulls,Bulls,Bulls,1652,1652,0,assets/img/clubs/bulls.png,URC,assets/img/competitions/urc.svg
 8,8,0,glasgow,Glasgow Warriors,Glasgow,1647,1647,0,assets/img/clubs/glasgow.png,URC,assets/img/competitions/urc.svg
 9,9,0,leicester-tigers,Leicester Tigers,Leicester Tigers,1632,1641,-9,assets/img/clubs/leicester-tigers.png,PREMIERSHIP,assets/img/competitions/premiership.png
-10,10,0,stade-rochelais,Stade Rochelais,Stade Rochelais,1588,1588,0,assets/img/clubs/stade-rochelais.png,TOP14,assets/img/competitions/top14.png
-11,11,0,exeter-chiefs,Exeter Chiefs,Exeter Chiefs,1586,1586,0,assets/img/clubs/exeter-chiefs.png,PREMIERSHIP,assets/img/competitions/premiership.png
+10,11,1,exeter-chiefs,Exeter Chiefs,Exeter Chiefs,1604,1586,18,assets/img/clubs/exeter-chiefs.png,PREMIERSHIP,assets/img/competitions/premiership.png
+11,10,-1,stade-rochelais,Stade Rochelais,Stade Rochelais,1588,1588,0,assets/img/clubs/stade-rochelais.png,TOP14,assets/img/competitions/top14.png
 12,12,0,racing-metro-92,Racing 92,Racing Métro 92,1572,1572,0,assets/img/clubs/racing-metro-92.png,TOP14,assets/img/competitions/top14.png
 13,13,0,stormers,Stormers,Stormers,1565,1565,0,assets/img/clubs/stormers.svg,URC,assets/img/competitions/urc.svg
 14,14,0,stade-francais-paris,Stade Français Paris,Stade Français Paris,1564,1564,0,assets/img/clubs/stade-francais-paris.png,TOP14,assets/img/competitions/top14.png

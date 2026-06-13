@@ -76,9 +76,9 @@
     "club_id": "bath-rugby",
     "team": "Bath Rugby",
     "model_name": "Bath Rugby",
-    "points": 1686,
+    "points": 1668,
     "previous_points": 1686,
-    "points_change": 0,
+    "points_change": -18,
     "logo": "assets/img/clubs/bath-rugby.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
@@ -127,8 +127,22 @@
   },
   {
     "rank": 10,
+    "previous_rank": 11,
+    "rank_change": 1,
+    "club_id": "exeter-chiefs",
+    "team": "Exeter Chiefs",
+    "model_name": "Exeter Chiefs",
+    "points": 1604,
+    "previous_points": 1586,
+    "points_change": 18,
+    "logo": "assets/img/clubs/exeter-chiefs.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
+  },
+  {
+    "rank": 11,
     "previous_rank": 10,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "stade-rochelais",
     "team": "Stade Rochelais",
     "model_name": "Stade Rochelais",
@@ -138,20 +152,6 @@
     "logo": "assets/img/clubs/stade-rochelais.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 11,
-    "previous_rank": 11,
-    "rank_change": 0,
-    "club_id": "exeter-chiefs",
-    "team": "Exeter Chiefs",
-    "model_name": "Exeter Chiefs",
-    "points": 1586,
-    "previous_points": 1586,
-    "points_change": 0,
-    "logo": "assets/img/clubs/exeter-chiefs.png",
-    "league": "PREMIERSHIP",
-    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 12,
