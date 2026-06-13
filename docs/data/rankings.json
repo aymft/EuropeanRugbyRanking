@@ -160,9 +160,9 @@
     "club_id": "racing-metro-92",
     "team": "Racing 92",
     "model_name": "Racing Métro 92",
-    "points": 1572,
+    "points": 1586,
     "previous_points": 1572,
-    "points_change": 0,
+    "points_change": 14,
     "logo": "assets/img/clubs/racing-metro-92.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
@@ -211,22 +211,8 @@
   },
   {
     "rank": 16,
-    "previous_rank": 16,
-    "rank_change": 0,
-    "club_id": "section-paloise",
-    "team": "Section Paloise",
-    "model_name": "Section Paloise",
-    "points": 1552,
-    "previous_points": 1552,
-    "points_change": 0,
-    "logo": "assets/img/clubs/section-paloise.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 17,
     "previous_rank": 17,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "rc-toulonnais",
     "team": "RC Toulon",
     "model_name": "RC Toulonnais",
@@ -238,9 +224,9 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
-    "rank": 18,
+    "rank": 17,
     "previous_rank": 18,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "asm-clermont-auvergne",
     "team": "ASM Clermont",
     "model_name": "ASM Clermont Auvergne",
@@ -248,6 +234,20 @@
     "previous_points": 1539,
     "points_change": 0,
     "logo": "assets/img/clubs/asm-clermont-auvergne.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
+  },
+  {
+    "rank": 18,
+    "previous_rank": 16,
+    "rank_change": -2,
+    "club_id": "section-paloise",
+    "team": "Section Paloise",
+    "model_name": "Section Paloise",
+    "points": 1538,
+    "previous_points": 1552,
+    "points_change": -14,
+    "logo": "assets/img/clubs/section-paloise.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
   },

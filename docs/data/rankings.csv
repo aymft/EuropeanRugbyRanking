@@ -10,13 +10,13 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 9,9,0,leicester-tigers,Leicester Tigers,Leicester Tigers,1632,1641,-9,assets/img/clubs/leicester-tigers.png,PREMIERSHIP,assets/img/competitions/premiership.png
 10,11,1,exeter-chiefs,Exeter Chiefs,Exeter Chiefs,1604,1586,18,assets/img/clubs/exeter-chiefs.png,PREMIERSHIP,assets/img/competitions/premiership.png
 11,10,-1,stade-rochelais,Stade Rochelais,Stade Rochelais,1588,1588,0,assets/img/clubs/stade-rochelais.png,TOP14,assets/img/competitions/top14.png
-12,12,0,racing-metro-92,Racing 92,Racing Métro 92,1572,1572,0,assets/img/clubs/racing-metro-92.png,TOP14,assets/img/competitions/top14.png
+12,12,0,racing-metro-92,Racing 92,Racing Métro 92,1586,1572,14,assets/img/clubs/racing-metro-92.png,TOP14,assets/img/competitions/top14.png
 13,13,0,stormers,Stormers,Stormers,1565,1565,0,assets/img/clubs/stormers.svg,URC,assets/img/competitions/urc.svg
 14,14,0,stade-francais-paris,Stade Français Paris,Stade Français Paris,1564,1564,0,assets/img/clubs/stade-francais-paris.png,TOP14,assets/img/competitions/top14.png
 15,15,0,saracens,Saracens,Saracens,1556,1556,0,assets/img/clubs/saracens.svg,PREMIERSHIP,assets/img/competitions/premiership.png
-16,16,0,section-paloise,Section Paloise,Section Paloise,1552,1552,0,assets/img/clubs/section-paloise.png,TOP14,assets/img/competitions/top14.png
-17,17,0,rc-toulonnais,RC Toulon,RC Toulonnais,1540,1540,0,assets/img/clubs/rc-toulonnais.png,TOP14,assets/img/competitions/top14.png
-18,18,0,asm-clermont-auvergne,ASM Clermont,ASM Clermont Auvergne,1539,1539,0,assets/img/clubs/asm-clermont-auvergne.png,TOP14,assets/img/competitions/top14.png
+16,17,1,rc-toulonnais,RC Toulon,RC Toulonnais,1540,1540,0,assets/img/clubs/rc-toulonnais.png,TOP14,assets/img/competitions/top14.png
+17,18,1,asm-clermont-auvergne,ASM Clermont,ASM Clermont Auvergne,1539,1539,0,assets/img/clubs/asm-clermont-auvergne.png,TOP14,assets/img/competitions/top14.png
+18,16,-2,section-paloise,Section Paloise,Section Paloise,1538,1552,-14,assets/img/clubs/section-paloise.png,TOP14,assets/img/competitions/top14.png
 19,19,0,bristol-bears,Bristol Bears,Bristol Bears,1527,1527,0,assets/img/clubs/bristol-bears.png,PREMIERSHIP,assets/img/competitions/premiership.png
 20,20,0,munster,Munster Rugby,Munster,1516,1516,0,assets/img/clubs/munster.png,URC,assets/img/competitions/urc.svg
 21,21,0,ulster,Ulster Rugby,Ulster,1498,1498,0,assets/img/clubs/ulster.png,URC,assets/img/competitions/urc.svg
