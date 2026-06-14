@@ -141,22 +141,8 @@
   },
   {
     "rank": 11,
-    "previous_rank": 10,
-    "rank_change": -1,
-    "club_id": "stade-rochelais",
-    "team": "Stade Rochelais",
-    "model_name": "Stade Rochelais",
-    "points": 1588,
-    "previous_points": 1588,
-    "points_change": 0,
-    "logo": "assets/img/clubs/stade-rochelais.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 12,
     "previous_rank": 12,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "racing-metro-92",
     "team": "Racing 92",
     "model_name": "Racing Métro 92",
@@ -168,9 +154,37 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
+    "rank": 12,
+    "previous_rank": 14,
+    "rank_change": 2,
+    "club_id": "stade-francais-paris",
+    "team": "Stade Français Paris",
+    "model_name": "Stade Français Paris",
+    "points": 1581,
+    "previous_points": 1564,
+    "points_change": 17,
+    "logo": "assets/img/clubs/stade-francais-paris.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
+  },
+  {
     "rank": 13,
+    "previous_rank": 10,
+    "rank_change": -3,
+    "club_id": "stade-rochelais",
+    "team": "Stade Rochelais",
+    "model_name": "Stade Rochelais",
+    "points": 1571,
+    "previous_points": 1588,
+    "points_change": -17,
+    "logo": "assets/img/clubs/stade-rochelais.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
+  },
+  {
+    "rank": 14,
     "previous_rank": 13,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "stormers",
     "team": "Stormers",
     "model_name": "Stormers",
@@ -180,20 +194,6 @@
     "logo": "assets/img/clubs/stormers.svg",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
-  },
-  {
-    "rank": 14,
-    "previous_rank": 14,
-    "rank_change": 0,
-    "club_id": "stade-francais-paris",
-    "team": "Stade Français Paris",
-    "model_name": "Stade Français Paris",
-    "points": 1564,
-    "previous_points": 1564,
-    "points_change": 0,
-    "logo": "assets/img/clubs/stade-francais-paris.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 15,
