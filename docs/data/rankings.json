@@ -48,9 +48,9 @@
     "club_id": "northampton-saints",
     "team": "Northampton Saints",
     "model_name": "Northampton Saints",
-    "points": 1695,
+    "points": 1702,
     "previous_points": 1695,
-    "points_change": 0,
+    "points_change": 7,
     "logo": "assets/img/clubs/northampton-saints.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
@@ -132,9 +132,9 @@
     "club_id": "exeter-chiefs",
     "team": "Exeter Chiefs",
     "model_name": "Exeter Chiefs",
-    "points": 1604,
+    "points": 1597,
     "previous_points": 1604,
-    "points_change": 0,
+    "points_change": -7,
     "logo": "assets/img/clubs/exeter-chiefs.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
