@@ -1,8 +1,22 @@
 [
   {
     "rank": 1,
+    "previous_rank": 2,
+    "rank_change": 1,
+    "club_id": "stade-toulousain",
+    "team": "Stade Toulousain",
+    "model_name": "Stade Toulousain",
+    "points": 1756,
+    "previous_points": 1747,
+    "points_change": 9,
+    "logo": "assets/img/clubs/stade-toulousain.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
+  },
+  {
+    "rank": 2,
     "previous_rank": 1,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "union-bordeaux-begles",
     "team": "Union Bordeaux-Bègles",
     "model_name": "Union Bordeaux Bègles",
@@ -10,20 +24,6 @@
     "previous_points": 1749,
     "points_change": 0,
     "logo": "assets/img/clubs/union-bordeaux-begles.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 2,
-    "previous_rank": 2,
-    "rank_change": 0,
-    "club_id": "stade-toulousain",
-    "team": "Stade Toulousain",
-    "model_name": "Stade Toulousain",
-    "points": 1747,
-    "previous_points": 1747,
-    "points_change": 0,
-    "logo": "assets/img/clubs/stade-toulousain.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
   },
@@ -62,9 +62,9 @@
     "club_id": "montpellier-herault-rugby",
     "team": "Montpellier Hérault Rugby",
     "model_name": "Montpellier Hérault Rugby",
-    "points": 1697,
+    "points": 1688,
     "previous_points": 1697,
-    "points_change": 0,
+    "points_change": -9,
     "logo": "assets/img/clubs/montpellier-herault-rugby.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
