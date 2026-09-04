@@ -10,12 +10,11 @@ First step:
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+from src.season_config import URC_MATCH_CENTRE_URL
+
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
 RAW_DATA_DIR = ROOT_DIR / "data" / "raw"
-
-URC_MATCH_CENTRE_URL = "https://stats.unitedrugby.com/match-centre/2025-26/SF"
-
 
 def fetch_urc_page() -> str:
     """

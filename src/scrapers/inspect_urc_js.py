@@ -13,7 +13,7 @@ from urllib.request import Request, urlopen
 ROOT_DIR = Path(__file__).resolve().parents[2]
 RAW_DATA_DIR = ROOT_DIR / "data" / "raw"
 
-URC_JS_URL = "https://stats.unitedrugby.com/assets/js/index-CISs8jk3.js"
+URC_JS_URL = "https://stats.unitedrugby.com/assets/js/index-DzHgP3vY.js"
 OUTPUT_PATH = RAW_DATA_DIR / "urc_main_index_js.txt"
 
 
@@ -30,8 +30,8 @@ PATTERNS = [
     "team",
     "teams",
     "season",
-    "2025",
-    "2025-26",
+    "2026",
+    "2026-27",
     "United Rugby Championship",
     "Leinster",
     "Munster",

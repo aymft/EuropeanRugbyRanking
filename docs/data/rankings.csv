@@ -36,8 +36,8 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 35,35,0,ospreys,Ospreys,Ospreys,1366,1366,0,assets/img/clubs/ospreys.svg,URC,assets/img/competitions/urc.svg
 36,36,0,usa-perpignan,USA Perpignan,USA Perpignan,1350,1350,0,assets/img/clubs/usa-perpignan.png,TOP14,assets/img/competitions/top14.png
 37,37,0,dragons,Dragons RFC,Dragons,1242,1242,0,assets/img/clubs/dragons.png,URC,assets/img/competitions/urc.svg
-38,38,0,cheetahs,Cheetahs,Cheetahs,1238,1238,0,assets/img/clubs/cheetahs.png,INVITED,assets/img/competitions/invited.png
+38,38,0,cheetahs,Cheetahs,Cheetahs,1238,1238,0,assets/img/clubs/cheetahs.png,INVITED,assets/img/competitions/invited.svg
 39,39,0,zebre,Zebre Parma,Zebre,1216,1216,0,assets/img/clubs/zebre.svg,URC,assets/img/competitions/urc.svg
-40,40,0,black-lion,Black Lion,Black Lion,1211,1211,0,assets/img/clubs/black-lion.svg,INVITED,assets/img/competitions/invited.png
+40,40,0,black-lion,Black Lion,Black Lion,1211,1211,0,assets/img/clubs/black-lion.svg,INVITED,assets/img/competitions/invited.svg
 41,41,0,newcastle-red-bulls,Newcastle Red Bulls,Newcastle Red Bulls,1160,1160,0,assets/img/clubs/newcastle-red-bulls.png,PREMIERSHIP,assets/img/competitions/premiership.png
-42,42,0,us-montauban,US Montauban,US Montauban,1148,1148,0,assets/img/clubs/us-montauban.png,TOP14,assets/img/competitions/top14.png
+42,42,0,rc-vannes,RC Vannes,RC Vannes,1154,1154,0,assets/img/clubs/rc-vannes.png,TOP14,assets/img/competitions/top14.png

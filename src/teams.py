@@ -46,7 +46,10 @@ INITIAL_TEAMS_ELO = {
     "Cheetahs": 1238,
     "Zebre": 1216,
     "Black Lion": 1211,
+    # Historical team retained so existing match history can still be replayed.
     "US Montauban": 1154,
+    # New 2026-2027 entrant, seeded at the existing promoted-team baseline.
+    "RC Vannes": 1154,
     "Newcastle Red Bulls": 1144,
 }
 

@@ -529,7 +529,7 @@
     "points_change": 0,
     "logo": "assets/img/clubs/cheetahs.png",
     "league": "INVITED",
-    "league_logo": "assets/img/competitions/invited.png"
+    "league_logo": "assets/img/competitions/invited.svg"
   },
   {
     "rank": 39,
@@ -557,7 +557,7 @@
     "points_change": 0,
     "logo": "assets/img/clubs/black-lion.svg",
     "league": "INVITED",
-    "league_logo": "assets/img/competitions/invited.png"
+    "league_logo": "assets/img/competitions/invited.svg"
   },
   {
     "rank": 41,
@@ -577,13 +577,13 @@
     "rank": 42,
     "previous_rank": 42,
     "rank_change": 0,
-    "club_id": "us-montauban",
-    "team": "US Montauban",
-    "model_name": "US Montauban",
-    "points": 1148,
-    "previous_points": 1148,
+    "club_id": "rc-vannes",
+    "team": "RC Vannes",
+    "model_name": "RC Vannes",
+    "points": 1154,
+    "previous_points": 1154,
     "points_change": 0,
-    "logo": "assets/img/clubs/us-montauban.png",
+    "logo": "assets/img/clubs/rc-vannes.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
   }

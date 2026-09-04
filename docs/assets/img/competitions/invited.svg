@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">EPCR invited clubs</title>
+  <desc id="desc">Neutral badge for clubs invited to the EPCR Challenge Cup.</desc>
+  <circle cx="90" cy="90" r="84" fill="#162b4d"/>
+  <circle cx="90" cy="90" r="74" fill="none" stroke="#e7b94d" stroke-width="6"/>
+  <path d="M42 91h96" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <text x="90" y="78" fill="#fff" font-family="Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">EPCR</text>
+  <text x="90" y="121" fill="#e7b94d" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2" text-anchor="middle">INVITED</text>
+</svg>

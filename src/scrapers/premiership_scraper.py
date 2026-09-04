@@ -10,12 +10,11 @@ First step:
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+from src.season_config import PREMIERSHIP_FIXTURES_URL
+
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
 RAW_DATA_DIR = ROOT_DIR / "data" / "raw"
-
-PREMIERSHIP_FIXTURES_URL = "https://premiershiprugby.com/content/202526-fixtures"
-
 
 def fetch_premiership_page() -> str:
     """

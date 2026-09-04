@@ -2,7 +2,7 @@
 Test the official URC GraphQL endpoint.
 
 Goal:
-- query team ranking/matrix data for the 2025-26 season
+- query team ranking/matrix data for the 2026-27 season
 - extract official URC team names
 """
 
@@ -10,12 +10,12 @@ import json
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+from src.season_config import URC_GRAPHQL_URL, URC_SEASON_ID
+
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
 RAW_DATA_DIR = ROOT_DIR / "data" / "raw"
 PROCESSED_DATA_DIR = ROOT_DIR / "data" / "processed"
-
-URC_GRAPHQL_URL = "https://www.unitedrugby.com/graphql"
 
 OUTPUT_RAW_PATH = RAW_DATA_DIR / "urc_graphql_team_matrix_raw.json"
 OUTPUT_NAMES_PATH = PROCESSED_DATA_DIR / "urc_official_team_names.json"
@@ -93,7 +93,7 @@ def main() -> None:
     PROCESSED_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     variables = {
-        "seasonId": [202501],
+        "seasonId": [URC_SEASON_ID],
     }
 
     response_data = post_graphql_query(QUERY, variables)

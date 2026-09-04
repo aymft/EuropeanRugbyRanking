@@ -137,10 +137,20 @@ CLUB_REGISTRY = {
     "us-montauban": {
         "display_name": "US Montauban",
         "model_name": "US Montauban",
-        "domestic_competition": "TOP14",
+        "domestic_competition": "PROD2",
+        "active": False,
         "aliases": {
             "lnr_top14": ["US Montauban"],
             "thesportsdb": ["US Montauban"],
+        },
+    },
+    "rc-vannes": {
+        "display_name": "RC Vannes",
+        "model_name": "RC Vannes",
+        "domestic_competition": "TOP14",
+        "aliases": {
+            "lnr_top14": ["RC Vannes"],
+            "thesportsdb": ["Vannes", "RC Vannes"],
         },
     },
 
@@ -318,7 +328,12 @@ CLUB_REGISTRY = {
         "model_name": "Lions",
         "domestic_competition": "URC",
         "aliases": {
-            "urc": ["Fidelity SecureDrive Lions"],
+            "urc": [
+                "Lions",
+                "10bet Lions",
+                "Fidelity SecureDrive Lions",
+                "Emirates Lions",
+            ],
             "thesportsdb": ["Lions"],
         },
     },
@@ -507,6 +522,12 @@ def get_domestic_competition(club_id: str) -> str:
     return get_club_data(club_id)["domestic_competition"]
 
 
+def is_active_club(club_id: str) -> bool:
+    """Return whether a club is part of the active 2026-2027 ranking set."""
+
+    return bool(get_club_data(club_id).get("active", True))
+
+
 def get_club_id_from_model_name(model_name: str) -> str:
     """
     Convert the current Elo model name into a stable club_id.
@@ -553,14 +574,20 @@ def main() -> None:
 
     print("Registry validation successful.")
     print(f"Number of clubs: {len(CLUB_REGISTRY)}")
+    print(
+        "Active clubs: "
+        f"{sum(is_active_club(club_id) for club_id in CLUB_REGISTRY)}"
+    )
 
     print("\nSample normalizations:")
     samples = [
         ("lnr_top14", "LOU Rugby"),
         ("lnr_top14", "RC Toulon"),
+        ("lnr_top14", "RC Vannes"),
         ("premiership", "Gloucester Rugby"),
         ("urc", "Glasgow Warriors"),
         ("urc", "Hollywoodbets Sharks"),
+        ("urc", "Lions"),
         ("urc", "Zebre Parma"),
     ]
 

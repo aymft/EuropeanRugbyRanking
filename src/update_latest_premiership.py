@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+from src.season_config import PREMIERSHIP_FEED_URL, PREMIERSHIP_FIXTURES_URL
 from src.team_registry import (
     get_display_name,
     get_model_name,
@@ -26,12 +27,6 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 PROCESSED_DATA_DIR = ROOT_DIR / "data" / "processed"
 
 MATCH_HISTORY_PATH = PROCESSED_DATA_DIR / "matches_history.csv"
-
-PREMIERSHIP_FEED_URL = (
-    "https://rugby-union-feeds.incrowdsports.com/v1/matches"
-    "?compId=1011&season=202501&provider=rugbyviz"
-)
-
 
 FIELDNAMES = [
     "source",
@@ -59,7 +54,7 @@ def fetch_premiership_matches() -> list[dict]:
             "Accept": "application/json,text/plain,*/*",
             "User-Agent": "Mozilla/5.0 EuropeanRugbyRanking/0.1",
             "Origin": "https://premiershiprugby.com",
-            "Referer": "https://premiershiprugby.com/content/202526-fixtures",
+            "Referer": PREMIERSHIP_FIXTURES_URL,
         },
     )
 

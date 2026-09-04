@@ -10,7 +10,8 @@ COMPETITION_LOGOS = {
     "TOP14": "assets/img/competitions/top14.png",
     "PREMIERSHIP": "assets/img/competitions/premiership.png",
     "URC": "assets/img/competitions/urc.svg",
-    "INVITED": "assets/img/competitions/invited.png",
+    "INVITED": "assets/img/competitions/invited.svg",
+    "PROD2": "assets/img/competitions/prod2.webp",
 }
 
 
@@ -29,7 +30,7 @@ TEAM_DOMESTIC_COMPETITION = {
     "Lyon OU": "TOP14",
     "Aviron Bayonnais": "TOP14",
     "USA Perpignan": "TOP14",
-    "US Montauban": "TOP14",
+    "RC Vannes": "TOP14",
 
     # Premiership
     "Northampton Saints": "PREMIERSHIP",
@@ -64,4 +65,7 @@ TEAM_DOMESTIC_COMPETITION = {
     # Invited / non-domestic EPCR teams
     "Cheetahs": "INVITED",
     "Black Lion": "INVITED",
+
+    # Historical club kept in the Elo model, outside the active ranking.
+    "US Montauban": "PROD2",
 }

@@ -10,17 +10,14 @@ It only prints recent and upcoming URC matches so we can inspect:
 """
 
 import json
-from datetime import datetime
-from pathlib import Path
 from urllib.request import Request, urlopen
 
+from src.season_config import URC_GRAPHQL_URL, URC_SEASON_ID
 from src.team_registry import (
     get_display_name,
     normalize_team_name,
 )
 
-
-URC_GRAPHQL_URL = "https://www.unitedrugby.com/graphql"
 
 QUERY = """
 query GetMatchesData(
@@ -94,7 +91,10 @@ def post_graphql_query(query: str, variables: dict) -> dict:
         return json.load(response)
 
 
-def safe_display_name(source_name: str) -> str:
+def safe_display_name(source_name: str | None) -> str:
+    if not source_name:
+        return "TBC"
+
     try:
         club_id = normalize_team_name("urc", source_name)
         return get_display_name(club_id)
@@ -140,10 +140,10 @@ def format_match(row: dict) -> str:
 
 def main() -> None:
     variables = {
-        "season_id": [202501],
-        "limit": 80,
+        "season_id": [URC_SEASON_ID],
+        "limit": 200,
         "orderBy": "dateTime",
-        "order": "DESC",
+        "order": "ASC",
     }
 
     response = post_graphql_query(QUERY, variables)
@@ -181,11 +181,20 @@ def main() -> None:
             "Finished",
         }
     ]
+    finished = sorted(
+        finished,
+        key=lambda row: (row.get("match_data") or {}).get("dateTime", ""),
+        reverse=True,
+    )
 
     not_finished = [
         row for row in matches
         if row not in finished
     ]
+    not_finished = sorted(
+        not_finished,
+        key=lambda row: (row.get("match_data") or {}).get("dateTime", ""),
+    )
 
     print("\n" + "=" * 80)
     print("Latest returned matches")

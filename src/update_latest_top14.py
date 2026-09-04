@@ -17,6 +17,7 @@ import re
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+from src.season_config import TOP14_RESULTS_URL
 from src.team_registry import (
     get_display_name,
     get_model_name,
@@ -27,7 +28,6 @@ from src.team_registry import (
 ROOT_DIR = Path(__file__).resolve().parents[1]
 PROCESSED_DATA_DIR = ROOT_DIR / "data" / "processed"
 
-TOP14_RESULTS_URL = "https://top14.lnr.fr/calendrier-et-resultats"
 MATCH_HISTORY_PATH = PROCESSED_DATA_DIR / "matches_history.csv"
 
 
@@ -74,16 +74,30 @@ def extract_current_week(raw_html: str) -> dict:
     Extract current week metadata from score-slider.
     """
 
-    match = re.search(
+    current_week_match = re.search(
         r"<score-slider\b[^>]*:current-week='([^']+)'",
         raw_html,
         flags=re.DOTALL,
     )
 
-    if not match:
-        raise RuntimeError("Could not find score-slider :current-week data.")
+    if current_week_match:
+        return json.loads(html.unescape(current_week_match.group(1)))
 
-    return json.loads(html.unescape(match.group(1)))
+    weeks_match = re.search(
+        r"<score-slider\b[^>]*:weeks='([^']+)'",
+        raw_html,
+        flags=re.DOTALL,
+    )
+
+    if not weeks_match:
+        raise RuntimeError("Could not find score-slider week data.")
+
+    weeks = json.loads(html.unescape(weeks_match.group(1)))
+
+    if not weeks:
+        raise RuntimeError("The score-slider weeks list is empty.")
+
+    return weeks[0]
 
 
 def extract_score_slider_matches(raw_html: str) -> list[dict]:

@@ -16,6 +16,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+from src.season_config import URC_GRAPHQL_URL, URC_SEASON_ID
 from src.team_registry import (
     get_display_name,
     get_model_name,
@@ -27,9 +28,6 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 PROCESSED_DATA_DIR = ROOT_DIR / "data" / "processed"
 
 MATCH_HISTORY_PATH = PROCESSED_DATA_DIR / "matches_history.csv"
-
-URC_GRAPHQL_URL = "https://www.unitedrugby.com/graphql"
-URC_SEASON_ID = 202501
 
 # Include all results close to the latest result date.
 # This catches Friday/Saturday/Sunday rounds as one weekend.

@@ -12,12 +12,11 @@ This scraper is experimental and is not connected to the Elo pipeline yet.
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+from src.season_config import TOP14_RESULTS_URL
+
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
 RAW_DATA_DIR = ROOT_DIR / "data" / "raw"
-
-TOP14_RESULTS_URL = "https://top14.lnr.fr/calendrier-et-resultats"
-
 
 def fetch_top14_page() -> str:
     """

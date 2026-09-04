@@ -14,6 +14,8 @@ import csv
 import json
 from pathlib import Path
 
+from src.season_config import SEASON_LABEL
+
 from src.teams import get_initial_teams
 
 
@@ -63,8 +65,8 @@ def collect_thesportsdb_event_names(records: list[dict]) -> None:
     Collect names from raw TheSportsDB event files, if available.
     """
 
-    for path in sorted(RAW_DATA_DIR.glob("*_2025-2026_raw.json")):
-        competition = path.name.replace("_2025-2026_raw.json", "").upper()
+    for path in sorted(RAW_DATA_DIR.glob(f"*_{SEASON_LABEL}_raw.json")):
+        competition = path.name.replace(f"_{SEASON_LABEL}_raw.json", "").upper()
 
         with path.open("r", encoding="utf-8") as file:
             data = json.load(file)

@@ -12,6 +12,12 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
+from src.season_config import (
+    PREMIERSHIP_COMPETITION_ID,
+    PREMIERSHIP_FIXTURES_URL,
+    PREMIERSHIP_SEASON_ID,
+)
+
 
 MATCH_FEED_URL = "https://rugby-union-feeds.incrowdsports.com/v1/matches"
 
@@ -20,8 +26,8 @@ APP_ID = "web"
 CLIENT_ID = "PRL"
 REALM_ID = "prl"
 
-SEASON = "202501"
-COMP_ID = "1011"
+SEASON = str(PREMIERSHIP_SEASON_ID)
+COMP_ID = str(PREMIERSHIP_COMPETITION_ID)
 
 
 QUERY_CANDIDATES = [
@@ -69,7 +75,7 @@ def fetch_url(url: str, headers: dict) -> tuple[int, str]:
         "Accept": "application/json,text/plain,*/*",
         "User-Agent": "Mozilla/5.0 EuropeanRugbyRanking/0.1",
         "Origin": "https://premiershiprugby.com",
-        "Referer": "https://premiershiprugby.com/content/202526-fixtures",
+        "Referer": PREMIERSHIP_FIXTURES_URL,
     }
 
     request_headers.update(headers)

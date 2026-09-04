@@ -20,6 +20,7 @@ from src.team_registry import (
     get_club_id_from_model_name,
     get_display_name,
     get_domestic_competition,
+    is_active_club,
 )
 
 
@@ -88,7 +89,11 @@ def build_rank_lookup(teams: dict[str, int]) -> dict[str, int]:
     """
 
     sorted_teams = sorted(
-        teams.items(),
+        (
+            (team, points)
+            for team, points in teams.items()
+            if is_active_club(get_club_id_from_model_name(team))
+        ),
         key=lambda item: item[1],
         reverse=True,
     )
@@ -168,7 +173,11 @@ def compute_rankings() -> list[dict]:
         teams[match.team_b] = new_elo_b
 
     sorted_teams = sorted(
-        teams.items(),
+        (
+            (team, points)
+            for team, points in teams.items()
+            if is_active_club(get_club_id_from_model_name(team))
+        ),
         key=lambda item: item[1],
         reverse=True,
     )
@@ -222,6 +231,7 @@ def export_csv(rankings: list[dict], output_path: Path) -> None:
     with output_path.open("w", newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(
             csv_file,
+            lineterminator="\n",
             fieldnames=[
                 "rank",
                 "previous_rank",
