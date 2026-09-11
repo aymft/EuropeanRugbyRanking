@@ -31,6 +31,7 @@ The website is still under active development and will improve progressively ove
 * Domestic league logos for TOP 14, Premiership and URC clubs
 * Elo points difference after the latest update
 * Rank movement indicators
+* Weekend fixture page covering domestic leagues and both EPCR cups, with club rankings, logos and automatically refreshed scores
 * Automated result fetching
 * Automated ranking generation
 * GitHub Pages deployment
@@ -58,15 +59,16 @@ The ranking is cumulative: previous results remain part of the Elo history. Howe
 
 The ranking update is automated with GitHub Actions.
 
-The update workflow runs every 10 minutes and performs the following steps:
+The update workflow runs every 5 minutes and performs the following steps:
 
 1. Fetch latest TOP 14 results
 2. Fetch latest URC results
 3. Fetch latest Premiership results
 4. Append new finished matches to the match history
 5. Recompute Elo ratings
-6. Update the website data files
-7. Commit and push changes if the ranking has changed
+6. Refresh the weekend fixture and score feed
+7. Update the website data files
+8. Commit and push changes if a ranking, fixture, status or score has changed
 
 A second workflow resets the weekly comparison snapshot after Tuesday, so that Elo differences and rank movements are cleared before the next weekend of matches.
 
@@ -79,8 +81,9 @@ The project currently uses official or competition-related data feeds:
 * TOP 14: official LNR website
 * United Rugby Championship: official URC GraphQL endpoint
 * Premiership Rugby: Incrowd / rugbyviz match feed used by the official Premiership Rugby website
+* Investec Champions Cup and EPCR Challenge Cup: official EPCR RugbyViz feeds
 
-Some European competition results may still rely on manually maintained or transitional sources while the full scraping pipeline is being improved.
+The weekend match centre now reads all five competitions from their current official sources.
 
 ---
 
@@ -96,7 +99,9 @@ EuropeanRugbyRanking/
 │
 ├── docs/
 │   ├── index.html
+│   ├── live.html
 │   ├── data/
+│   │   ├── live_results.json
 │   │   ├── rankings.csv
 │   │   └── rankings.json
 │   └── assets/

@@ -423,6 +423,55 @@ CLUB_REGISTRY = {
 }
 
 
+# Names currently returned by the official EPCR RugbyViz feed. Keeping these
+# aliases together makes it easy to audit the complete Champions Cup and
+# Challenge Cup participant set for one season.
+EPCR_ALIASES = {
+    "union-bordeaux-begles": ["Bordeaux-Begles"],
+    "stade-toulousain": ["Toulouse"],
+    "montpellier-herault-rugby": ["Montpellier"],
+    "stade-rochelais": ["La Rochelle"],
+    "stade-francais-paris": ["Stade Francais Paris"],
+    "section-paloise": ["Pau"],
+    "rc-toulonnais": ["Toulon"],
+    "asm-clermont-auvergne": ["Clermont Auvergne"],
+    "racing-metro-92": ["Racing 92"],
+    "castres-olympique": ["Castres Olympique"],
+    "lyon-ou": ["Lyon O.U."],
+    "aviron-bayonnais": ["Bayonne"],
+    "usa-perpignan": ["Perpignan"],
+    "rc-vannes": ["Vannes"],
+    "northampton-saints": ["Northampton Saints"],
+    "bath-rugby": ["Bath Rugby"],
+    "leicester-tigers": ["Leicester Tigers"],
+    "saracens": ["Saracens"],
+    "exeter-chiefs": ["Exeter Chiefs"],
+    "bristol-bears": ["Bristol Bears"],
+    "sale-sharks": ["Sale Sharks"],
+    "harlequins": ["Harlequins"],
+    "gloucester": ["Gloucester Rugby"],
+    "newcastle-red-bulls": ["Newcastle Red Bulls"],
+    "leinster": ["Leinster Rugby"],
+    "glasgow": ["Glasgow Warriors"],
+    "bulls": ["Vodacom Bulls"],
+    "stormers": ["DHL Stormers"],
+    "munster": ["Munster Rugby"],
+    "ulster": ["Ulster Rugby"],
+    "connacht": ["Connacht Rugby"],
+    "the-sharks": ["Hollywoodbets Sharks"],
+    "lions": ["10bet Lions"],
+    "benetton": ["Benetton Rugby"],
+    "cardiff-rugby": ["Cardiff Rugby"],
+    "edinburgh": ["Edinburgh Rugby"],
+    "scarlets": ["Scarlets"],
+    "ospreys": ["Ospreys"],
+    "dragons": ["Dragons RFC"],
+    "zebre": ["Zebre Parma"],
+    "cheetahs": ["Toyota Cheetahs"],
+    "black-lion": ["Black Lion"],
+}
+
+
 def build_alias_lookup() -> dict[str, dict[str, str]]:
     """
     Build a nested source -> raw name -> club_id lookup table.
@@ -452,6 +501,22 @@ def build_alias_lookup() -> dict[str, dict[str, str]]:
                     )
 
                 lookup[source][alias] = club_id
+
+    lookup["epcr"] = {}
+
+    for club_id, aliases in EPCR_ALIASES.items():
+        if club_id not in CLUB_REGISTRY:
+            raise ValueError(f"Unknown EPCR club_id: {club_id!r}")
+
+        for alias in aliases:
+            if alias in lookup["epcr"]:
+                existing_club_id = lookup["epcr"][alias]
+                raise ValueError(
+                    f"Duplicate alias {alias!r} for source 'epcr': "
+                    f"{existing_club_id!r} and {club_id!r}"
+                )
+
+            lookup["epcr"][alias] = club_id
 
     return lookup
 
@@ -589,6 +654,8 @@ def main() -> None:
         ("urc", "Hollywoodbets Sharks"),
         ("urc", "Lions"),
         ("urc", "Zebre Parma"),
+        ("epcr", "Bordeaux-Begles"),
+        ("epcr", "Toyota Cheetahs"),
     ]
 
     for source, raw_name in samples:

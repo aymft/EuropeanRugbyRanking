@@ -28,3 +28,22 @@ PREMIERSHIP_FEED_URL = (
     f"&season={PREMIERSHIP_SEASON_ID}"
     "&provider=rugbyviz"
 )
+
+# European Professional Club Rugby
+EPCR_SEASON_ID = 202601
+EPCR_CHAMPIONS_CUP_COMPETITION_ID = 1008
+EPCR_CHALLENGE_CUP_COMPETITION_ID = 1026
+EPCR_CHAMPIONS_CUP_FIXTURES_URL = "https://www.epcrugby.com/champions-cup/matches"
+EPCR_CHALLENGE_CUP_FIXTURES_URL = "https://www.epcrugby.com/challenge-cup/matches"
+EPCR_CHAMPIONS_CUP_FEED_URL = (
+    "https://rugby-union-feeds.incrowdsports.com/v1/matches"
+    f"?compId={EPCR_CHAMPIONS_CUP_COMPETITION_ID}"
+    f"&season={EPCR_SEASON_ID}"
+    "&provider=rugbyviz"
+)
+EPCR_CHALLENGE_CUP_FEED_URL = (
+    "https://rugby-union-feeds.incrowdsports.com/v1/matches"
+    f"?compId={EPCR_CHALLENGE_CUP_COMPETITION_ID}"
+    f"&season={EPCR_SEASON_ID}"
+    "&provider=rugbyviz"
+)

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weekend Matches | European Rugby Ranking</title>
+  <meta
+    name="description"
+    content="Weekend fixtures and automatically refreshed scores for TOP 14, URC, Premiership Rugby, Champions Cup and Challenge Cup, with club rankings."
+  >
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="live-hero">
+    <p class="eyebrow">European Rugby Ranking</p>
+    <h1>Weekend matches</h1>
+    <p>
+      Fixtures and scores for the three domestic leagues, Investec Champions
+      Cup and EPCR Challenge Cup, paired with each club's current ranking.
+    </p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Ranking</a></li>
+      <li><a href="live.html" class="is-active" aria-current="page">Weekend matches</a></li>
+      <li><a href="index.html#method">Method</a></li>
+      <li><a href="data/rankings.csv">Download CSV</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="weekend-overview" aria-labelledby="weekend-title">
+      <div>
+        <p class="section-label">Match centre</p>
+        <h2 id="weekend-title">This weekend</h2>
+        <p id="weekend-range">Loading the weekend programme…</p>
+      </div>
+
+      <div class="live-update" id="live-update" role="status" aria-live="polite">
+        <span class="update-dot" aria-hidden="true"></span>
+        <span id="live-meta">Loading scores…</span>
+      </div>
+    </section>
+
+    <div id="live-results" class="live-results" aria-live="polite" aria-busy="true">
+      <section class="competition-block loading-block">
+        <p>Loading matches and rankings…</p>
+      </section>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>
+      European Rugby Ranking — built with Python and GitHub Pages.
+      <a href="https://github.com/aymft/EuropeanRugbyRanking" target="_blank" rel="noopener noreferrer">
+        View source on GitHub
+      </a>
+    </p>
+  </footer>
+
+  <script src="assets/js/live.js"></script>
+</body>
+</html>

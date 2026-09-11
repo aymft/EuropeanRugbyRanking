@@ -10,6 +10,8 @@ COMPETITION_LOGOS = {
     "TOP14": "assets/img/competitions/top14.png",
     "PREMIERSHIP": "assets/img/competitions/premiership.png",
     "URC": "assets/img/competitions/urc.svg",
+    "CHAMPIONS_CUP": "assets/img/competitions/champions-cup.svg",
+    "CHALLENGE_CUP": "assets/img/competitions/challenge-cup.svg",
     "INVITED": "assets/img/competitions/invited.svg",
     "PROD2": "assets/img/competitions/prod2.webp",
 }

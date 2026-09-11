@@ -9,14 +9,21 @@ It does not modify matches_history.csv.
 """
 
 import json
-import re
-import subprocess
-import sys
-from datetime import datetime, timezone
+from datetime import datetime, time, timedelta, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
+from src.preview_latest_top14 import (
+    extract_current_week,
+    extract_matches,
+    fetch_top14_page,
+)
 from src.season_config import (
+    EPCR_CHALLENGE_CUP_FEED_URL,
+    EPCR_CHALLENGE_CUP_FIXTURES_URL,
+    EPCR_CHAMPIONS_CUP_FEED_URL,
+    EPCR_CHAMPIONS_CUP_FIXTURES_URL,
     PREMIERSHIP_FEED_URL,
     PREMIERSHIP_FIXTURES_URL,
     URC_GRAPHQL_URL,
@@ -27,11 +34,35 @@ from src.team_registry import get_display_name, normalize_team_name
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 LIVE_RESULTS_PATH = ROOT_DIR / "docs" / "data" / "live_results.json"
-MAX_UPCOMING_MATCHES = 10
+SITE_TIMEZONE_NAME = "Europe/Paris"
+SITE_TIMEZONE = ZoneInfo(SITE_TIMEZONE_NAME)
+PAGE_REFRESH_SECONDS = 120
 
 
 def now_utc_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def preserve_generated_at_if_unchanged(output: dict) -> dict:
+    """Avoid rewriting the live file when no fixture, status, or score changed."""
+
+    if not LIVE_RESULTS_PATH.is_file():
+        return output
+
+    try:
+        existing = json.loads(LIVE_RESULTS_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return output
+
+    current_payload = {key: value for key, value in output.items() if key != "generated_at"}
+    existing_payload = {
+        key: value for key, value in existing.items() if key != "generated_at"
+    }
+
+    if current_payload == existing_payload and existing.get("generated_at"):
+        output["generated_at"] = existing["generated_at"]
+
+    return output
 
 
 def parse_iso_datetime(value: str | None) -> datetime | None:
@@ -50,7 +81,18 @@ def normalize_status(raw_status: str | None) -> str:
     if value in {"result", "finished", "complete", "completed", "full-time", "ft"}:
         return "finished"
 
-    if value in {"live", "in-progress", "in_progress", "playing"}:
+    if value in {
+        "live",
+        "in-progress",
+        "in_progress",
+        "playing",
+        "first-half",
+        "first_half",
+        "half-time",
+        "halftime",
+        "second-half",
+        "second_half",
+    }:
         return "live"
 
     if value in {"fixture", "not-started", "not_started", "scheduled", "upcoming"}:
@@ -67,6 +109,8 @@ def make_match(
     raw_status: str | None,
     home_team: str | None,
     away_team: str | None,
+    home_club_id: str = "",
+    away_club_id: str = "",
     home_score: int | None = None,
     away_score: int | None = None,
     kickoff_utc: str | None = None,
@@ -74,6 +118,7 @@ def make_match(
     round_label: str | int | None = None,
     minute: int | None = None,
     venue: str | None = None,
+    match_url: str | None = None,
 ) -> dict:
     return {
         "competition": competition,
@@ -86,6 +131,9 @@ def make_match(
         "kickoff_display": kickoff_display or "",
         "minute": minute,
         "venue": venue or "",
+        "match_url": match_url or "",
+        "home_club_id": home_club_id,
+        "away_club_id": away_club_id,
         "home_team": home_team or "TBC",
         "away_team": away_team or "TBC",
         "home_score": home_score,
@@ -93,44 +141,63 @@ def make_match(
     }
 
 
-def normalize_display_name(source: str, raw_name: str | None) -> str:
-    """Return the project display name while allowing future TBC placeholders."""
+def normalize_team(source: str, raw_name: str | None) -> tuple[str, str]:
+    """Return ``(club_id, display_name)`` while allowing future placeholders."""
 
     if not raw_name:
-        return "TBC"
+        return "", "TBC"
 
     try:
         club_id = normalize_team_name(source, raw_name)
-        return get_display_name(club_id)
+        return club_id, get_display_name(club_id)
     except ValueError:
-        return raw_name
+        return "", raw_name
 
 
-def limit_live_page_matches(matches: list[dict]) -> list[dict]:
-    """Keep all live/recent results and only the next scheduled fixtures."""
+def get_weekend_window(now: datetime | None = None) -> tuple[datetime, datetime]:
+    """Return the current or next Friday-to-Monday window in Paris time."""
 
-    live = [match for match in matches if match["status"] == "live"]
-    finished = [match for match in matches if match["status"] == "finished"]
-    scheduled = sorted(
-        (match for match in matches if match["status"] == "scheduled"),
-        key=lambda match: match.get("kickoff_utc") or match.get("kickoff_display") or "",
-    )[:MAX_UPCOMING_MATCHES]
+    reference = now or datetime.now(timezone.utc)
+    local_reference = reference.astimezone(SITE_TIMEZONE)
+    weekday = local_reference.weekday()
 
-    return sort_matches(live + scheduled + finished)
+    if weekday < 4:
+        friday_date = local_reference.date() + timedelta(days=4 - weekday)
+    else:
+        friday_date = local_reference.date() - timedelta(days=weekday - 4)
+
+    start_local = datetime.combine(friday_date, time.min, tzinfo=SITE_TIMEZONE)
+    end_local = start_local + timedelta(days=3)
+
+    return start_local.astimezone(timezone.utc), end_local.astimezone(timezone.utc)
+
+
+def select_weekend_matches(
+    matches: list[dict],
+    weekend_start: datetime | None = None,
+    weekend_end: datetime | None = None,
+) -> list[dict]:
+    """Keep matches whose kickoff falls in the current/upcoming weekend."""
+
+    if weekend_start is None or weekend_end is None:
+        weekend_start, weekend_end = get_weekend_window()
+
+    selected = []
+
+    for match in matches:
+        kickoff = parse_iso_datetime(match.get("kickoff_utc"))
+
+        if kickoff is not None and weekend_start <= kickoff < weekend_end:
+            selected.append(match)
+
+    return sort_matches(selected)
 
 
 def sort_matches(matches: list[dict]) -> list[dict]:
-    def key(match: dict) -> tuple[int, str]:
-        status_order = {
-            "live": 0,
-            "scheduled": 1,
-            "finished": 2,
-            "unknown": 3,
-        }
-
+    def key(match: dict) -> tuple[str, str]:
         return (
-            status_order.get(match.get("status", "unknown"), 9),
             match.get("kickoff_utc") or match.get("kickoff_display") or "",
+            match.get("id") or "",
         )
 
     return sorted(matches, key=key)
@@ -162,28 +229,16 @@ def fetch_premiership_matches() -> list[dict]:
 
 def build_premiership_live_results() -> list[dict]:
     raw_matches = fetch_premiership_matches()
-    now = datetime.now(timezone.utc)
-
     selected = []
 
     for match in raw_matches:
         kickoff = parse_iso_datetime(match.get("date"))
         raw_status = match.get("status")
-        status = normalize_status(raw_status)
-
-        # Keep live matches, upcoming matches, and recent finished matches.
-        keep = status in {"live", "scheduled"}
-
-        if status == "finished" and kickoff is not None:
-            age_hours = (now - kickoff).total_seconds() / 3600
-            keep = age_hours <= 72
-
-        if not keep:
-            continue
-
         home = match.get("homeTeam") or {}
         away = match.get("awayTeam") or {}
         venue = match.get("venue") or {}
+        home_club_id, home_name = normalize_team("premiership", home.get("name"))
+        away_club_id, away_name = normalize_team("premiership", away.get("name"))
 
         selected.append(
             make_match(
@@ -193,8 +248,10 @@ def build_premiership_live_results() -> list[dict]:
                 raw_status=raw_status,
                 round_label=match.get("round"),
                 kickoff_utc=kickoff.isoformat(timespec="seconds") if kickoff else match.get("date", ""),
-                home_team=normalize_display_name("premiership", home.get("name")),
-                away_team=normalize_display_name("premiership", away.get("name")),
+                home_team=home_name,
+                away_team=away_name,
+                home_club_id=home_club_id,
+                away_club_id=away_club_id,
                 home_score=home.get("score"),
                 away_score=away.get("score"),
                 minute=match.get("minute"),
@@ -202,7 +259,90 @@ def build_premiership_live_results() -> list[dict]:
             )
         )
 
-    return limit_live_page_matches(selected)
+    return select_weekend_matches(selected)
+
+
+# ---------------------------------------------------------------------------
+# EPCR
+# ---------------------------------------------------------------------------
+
+def fetch_epcr_matches(feed_url: str, fixtures_url: str) -> list[dict]:
+    request = Request(
+        feed_url,
+        headers={
+            "Accept": "application/json,text/plain,*/*",
+            "User-Agent": "Mozilla/5.0 EuropeanRugbyRanking/0.1",
+            "Origin": "https://www.epcrugby.com",
+            "Referer": fixtures_url,
+        },
+    )
+
+    with urlopen(request, timeout=30) as response:
+        data = json.load(response)
+
+    if data.get("status") != "success":
+        raise RuntimeError(f"Unexpected EPCR feed status: {data.get('status')}")
+
+    return data.get("data") or []
+
+
+def build_epcr_live_results(
+    *,
+    competition: str,
+    feed_url: str,
+    fixtures_url: str,
+) -> list[dict]:
+    raw_matches = fetch_epcr_matches(feed_url, fixtures_url)
+    selected = []
+
+    for match in raw_matches:
+        kickoff = parse_iso_datetime(match.get("date"))
+        home = match.get("homeTeam") or {}
+        away = match.get("awayTeam") or {}
+        venue = match.get("venue") or {}
+        home_club_id, home_name = normalize_team("epcr", home.get("name"))
+        away_club_id, away_name = normalize_team("epcr", away.get("name"))
+
+        selected.append(
+            make_match(
+                competition=competition,
+                source="epcr_rugbyviz",
+                match_id=match.get("id"),
+                raw_status=match.get("status"),
+                round_label=match.get("round"),
+                kickoff_utc=(
+                    kickoff.isoformat(timespec="seconds")
+                    if kickoff
+                    else match.get("date", "")
+                ),
+                home_team=home_name,
+                away_team=away_name,
+                home_club_id=home_club_id,
+                away_club_id=away_club_id,
+                home_score=home.get("score"),
+                away_score=away.get("score"),
+                minute=match.get("minute"),
+                venue=venue.get("name"),
+            )
+        )
+
+    return select_weekend_matches(selected)
+
+
+def build_champions_cup_live_results() -> list[dict]:
+    return build_epcr_live_results(
+        competition="CHAMPIONS_CUP",
+        feed_url=EPCR_CHAMPIONS_CUP_FEED_URL,
+        fixtures_url=EPCR_CHAMPIONS_CUP_FIXTURES_URL,
+    )
+
+
+def build_challenge_cup_live_results() -> list[dict]:
+    return build_epcr_live_results(
+        competition="CHALLENGE_CUP",
+        feed_url=EPCR_CHALLENGE_CUP_FEED_URL,
+        fixtures_url=EPCR_CHALLENGE_CUP_FIXTURES_URL,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -284,28 +424,17 @@ def get_urc_score(team: dict) -> int | None:
 
 def build_urc_live_results() -> list[dict]:
     raw_matches = fetch_urc_matches()
-    now = datetime.now(timezone.utc)
-
     selected = []
 
     for row in raw_matches:
         match = row.get("match_data") or {}
         kickoff = parse_iso_datetime(match.get("dateTime"))
         raw_status = match.get("matchStatus")
-        status = normalize_status(raw_status)
-
-        keep = status in {"live", "scheduled"}
-
-        if status == "finished" and kickoff is not None:
-            age_hours = (now - kickoff).total_seconds() / 3600
-            keep = age_hours <= 72
-
-        if not keep:
-            continue
-
         home = match.get("homeTeam") or {}
         away = match.get("awayTeam") or {}
         venue = match.get("venue") or {}
+        home_club_id, home_name = normalize_team("urc", home.get("name"))
+        away_club_id, away_name = normalize_team("urc", away.get("name"))
 
         selected.append(
             make_match(
@@ -315,15 +444,17 @@ def build_urc_live_results() -> list[dict]:
                 raw_status=raw_status,
                 round_label=match.get("round"),
                 kickoff_utc=kickoff.isoformat(timespec="seconds") if kickoff else match.get("dateTime", ""),
-                home_team=normalize_display_name("urc", home.get("name")),
-                away_team=normalize_display_name("urc", away.get("name")),
+                home_team=home_name,
+                away_team=away_name,
+                home_club_id=home_club_id,
+                away_club_id=away_club_id,
                 home_score=get_urc_score(home),
                 away_score=get_urc_score(away),
                 venue=venue.get("name"),
             )
         )
 
-    return limit_live_page_matches(selected)
+    return select_weekend_matches(selected)
 
 
 # ---------------------------------------------------------------------------
@@ -331,74 +462,47 @@ def build_urc_live_results() -> list[dict]:
 # ---------------------------------------------------------------------------
 
 def build_top14_live_results() -> list[dict]:
-    """
-    Temporary TOP 14 adapter.
+    """Build the live page data directly from the LNR score slider."""
 
-    It reuses the existing local preview script and parses its printed output.
-    This avoids duplicating the TOP 14 score-slider parser for now.
-
-    Expected line format:
-        06/06 21h05 | not-started | 11488 | Union Bordeaux-Bègles 0 - 0 ASM Clermont
-    """
-
-    command = [sys.executable, "-m", "src.preview_latest_top14"]
-
-    try:
-        completed = subprocess.run(
-            command,
-            cwd=ROOT_DIR,
-            check=True,
-            capture_output=True,
-            text=True,
-            timeout=40,
-        )
-    except Exception as error:
-        print(f"[TOP14] Could not run preview_latest_top14: {error}")
-        return []
-
+    raw_html = fetch_top14_page()
+    current_week = extract_current_week(raw_html)
+    raw_matches = extract_matches(raw_html)
     matches = []
-    seen_match_ids = set()
 
-    pattern = re.compile(
-        r"^(?P<kickoff>[^|]+)\s*\|\s*"
-        r"(?P<status>[^|]+)\s*\|\s*"
-        r"(?P<id>[^|]+)\s*\|\s*"
-        r"(?P<home>.+?)\s+"
-        r"(?P<home_score>\d+)\s*-\s*"
-        r"(?P<away_score>\d+)\s+"
-        r"(?P<away>.+)$"
-    )
-
-    for line in completed.stdout.splitlines():
-        line = line.strip()
-        match = pattern.match(line)
-
-        if not match:
-            continue
-
-        groups = match.groupdict()
-        match_id = groups["id"].strip()
-
-        if match_id in seen_match_ids:
-            continue
-
-        seen_match_ids.add(match_id)
+    for match in raw_matches:
+        home = match.get("hosting_club") or {}
+        away = match.get("visiting_club") or {}
+        score = match.get("score") or []
+        timer = match.get("timer") or {}
+        kickoff_raw = timer.get("firstPeriodStartDate")
+        kickoff = parse_iso_datetime(kickoff_raw)
+        home_club_id, home_name = normalize_team("lnr_top14", home.get("name"))
+        away_club_id, away_name = normalize_team("lnr_top14", away.get("name"))
 
         matches.append(
             make_match(
                 competition="TOP14",
-                source="lnr_top14_preview",
-                match_id=match_id,
-                raw_status=groups["status"].strip(),
-                kickoff_display=groups["kickoff"].strip(),
-                home_team=groups["home"].strip(),
-                away_team=groups["away"].strip(),
-                home_score=int(groups["home_score"]),
-                away_score=int(groups["away_score"]),
+                source="lnr_top14",
+                match_id=match.get("id"),
+                raw_status=match.get("status"),
+                round_label=current_week.get("name"),
+                kickoff_utc=(
+                    kickoff.isoformat(timespec="seconds")
+                    if kickoff
+                    else kickoff_raw or ""
+                ),
+                kickoff_display=f"{match.get('date', '')} {match.get('time', '')}".strip(),
+                home_team=home_name,
+                away_team=away_name,
+                home_club_id=home_club_id,
+                away_club_id=away_club_id,
+                home_score=int(score[0]) if len(score) == 2 else None,
+                away_score=int(score[1]) if len(score) == 2 else None,
+                match_url=match.get("link"),
             )
         )
 
-    return sort_matches(matches)
+    return select_weekend_matches(matches)
 
 
 # ---------------------------------------------------------------------------
@@ -407,11 +511,14 @@ def build_top14_live_results() -> list[dict]:
 
 def main() -> None:
     competitions = []
+    weekend_start, weekend_end = get_weekend_window()
 
     builders = [
         ("TOP14", "TOP 14", build_top14_live_results),
         ("URC", "United Rugby Championship", build_urc_live_results),
         ("PREMIERSHIP", "Premiership Rugby", build_premiership_live_results),
+        ("CHAMPIONS_CUP", "Investec Champions Cup", build_champions_cup_live_results),
+        ("CHALLENGE_CUP", "EPCR Challenge Cup", build_challenge_cup_live_results),
     ]
 
     for code, name, builder in builders:
@@ -434,9 +541,14 @@ def main() -> None:
 
     output = {
         "generated_at": now_utc_iso(),
-        "refresh_seconds": 120,
+        "refresh_seconds": PAGE_REFRESH_SECONDS,
+        "source_refresh_seconds": 300,
+        "timezone": SITE_TIMEZONE_NAME,
+        "weekend_start": weekend_start.isoformat(timespec="seconds"),
+        "weekend_end": weekend_end.isoformat(timespec="seconds"),
         "competitions": competitions,
     }
+    output = preserve_generated_at_if_unchanged(output)
 
     LIVE_RESULTS_PATH.parent.mkdir(parents=True, exist_ok=True)
 

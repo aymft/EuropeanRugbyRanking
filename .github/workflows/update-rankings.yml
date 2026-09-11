@@ -34,6 +34,9 @@ jobs:
       - name: Update latest Premiership results
         run: python -m src.update_latest_premiership
 
+      - name: Update weekend fixtures and live scores
+        run: python -m src.update_live_results
+
       - name: Generate rankings
         run: python -m src.generate_rankings
 
@@ -47,6 +50,7 @@ jobs:
             git add data/processed/rankings.csv
             git add docs/data/rankings.csv
             git add docs/data/rankings.json
+            git add docs/data/live_results.json
             git commit -m "Auto-update rugby rankings"
             git push
           else
