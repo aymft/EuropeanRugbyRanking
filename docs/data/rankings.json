@@ -127,8 +127,22 @@
   },
   {
     "rank": 10,
+    "previous_rank": 11,
+    "rank_change": 1,
+    "club_id": "stade-rochelais",
+    "team": "Stade Rochelais",
+    "model_name": "Stade Rochelais",
+    "points": 1600,
+    "previous_points": 1588,
+    "points_change": 12,
+    "logo": "assets/img/clubs/stade-rochelais.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
+  },
+  {
+    "rank": 11,
     "previous_rank": 10,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "exeter-chiefs",
     "team": "Exeter Chiefs",
     "model_name": "Exeter Chiefs",
@@ -138,20 +152,6 @@
     "logo": "assets/img/clubs/exeter-chiefs.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
-  },
-  {
-    "rank": 11,
-    "previous_rank": 11,
-    "rank_change": 0,
-    "club_id": "stade-rochelais",
-    "team": "Stade Rochelais",
-    "model_name": "Stade Rochelais",
-    "points": 1588,
-    "previous_points": 1588,
-    "points_change": 0,
-    "logo": "assets/img/clubs/stade-rochelais.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 12,
@@ -253,22 +253,8 @@
   },
   {
     "rank": 19,
-    "previous_rank": 18,
-    "rank_change": -1,
-    "club_id": "rc-toulonnais",
-    "team": "RC Toulon",
-    "model_name": "RC Toulonnais",
-    "points": 1526,
-    "previous_points": 1526,
-    "points_change": 0,
-    "logo": "assets/img/clubs/rc-toulonnais.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 20,
     "previous_rank": 20,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "munster",
     "team": "Munster Rugby",
     "model_name": "Munster",
@@ -278,6 +264,20 @@
     "logo": "assets/img/clubs/munster.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
+  },
+  {
+    "rank": 20,
+    "previous_rank": 18,
+    "rank_change": -2,
+    "club_id": "rc-toulonnais",
+    "team": "RC Toulon",
+    "model_name": "RC Toulonnais",
+    "points": 1514,
+    "previous_points": 1526,
+    "points_change": -12,
+    "logo": "assets/img/clubs/rc-toulonnais.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 21,

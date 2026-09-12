@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T20:48:31+00:00",
+  "generated_at": "2026-09-12T21:34:14+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -109,8 +109,8 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11831",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J2",
           "kickoff_utc": "2026-09-12T19:00:22+00:00",
           "kickoff_display": "12/09 21h00",
