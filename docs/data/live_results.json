@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T16:16:17+00:00",
+  "generated_at": "2026-09-12T18:27:49+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -14,8 +14,8 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11830",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J2",
           "kickoff_utc": "2026-09-12T14:37:07+00:00",
           "kickoff_display": "12/09 16h35",
@@ -26,15 +26,15 @@
           "away_club_id": "lyon-ou",
           "home_team": "Racing 92",
           "away_team": "LOU Rugby",
-          "home_score": 24,
+          "home_score": 31,
           "away_score": 48
         },
         {
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11827",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J2",
           "kickoff_utc": "2026-09-12T14:37:44+00:00",
           "kickoff_display": "12/09 16h35",
@@ -46,14 +46,14 @@
           "home_team": "RC Vannes",
           "away_team": "Montpellier Hérault Rugby",
           "home_score": 12,
-          "away_score": 21
+          "away_score": 26
         },
         {
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11828",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J2",
           "kickoff_utc": "2026-09-12T14:37:49+00:00",
           "kickoff_display": "12/09 16h35",
@@ -64,15 +64,15 @@
           "away_club_id": "stade-francais-paris",
           "home_team": "ASM Clermont",
           "away_team": "Stade Français Paris",
-          "home_score": 20,
-          "away_score": 9
+          "home_score": 25,
+          "away_score": 16
         },
         {
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11826",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J2",
           "kickoff_utc": "2026-09-12T14:38:09+00:00",
           "kickoff_display": "12/09 16h35",
@@ -83,15 +83,15 @@
           "away_club_id": "castres-olympique",
           "home_team": "USA Perpignan",
           "away_team": "Castres Olympique",
-          "home_score": 31,
+          "home_score": 43,
           "away_score": 29
         },
         {
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11829",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J2",
           "kickoff_utc": "2026-09-12T15:19:23+00:00",
           "kickoff_display": "12/09 16h35",
@@ -102,8 +102,8 @@
           "away_club_id": "aviron-bayonnais",
           "home_team": "Section Paloise",
           "away_team": "Aviron Bayonnais",
-          "home_score": 63,
-          "away_score": 21
+          "home_score": 70,
+          "away_score": 28
         },
         {
           "competition": "TOP14",
