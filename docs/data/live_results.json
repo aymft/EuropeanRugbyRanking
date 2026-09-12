@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T18:27:49+00:00",
+  "generated_at": "2026-09-12T20:48:31+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -109,10 +109,10 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11831",
-          "status": "scheduled",
-          "raw_status": "not-started",
+          "status": "live",
+          "raw_status": "live",
           "round": "J2",
-          "kickoff_utc": "2026-09-12T19:00:00+00:00",
+          "kickoff_utc": "2026-09-12T19:00:22+00:00",
           "kickoff_display": "12/09 21h00",
           "minute": null,
           "venue": "",
@@ -121,8 +121,8 @@
           "away_club_id": "stade-rochelais",
           "home_team": "RC Toulon",
           "away_team": "Stade Rochelais",
-          "home_score": 0,
-          "away_score": 0
+          "home_score": 20,
+          "away_score": 21
         },
         {
           "competition": "TOP14",
