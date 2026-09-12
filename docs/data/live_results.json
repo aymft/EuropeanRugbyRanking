@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T15:46:32+00:00",
+  "generated_at": "2026-09-12T16:16:17+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -26,8 +26,8 @@
           "away_club_id": "lyon-ou",
           "home_team": "Racing 92",
           "away_team": "LOU Rugby",
-          "home_score": 15,
-          "away_score": 24
+          "home_score": 24,
+          "away_score": 48
         },
         {
           "competition": "TOP14",
@@ -46,7 +46,7 @@
           "home_team": "RC Vannes",
           "away_team": "Montpellier Hérault Rugby",
           "home_score": 12,
-          "away_score": 11
+          "away_score": 21
         },
         {
           "competition": "TOP14",
@@ -64,8 +64,8 @@
           "away_club_id": "stade-francais-paris",
           "home_team": "ASM Clermont",
           "away_team": "Stade Français Paris",
-          "home_score": 3,
-          "away_score": 6
+          "home_score": 20,
+          "away_score": 9
         },
         {
           "competition": "TOP14",
@@ -83,8 +83,8 @@
           "away_club_id": "castres-olympique",
           "home_team": "USA Perpignan",
           "away_team": "Castres Olympique",
-          "home_score": 24,
-          "away_score": 15
+          "home_score": 31,
+          "away_score": 29
         },
         {
           "competition": "TOP14",
@@ -102,8 +102,8 @@
           "away_club_id": "aviron-bayonnais",
           "home_team": "Section Paloise",
           "away_team": "Aviron Bayonnais",
-          "home_score": 35,
-          "away_score": 7
+          "home_score": 63,
+          "away_score": 21
         },
         {
           "competition": "TOP14",
