@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T15:42:50+00:00",
+  "generated_at": "2026-09-12T15:46:32+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -26,8 +26,8 @@
           "away_club_id": "lyon-ou",
           "home_team": "Racing 92",
           "away_team": "LOU Rugby",
-          "home_score": 10,
-          "away_score": 17
+          "home_score": 15,
+          "away_score": 24
         },
         {
           "competition": "TOP14",
