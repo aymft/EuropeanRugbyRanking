@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T19:37:39+00:00",
+  "generated_at": "2026-09-13T21:40:36+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -128,8 +128,8 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11832",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J2",
           "kickoff_utc": "2026-09-13T19:07:37+00:00",
           "kickoff_display": "13/09 21h05",
@@ -140,8 +140,8 @@
           "away_club_id": "union-bordeaux-begles",
           "home_team": "Stade Toulousain",
           "away_team": "Union Bordeaux-Bègles",
-          "home_score": 15,
-          "away_score": 0
+          "home_score": 48,
+          "away_score": 12
         }
       ],
       "error": ""

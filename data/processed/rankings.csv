@@ -1,6 +1,6 @@
 rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,points_change,logo,league,league_logo
-1,1,0,union-bordeaux-begles,Union Bordeaux-Bègles,Union Bordeaux Bègles,1757,1757,0,assets/img/clubs/union-bordeaux-begles.png,TOP14,assets/img/competitions/top14.png
-2,2,0,stade-toulousain,Stade Toulousain,Stade Toulousain,1739,1739,0,assets/img/clubs/stade-toulousain.png,TOP14,assets/img/competitions/top14.png
+1,2,1,stade-toulousain,Stade Toulousain,Stade Toulousain,1755,1739,16,assets/img/clubs/stade-toulousain.png,TOP14,assets/img/competitions/top14.png
+2,1,-1,union-bordeaux-begles,Union Bordeaux-Bègles,Union Bordeaux Bègles,1741,1757,-16,assets/img/clubs/union-bordeaux-begles.png,TOP14,assets/img/competitions/top14.png
 3,3,0,leinster,Leinster Rugby,Leinster,1732,1732,0,assets/img/clubs/leinster.png,URC,assets/img/competitions/urc.svg
 4,4,0,northampton-saints,Northampton Saints,Northampton Saints,1702,1702,0,assets/img/clubs/northampton-saints.png,PREMIERSHIP,assets/img/competitions/premiership.png
 5,5,0,montpellier-herault-rugby,Montpellier Hérault Rugby,Montpellier Hérault Rugby,1671,1669,2,assets/img/clubs/montpellier-herault-rugby.png,TOP14,assets/img/competitions/top14.png
