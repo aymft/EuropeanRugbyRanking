@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T17:26:32+00:00",
+  "generated_at": "2026-09-19T19:28:11+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -109,10 +109,10 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11835",
-          "status": "scheduled",
-          "raw_status": "not-started",
+          "status": "live",
+          "raw_status": "live",
           "round": "J3",
-          "kickoff_utc": "2026-09-19T19:00:00+00:00",
+          "kickoff_utc": "2026-09-19T19:01:40+00:00",
           "kickoff_display": "19/09 21h00",
           "minute": null,
           "venue": "",
@@ -121,7 +121,7 @@
           "away_club_id": "stade-toulousain",
           "home_team": "RC Vannes",
           "away_team": "Stade Toulousain",
-          "home_score": 0,
+          "home_score": 13,
           "away_score": 0
         },
         {
