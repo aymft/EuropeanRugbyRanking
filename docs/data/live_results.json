@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T23:45:54+00:00",
+  "generated_at": "2026-09-19T14:22:20+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -14,10 +14,10 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11836",
-          "status": "scheduled",
-          "raw_status": "not-started",
+          "status": "live",
+          "raw_status": "live",
           "round": "J3",
-          "kickoff_utc": "2026-09-19T12:30:00+00:00",
+          "kickoff_utc": "2026-09-19T12:31:22+00:00",
           "kickoff_display": "19/09 14h30",
           "minute": null,
           "venue": "",
@@ -26,8 +26,8 @@
           "away_club_id": "rc-toulonnais",
           "home_team": "Castres Olympique",
           "away_team": "RC Toulon",
-          "home_score": 0,
-          "away_score": 0
+          "home_score": 29,
+          "away_score": 27
         },
         {
           "competition": "TOP14",
