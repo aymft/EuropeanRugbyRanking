@@ -272,9 +272,9 @@
     "club_id": "rc-toulonnais",
     "team": "RC Toulon",
     "model_name": "RC Toulonnais",
-    "points": 1514,
+    "points": 1502,
     "previous_points": 1514,
-    "points_change": 0,
+    "points_change": -12,
     "logo": "assets/img/clubs/rc-toulonnais.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
@@ -309,8 +309,22 @@
   },
   {
     "rank": 23,
+    "previous_rank": 27,
+    "rank_change": 4,
+    "club_id": "castres-olympique",
+    "team": "Castres Olympique",
+    "model_name": "Castres Olympique",
+    "points": 1483,
+    "previous_points": 1471,
+    "points_change": 12,
+    "logo": "assets/img/clubs/castres-olympique.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
+  },
+  {
+    "rank": 24,
     "previous_rank": 23,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "connacht",
     "team": "Connacht Rugby",
     "model_name": "Connacht",
@@ -322,9 +336,9 @@
     "league_logo": "assets/img/competitions/urc.svg"
   },
   {
-    "rank": 24,
+    "rank": 25,
     "previous_rank": 24,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "the-sharks",
     "team": "Sharks",
     "model_name": "The Sharks",
@@ -336,9 +350,9 @@
     "league_logo": "assets/img/competitions/urc.svg"
   },
   {
-    "rank": 25,
+    "rank": 26,
     "previous_rank": 25,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "sale-sharks",
     "team": "Sale Sharks",
     "model_name": "Sale Sharks",
@@ -350,9 +364,9 @@
     "league_logo": "assets/img/competitions/premiership.png"
   },
   {
-    "rank": 26,
+    "rank": 27,
     "previous_rank": 26,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "lyon-ou",
     "team": "LOU Rugby",
     "model_name": "Lyon OU",
@@ -360,20 +374,6 @@
     "previous_points": 1473,
     "points_change": 0,
     "logo": "assets/img/clubs/lyon-ou.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 27,
-    "previous_rank": 27,
-    "rank_change": 0,
-    "club_id": "castres-olympique",
-    "team": "Castres Olympique",
-    "model_name": "Castres Olympique",
-    "points": 1471,
-    "previous_points": 1471,
-    "points_change": 0,
-    "logo": "assets/img/clubs/castres-olympique.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
   },
