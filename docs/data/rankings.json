@@ -6,9 +6,9 @@
     "club_id": "stade-toulousain",
     "team": "Stade Toulousain",
     "model_name": "Stade Toulousain",
-    "points": 1755,
+    "points": 1756,
     "previous_points": 1755,
-    "points_change": 0,
+    "points_change": 1,
     "logo": "assets/img/clubs/stade-toulousain.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
@@ -580,9 +580,9 @@
     "club_id": "rc-vannes",
     "team": "RC Vannes",
     "model_name": "RC Vannes",
-    "points": 1150,
+    "points": 1149,
     "previous_points": 1150,
-    "points_change": 0,
+    "points_change": -1,
     "logo": "assets/img/clubs/rc-vannes.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
