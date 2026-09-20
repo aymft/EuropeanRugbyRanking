@@ -1,6 +1,6 @@
 rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,points_change,logo,league,league_logo
 1,1,0,stade-toulousain,Stade Toulousain,Stade Toulousain,1756,1755,1,assets/img/clubs/stade-toulousain.png,TOP14,assets/img/competitions/top14.png
-2,2,0,union-bordeaux-begles,Union Bordeaux-Bègles,Union Bordeaux Bègles,1741,1741,0,assets/img/clubs/union-bordeaux-begles.png,TOP14,assets/img/competitions/top14.png
+2,2,0,union-bordeaux-begles,Union Bordeaux-Bègles,Union Bordeaux Bègles,1749,1741,8,assets/img/clubs/union-bordeaux-begles.png,TOP14,assets/img/competitions/top14.png
 3,3,0,leinster,Leinster Rugby,Leinster,1732,1732,0,assets/img/clubs/leinster.png,URC,assets/img/competitions/urc.svg
 4,4,0,northampton-saints,Northampton Saints,Northampton Saints,1702,1702,0,assets/img/clubs/northampton-saints.png,PREMIERSHIP,assets/img/competitions/premiership.png
 5,5,0,montpellier-herault-rugby,Montpellier Hérault Rugby,Montpellier Hérault Rugby,1675,1671,4,assets/img/clubs/montpellier-herault-rugby.png,TOP14,assets/img/competitions/top14.png
@@ -10,8 +10,8 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 9,9,0,leicester-tigers,Leicester Tigers,Leicester Tigers,1632,1632,0,assets/img/clubs/leicester-tigers.png,PREMIERSHIP,assets/img/competitions/premiership.png
 10,11,1,exeter-chiefs,Exeter Chiefs,Exeter Chiefs,1597,1597,0,assets/img/clubs/exeter-chiefs.png,PREMIERSHIP,assets/img/competitions/premiership.png
 11,10,-1,stade-rochelais,Stade Rochelais,Stade Rochelais,1583,1600,-17,assets/img/clubs/stade-rochelais.png,TOP14,assets/img/competitions/top14.png
-12,13,1,stade-francais-paris,Stade Français Paris,Stade Français Paris,1566,1566,0,assets/img/clubs/stade-francais-paris.png,TOP14,assets/img/competitions/top14.png
-13,14,1,stormers,Stormers,Stormers,1565,1565,0,assets/img/clubs/stormers.svg,URC,assets/img/competitions/urc.svg
+12,14,2,stormers,Stormers,Stormers,1565,1565,0,assets/img/clubs/stormers.svg,URC,assets/img/competitions/urc.svg
+13,13,0,stade-francais-paris,Stade Français Paris,Stade Français Paris,1558,1566,-8,assets/img/clubs/stade-francais-paris.png,TOP14,assets/img/competitions/top14.png
 14,16,2,racing-metro-92,Racing 92,Racing Métro 92,1558,1541,17,assets/img/clubs/racing-metro-92.png,TOP14,assets/img/competitions/top14.png
 15,15,0,saracens,Saracens,Saracens,1556,1556,0,assets/img/clubs/saracens.svg,PREMIERSHIP,assets/img/competitions/premiership.png
 16,12,-4,section-paloise,Section Paloise,Section Paloise,1546,1567,-21,assets/img/clubs/section-paloise.png,TOP14,assets/img/competitions/top14.png

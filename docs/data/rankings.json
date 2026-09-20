@@ -20,9 +20,9 @@
     "club_id": "union-bordeaux-begles",
     "team": "Union Bordeaux-Bègles",
     "model_name": "Union Bordeaux Bègles",
-    "points": 1741,
+    "points": 1749,
     "previous_points": 1741,
-    "points_change": 0,
+    "points_change": 8,
     "logo": "assets/img/clubs/union-bordeaux-begles.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
@@ -155,22 +155,8 @@
   },
   {
     "rank": 12,
-    "previous_rank": 13,
-    "rank_change": 1,
-    "club_id": "stade-francais-paris",
-    "team": "Stade Français Paris",
-    "model_name": "Stade Français Paris",
-    "points": 1566,
-    "previous_points": 1566,
-    "points_change": 0,
-    "logo": "assets/img/clubs/stade-francais-paris.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 13,
     "previous_rank": 14,
-    "rank_change": 1,
+    "rank_change": 2,
     "club_id": "stormers",
     "team": "Stormers",
     "model_name": "Stormers",
@@ -180,6 +166,20 @@
     "logo": "assets/img/clubs/stormers.svg",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
+  },
+  {
+    "rank": 13,
+    "previous_rank": 13,
+    "rank_change": 0,
+    "club_id": "stade-francais-paris",
+    "team": "Stade Français Paris",
+    "model_name": "Stade Français Paris",
+    "points": 1558,
+    "previous_points": 1566,
+    "points_change": -8,
+    "logo": "assets/img/clubs/stade-francais-paris.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 14,
