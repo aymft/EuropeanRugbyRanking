@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T15:00:07+00:00",
+  "generated_at": "2026-09-24T19:00:10+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -338,14 +338,14 @@
           "kickoff_utc": "2026-09-25T18:45:00+00:00",
           "kickoff_display": "",
           "minute": 0,
-          "venue": "Franklin's Gardens",
+          "venue": "DPD Stadium at Franklin's Gardens",
           "match_url": "",
           "home_club_id": "northampton-saints",
           "away_club_id": "newcastle-red-bulls",
           "home_team": "Northampton Saints",
           "away_team": "Newcastle Red Bulls",
-          "home_score": 0,
-          "away_score": 0
+          "home_score": null,
+          "away_score": null
         },
         {
           "competition": "PREMIERSHIP",
