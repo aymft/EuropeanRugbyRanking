@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T19:00:10+00:00",
+  "generated_at": "2026-09-25T15:19:59+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -363,8 +363,8 @@
           "away_club_id": "gloucester",
           "home_team": "Exeter Chiefs",
           "away_team": "Gloucester Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "PREMIERSHIP",
@@ -401,8 +401,8 @@
           "away_club_id": "saracens",
           "home_team": "Leicester Tigers",
           "away_team": "Saracens",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         }
       ],
       "error": ""
