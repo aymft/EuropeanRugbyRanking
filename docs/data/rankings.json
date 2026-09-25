@@ -48,17 +48,31 @@
     "club_id": "northampton-saints",
     "team": "Northampton Saints",
     "model_name": "Northampton Saints",
-    "points": 1702,
+    "points": 1703,
     "previous_points": 1702,
-    "points_change": 0,
+    "points_change": 1,
     "logo": "assets/img/clubs/northampton-saints.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 5,
+    "previous_rank": 6,
+    "rank_change": 1,
+    "club_id": "bath-rugby",
+    "team": "Bath Rugby",
+    "model_name": "Bath Rugby",
+    "points": 1680,
+    "previous_points": 1668,
+    "points_change": 12,
+    "logo": "assets/img/clubs/bath-rugby.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
+  },
+  {
+    "rank": 6,
     "previous_rank": 5,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "montpellier-herault-rugby",
     "team": "Montpellier Hérault Rugby",
     "model_name": "Montpellier Hérault Rugby",
@@ -68,20 +82,6 @@
     "logo": "assets/img/clubs/montpellier-herault-rugby.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 6,
-    "previous_rank": 6,
-    "rank_change": 0,
-    "club_id": "bath-rugby",
-    "team": "Bath Rugby",
-    "model_name": "Bath Rugby",
-    "points": 1668,
-    "previous_points": 1668,
-    "points_change": 0,
-    "logo": "assets/img/clubs/bath-rugby.png",
-    "league": "PREMIERSHIP",
-    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 7,
@@ -309,22 +309,8 @@
   },
   {
     "rank": 23,
-    "previous_rank": 23,
-    "rank_change": 0,
-    "club_id": "harlequins",
-    "team": "Harlequins",
-    "model_name": "Harlequins",
-    "points": 1486,
-    "previous_points": 1486,
-    "points_change": 0,
-    "logo": "assets/img/clubs/harlequins.png",
-    "league": "PREMIERSHIP",
-    "league_logo": "assets/img/competitions/premiership.png"
-  },
-  {
-    "rank": 24,
     "previous_rank": 24,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "castres-olympique",
     "team": "Castres Olympique",
     "model_name": "Castres Olympique",
@@ -336,9 +322,9 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
-    "rank": 25,
+    "rank": 24,
     "previous_rank": 25,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "connacht",
     "team": "Connacht Rugby",
     "model_name": "Connacht",
@@ -350,9 +336,9 @@
     "league_logo": "assets/img/competitions/urc.svg"
   },
   {
-    "rank": 26,
+    "rank": 25,
     "previous_rank": 26,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "the-sharks",
     "team": "Sharks",
     "model_name": "The Sharks",
@@ -364,9 +350,9 @@
     "league_logo": "assets/img/competitions/urc.svg"
   },
   {
-    "rank": 27,
+    "rank": 26,
     "previous_rank": 27,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "sale-sharks",
     "team": "Sale Sharks",
     "model_name": "Sale Sharks",
@@ -374,6 +360,20 @@
     "previous_points": 1478,
     "points_change": 0,
     "logo": "assets/img/clubs/sale-sharks.svg",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
+  },
+  {
+    "rank": 27,
+    "previous_rank": 23,
+    "rank_change": -4,
+    "club_id": "harlequins",
+    "team": "Harlequins",
+    "model_name": "Harlequins",
+    "points": 1474,
+    "previous_points": 1486,
+    "points_change": -12,
+    "logo": "assets/img/clubs/harlequins.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
   },
@@ -566,9 +566,9 @@
     "club_id": "newcastle-red-bulls",
     "team": "Newcastle Red Bulls",
     "model_name": "Newcastle Red Bulls",
-    "points": 1160,
+    "points": 1159,
     "previous_points": 1160,
-    "points_change": 0,
+    "points_change": -1,
     "logo": "assets/img/clubs/newcastle-red-bulls.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
