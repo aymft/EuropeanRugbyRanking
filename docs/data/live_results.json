@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T14:30:58+00:00",
+  "generated_at": "2026-09-26T14:33:06+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -356,7 +356,7 @@
           "round": "1",
           "kickoff_utc": "2026-09-26T14:05:00+00:00",
           "kickoff_display": "",
-          "minute": 22,
+          "minute": 24,
           "venue": "Sandy Park",
           "match_url": "",
           "home_club_id": "exeter-chiefs",
@@ -364,7 +364,7 @@
           "home_team": "Exeter Chiefs",
           "away_team": "Gloucester Rugby",
           "home_score": 7,
-          "away_score": 12
+          "away_score": 19
         },
         {
           "competition": "PREMIERSHIP",
