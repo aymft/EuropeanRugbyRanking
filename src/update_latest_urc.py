@@ -59,12 +59,14 @@ query GetMatchesData(
   $limit: Int
   $orderBy: String
   $order: String
+  $matchStatus: String
 ) {
   matches(
     season_id: $season_id
     limit: $limit
     orderBy: $orderBy
     order: $order
+    matchStatus: $matchStatus
   ) {
     id
     season_id
@@ -142,9 +144,10 @@ def get_final_score(team: dict) -> int | None:
 def fetch_urc_matches() -> list[dict]:
     variables = {
         "season_id": [URC_SEASON_ID],
-        "limit": 120,
+        "limit": 200,
         "orderBy": "dateTime",
         "order": "DESC",
+        "matchStatus": "result",
     }
 
     response = post_graphql_query(QUERY, variables)

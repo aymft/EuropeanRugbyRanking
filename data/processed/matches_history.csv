@@ -56,3 +56,6 @@ lnr_top14,TOP14,j3,11835,rc-vannes,stade-toulousain,RC Vannes,Stade Toulousain,R
 lnr_top14,TOP14,j3,11834,union-bordeaux-begles,stade-francais-paris,Union Bordeaux Bègles,Stade Français Paris,Union Bordeaux-Bègles,Stade Français Paris,home,40,10,finished,https://top14.lnr.fr/feuille-de-match/2026-2027/j3/11834-bordeaux-begles-paris
 premiership_rugbyviz,PREMIERSHIP,premiership_round_1,294908,harlequins,bath-rugby,Harlequins,Bath Rugby,Harlequins,Bath Rugby,home,17,33,finished,
 premiership_rugbyviz,PREMIERSHIP,premiership_round_1,294909,northampton-saints,newcastle-red-bulls,Northampton Saints,Newcastle Red Bulls,Northampton Saints,Newcastle Red Bulls,home,59,26,finished,
+urc_graphql,URC,urc_weekend_2026-09-25,292584,benetton,dragons,Benetton,Dragons,Benetton Rugby,Dragons RFC,home,19,19,finished,
+urc_graphql,URC,urc_weekend_2026-09-25,292585,connacht,stormers,Connacht,Stormers,Connacht Rugby,Stormers,home,15,29,finished,
+urc_graphql,URC,urc_weekend_2026-09-25,292586,ulster,edinburgh,Ulster,Edinburgh,Ulster Rugby,Edinburgh Rugby,home,29,34,finished,
