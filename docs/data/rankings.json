@@ -90,9 +90,9 @@
     "club_id": "glasgow",
     "team": "Glasgow Warriors",
     "model_name": "Glasgow",
-    "points": 1647,
+    "points": 1657,
     "previous_points": 1647,
-    "points_change": 0,
+    "points_change": 10,
     "logo": "assets/img/clubs/glasgow.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
@@ -104,9 +104,9 @@
     "club_id": "bulls",
     "team": "Bulls",
     "model_name": "Bulls",
-    "points": 1640,
+    "points": 1644,
     "previous_points": 1640,
-    "points_change": 0,
+    "points_change": 4,
     "logo": "assets/img/clubs/bulls.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
@@ -230,9 +230,9 @@
     "club_id": "bristol-bears",
     "team": "Bristol Bears",
     "model_name": "Bristol Bears",
-    "points": 1527,
+    "points": 1540,
     "previous_points": 1527,
-    "points_change": 0,
+    "points_change": 13,
     "logo": "assets/img/clubs/bristol-bears.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
@@ -258,9 +258,9 @@
     "club_id": "munster",
     "team": "Munster Rugby",
     "model_name": "Munster",
-    "points": 1516,
+    "points": 1506,
     "previous_points": 1516,
-    "points_change": 0,
+    "points_change": -10,
     "logo": "assets/img/clubs/munster.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
@@ -323,22 +323,8 @@
   },
   {
     "rank": 24,
-    "previous_rank": 27,
-    "rank_change": 3,
-    "club_id": "sale-sharks",
-    "team": "Sale Sharks",
-    "model_name": "Sale Sharks",
-    "points": 1478,
-    "previous_points": 1478,
-    "points_change": 0,
-    "logo": "assets/img/clubs/sale-sharks.svg",
-    "league": "PREMIERSHIP",
-    "league_logo": "assets/img/competitions/premiership.png"
-  },
-  {
-    "rank": 25,
     "previous_rank": 28,
-    "rank_change": 3,
+    "rank_change": 4,
     "club_id": "aviron-bayonnais",
     "team": "Aviron Bayonnais",
     "model_name": "Aviron Bayonnais",
@@ -350,9 +336,9 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
-    "rank": 26,
+    "rank": 25,
     "previous_rank": 29,
-    "rank_change": 3,
+    "rank_change": 4,
     "club_id": "lions",
     "team": "Lions",
     "model_name": "Lions",
@@ -364,9 +350,9 @@
     "league_logo": "assets/img/competitions/urc.svg"
   },
   {
-    "rank": 27,
+    "rank": 26,
     "previous_rank": 24,
-    "rank_change": -3,
+    "rank_change": -2,
     "club_id": "castres-olympique",
     "team": "Castres Olympique",
     "model_name": "Castres Olympique",
@@ -378,9 +364,9 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
-    "rank": 28,
+    "rank": 27,
     "previous_rank": 23,
-    "rank_change": -5,
+    "rank_change": -4,
     "club_id": "harlequins",
     "team": "Harlequins",
     "model_name": "Harlequins",
@@ -392,9 +378,9 @@
     "league_logo": "assets/img/competitions/premiership.png"
   },
   {
-    "rank": 29,
+    "rank": 28,
     "previous_rank": 31,
-    "rank_change": 2,
+    "rank_change": 3,
     "club_id": "gloucester",
     "team": "Gloucester Rugby",
     "model_name": "Gloucester",
@@ -406,9 +392,9 @@
     "league_logo": "assets/img/competitions/premiership.png"
   },
   {
-    "rank": 30,
+    "rank": 29,
     "previous_rank": 25,
-    "rank_change": -5,
+    "rank_change": -4,
     "club_id": "connacht",
     "team": "Connacht Rugby",
     "model_name": "Connacht",
@@ -420,9 +406,37 @@
     "league_logo": "assets/img/competitions/urc.svg"
   },
   {
+    "rank": 30,
+    "previous_rank": 27,
+    "rank_change": -3,
+    "club_id": "sale-sharks",
+    "team": "Sale Sharks",
+    "model_name": "Sale Sharks",
+    "points": 1465,
+    "previous_points": 1478,
+    "points_change": -13,
+    "logo": "assets/img/clubs/sale-sharks.svg",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
+  },
+  {
     "rank": 31,
+    "previous_rank": 32,
+    "rank_change": 1,
+    "club_id": "cardiff-rugby",
+    "team": "Cardiff Rugby",
+    "model_name": "Cardiff Rugby",
+    "points": 1454,
+    "previous_points": 1442,
+    "points_change": 12,
+    "logo": "assets/img/clubs/cardiff-rugby.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
+  },
+  {
+    "rank": 32,
     "previous_rank": 33,
-    "rank_change": 2,
+    "rank_change": 1,
     "club_id": "edinburgh",
     "team": "Edinburgh Rugby",
     "model_name": "Edinburgh",
@@ -434,9 +448,9 @@
     "league_logo": "assets/img/competitions/urc.svg"
   },
   {
-    "rank": 32,
+    "rank": 33,
     "previous_rank": 30,
-    "rank_change": -2,
+    "rank_change": -3,
     "club_id": "benetton",
     "team": "Benetton Rugby",
     "model_name": "Benetton",
@@ -444,20 +458,6 @@
     "previous_points": 1453,
     "points_change": -8,
     "logo": "assets/img/clubs/benetton.png",
-    "league": "URC",
-    "league_logo": "assets/img/competitions/urc.svg"
-  },
-  {
-    "rank": 33,
-    "previous_rank": 32,
-    "rank_change": -1,
-    "club_id": "cardiff-rugby",
-    "team": "Cardiff Rugby",
-    "model_name": "Cardiff Rugby",
-    "points": 1442,
-    "previous_points": 1442,
-    "points_change": 0,
-    "logo": "assets/img/clubs/cardiff-rugby.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
   },
@@ -482,9 +482,9 @@
     "club_id": "scarlets",
     "team": "Scarlets",
     "model_name": "Scarlets",
-    "points": 1369,
+    "points": 1357,
     "previous_points": 1369,
-    "points_change": 0,
+    "points_change": -12,
     "logo": "assets/img/clubs/scarlets.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
@@ -538,9 +538,9 @@
     "club_id": "zebre",
     "team": "Zebre Parma",
     "model_name": "Zebre",
-    "points": 1216,
+    "points": 1212,
     "previous_points": 1216,
-    "points_change": 0,
+    "points_change": -4,
     "logo": "assets/img/clubs/zebre.svg",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"

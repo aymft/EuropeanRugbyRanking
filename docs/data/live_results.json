@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T17:57:08+00:00",
+  "generated_at": "2026-09-26T20:44:12+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -109,10 +109,10 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11843",
-          "status": "scheduled",
-          "raw_status": "not-started",
+          "status": "live",
+          "raw_status": "live",
           "round": "J4",
-          "kickoff_utc": "2026-09-26T19:00:00+00:00",
+          "kickoff_utc": "2026-09-26T19:01:14+00:00",
           "kickoff_display": "26/09 21h00",
           "minute": null,
           "venue": "",
@@ -121,8 +121,8 @@
           "away_club_id": "stade-rochelais",
           "home_team": "Section Paloise",
           "away_team": "Stade Rochelais",
-          "home_score": 0,
-          "away_score": 0
+          "home_score": 34,
+          "away_score": 10
         },
         {
           "competition": "TOP14",
@@ -249,8 +249,8 @@
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292589",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "1",
           "kickoff_utc": "2026-09-26T16:30:00+00:00",
           "kickoff_display": "",
@@ -261,15 +261,15 @@
           "away_club_id": "glasgow",
           "home_team": "Munster Rugby",
           "away_team": "Glasgow Warriors",
-          "home_score": null,
-          "away_score": null
+          "home_score": 20,
+          "away_score": 26
         },
         {
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292590",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "1",
           "kickoff_utc": "2026-09-26T16:30:00+00:00",
           "kickoff_display": "",
@@ -280,15 +280,15 @@
           "away_club_id": "bulls",
           "home_team": "Zebre Parma",
           "away_team": "Bulls",
-          "home_score": null,
-          "away_score": null
+          "home_score": 13,
+          "away_score": 47
         },
         {
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292591",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "1",
           "kickoff_utc": "2026-09-26T18:45:00+00:00",
           "kickoff_display": "",
@@ -299,8 +299,8 @@
           "away_club_id": "cardiff-rugby",
           "home_team": "Scarlets",
           "away_team": "Cardiff Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 15,
+          "away_score": 21
         }
       ],
       "error": ""
@@ -370,20 +370,20 @@
           "competition": "PREMIERSHIP",
           "source": "premiership_rugbyviz",
           "id": "294911",
-          "status": "second half",
-          "raw_status": "second half",
+          "status": "finished",
+          "raw_status": "result",
           "round": "1",
           "kickoff_utc": "2026-09-26T16:30:00+00:00",
           "kickoff_display": "",
-          "minute": 62,
+          "minute": 80,
           "venue": "CorpAcq Stadium",
           "match_url": "",
           "home_club_id": "sale-sharks",
           "away_club_id": "bristol-bears",
           "home_team": "Sale Sharks",
           "away_team": "Bristol Bears",
-          "home_score": 17,
-          "away_score": 27
+          "home_score": 24,
+          "away_score": 34
         },
         {
           "competition": "PREMIERSHIP",
