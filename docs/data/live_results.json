@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T13:06:01+00:00",
+  "generated_at": "2026-09-26T14:30:58+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -14,8 +14,8 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11840",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J4",
           "kickoff_utc": "2026-09-26T12:30:47+00:00",
           "kickoff_display": "26/09 14h30",
@@ -26,8 +26,8 @@
           "away_club_id": "union-bordeaux-begles",
           "home_team": "USA Perpignan",
           "away_team": "Union Bordeaux-Bègles",
-          "home_score": 21,
-          "away_score": 6
+          "home_score": 38,
+          "away_score": 25
         },
         {
           "competition": "TOP14",
@@ -211,8 +211,8 @@
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292587",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "1",
           "kickoff_utc": "2026-09-26T11:30:00+00:00",
           "kickoff_display": "",
@@ -223,8 +223,8 @@
           "away_club_id": "leinster",
           "home_team": "Lions",
           "away_team": "Leinster Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 27,
+          "away_score": 26
         },
         {
           "competition": "URC",
@@ -351,20 +351,20 @@
           "competition": "PREMIERSHIP",
           "source": "premiership_rugbyviz",
           "id": "294910",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "first half",
+          "raw_status": "first half",
           "round": "1",
           "kickoff_utc": "2026-09-26T14:05:00+00:00",
           "kickoff_display": "",
-          "minute": 0,
+          "minute": 22,
           "venue": "Sandy Park",
           "match_url": "",
           "home_club_id": "exeter-chiefs",
           "away_club_id": "gloucester",
           "home_team": "Exeter Chiefs",
           "away_team": "Gloucester Rugby",
-          "home_score": 0,
-          "away_score": 0
+          "home_score": 7,
+          "away_score": 12
         },
         {
           "competition": "PREMIERSHIP",
