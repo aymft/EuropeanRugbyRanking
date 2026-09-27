@@ -6,9 +6,9 @@
     "club_id": "stade-toulousain",
     "team": "Stade Toulousain",
     "model_name": "Stade Toulousain",
-    "points": 1756,
+    "points": 1768,
     "previous_points": 1756,
-    "points_change": 0,
+    "points_change": 12,
     "logo": "assets/img/clubs/stade-toulousain.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
@@ -76,9 +76,9 @@
     "club_id": "montpellier-herault-rugby",
     "team": "Montpellier Hérault Rugby",
     "model_name": "Montpellier Hérault Rugby",
-    "points": 1675,
+    "points": 1663,
     "previous_points": 1675,
-    "points_change": 0,
+    "points_change": -12,
     "logo": "assets/img/clubs/montpellier-herault-rugby.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
