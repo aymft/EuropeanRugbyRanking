@@ -118,9 +118,9 @@
     "club_id": "leicester-tigers",
     "team": "Leicester Tigers",
     "model_name": "Leicester Tigers",
-    "points": 1632,
+    "points": 1615,
     "previous_points": 1632,
-    "points_change": 0,
+    "points_change": -17,
     "logo": "assets/img/clubs/leicester-tigers.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
@@ -141,8 +141,22 @@
   },
   {
     "rank": 11,
+    "previous_rank": 15,
+    "rank_change": 4,
+    "club_id": "saracens",
+    "team": "Saracens",
+    "model_name": "Saracens",
+    "points": 1573,
+    "previous_points": 1556,
+    "points_change": 17,
+    "logo": "assets/img/clubs/saracens.svg",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
+  },
+  {
+    "rank": 12,
     "previous_rank": 13,
-    "rank_change": 2,
+    "rank_change": 1,
     "club_id": "stade-francais-paris",
     "team": "Stade Français Paris",
     "model_name": "Stade Français Paris",
@@ -154,9 +168,9 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
-    "rank": 12,
+    "rank": 13,
     "previous_rank": 10,
-    "rank_change": -2,
+    "rank_change": -3,
     "club_id": "exeter-chiefs",
     "team": "Exeter Chiefs",
     "model_name": "Exeter Chiefs",
@@ -168,9 +182,9 @@
     "league_logo": "assets/img/competitions/premiership.png"
   },
   {
-    "rank": 13,
+    "rank": 14,
     "previous_rank": 11,
-    "rank_change": -2,
+    "rank_change": -3,
     "club_id": "stade-rochelais",
     "team": "Stade Rochelais",
     "model_name": "Stade Rochelais",
@@ -182,9 +196,9 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
-    "rank": 14,
+    "rank": 15,
     "previous_rank": 16,
-    "rank_change": 2,
+    "rank_change": 1,
     "club_id": "section-paloise",
     "team": "Section Paloise",
     "model_name": "Section Paloise",
@@ -194,20 +208,6 @@
     "logo": "assets/img/clubs/section-paloise.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 15,
-    "previous_rank": 15,
-    "rank_change": 0,
-    "club_id": "saracens",
-    "team": "Saracens",
-    "model_name": "Saracens",
-    "points": 1556,
-    "previous_points": 1556,
-    "points_change": 0,
-    "logo": "assets/img/clubs/saracens.svg",
-    "league": "PREMIERSHIP",
-    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 16,

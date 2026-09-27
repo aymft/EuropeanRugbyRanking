@@ -7,13 +7,13 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 6,5,-1,montpellier-herault-rugby,Montpellier Hérault Rugby,Montpellier Hérault Rugby,1675,1675,0,assets/img/clubs/montpellier-herault-rugby.png,TOP14,assets/img/competitions/top14.png
 7,7,0,glasgow,Glasgow Warriors,Glasgow,1657,1647,10,assets/img/clubs/glasgow.png,URC,assets/img/competitions/urc.svg
 8,8,0,bulls,Bulls,Bulls,1644,1640,4,assets/img/clubs/bulls.png,URC,assets/img/competitions/urc.svg
-9,9,0,leicester-tigers,Leicester Tigers,Leicester Tigers,1632,1632,0,assets/img/clubs/leicester-tigers.png,PREMIERSHIP,assets/img/competitions/premiership.png
+9,9,0,leicester-tigers,Leicester Tigers,Leicester Tigers,1615,1632,-17,assets/img/clubs/leicester-tigers.png,PREMIERSHIP,assets/img/competitions/premiership.png
 10,12,2,stormers,Stormers,Stormers,1577,1565,12,assets/img/clubs/stormers.svg,URC,assets/img/competitions/urc.svg
-11,13,2,stade-francais-paris,Stade Français Paris,Stade Français Paris,1570,1558,12,assets/img/clubs/stade-francais-paris.png,TOP14,assets/img/competitions/top14.png
-12,10,-2,exeter-chiefs,Exeter Chiefs,Exeter Chiefs,1568,1597,-29,assets/img/clubs/exeter-chiefs.png,PREMIERSHIP,assets/img/competitions/premiership.png
-13,11,-2,stade-rochelais,Stade Rochelais,Stade Rochelais,1565,1583,-18,assets/img/clubs/stade-rochelais.png,TOP14,assets/img/competitions/top14.png
-14,16,2,section-paloise,Section Paloise,Section Paloise,1564,1546,18,assets/img/clubs/section-paloise.png,TOP14,assets/img/competitions/top14.png
-15,15,0,saracens,Saracens,Saracens,1556,1556,0,assets/img/clubs/saracens.svg,PREMIERSHIP,assets/img/competitions/premiership.png
+11,15,4,saracens,Saracens,Saracens,1573,1556,17,assets/img/clubs/saracens.svg,PREMIERSHIP,assets/img/competitions/premiership.png
+12,13,1,stade-francais-paris,Stade Français Paris,Stade Français Paris,1570,1558,12,assets/img/clubs/stade-francais-paris.png,TOP14,assets/img/competitions/top14.png
+13,10,-3,exeter-chiefs,Exeter Chiefs,Exeter Chiefs,1568,1597,-29,assets/img/clubs/exeter-chiefs.png,PREMIERSHIP,assets/img/competitions/premiership.png
+14,11,-3,stade-rochelais,Stade Rochelais,Stade Rochelais,1565,1583,-18,assets/img/clubs/stade-rochelais.png,TOP14,assets/img/competitions/top14.png
+15,16,1,section-paloise,Section Paloise,Section Paloise,1564,1546,18,assets/img/clubs/section-paloise.png,TOP14,assets/img/competitions/top14.png
 16,14,-2,racing-metro-92,Racing 92,Racing Métro 92,1540,1558,-18,assets/img/clubs/racing-metro-92.png,TOP14,assets/img/competitions/top14.png
 17,17,0,bristol-bears,Bristol Bears,Bristol Bears,1540,1527,13,assets/img/clubs/bristol-bears.png,PREMIERSHIP,assets/img/competitions/premiership.png
 18,18,0,asm-clermont-auvergne,ASM Clermont,ASM Clermont Auvergne,1525,1516,9,assets/img/clubs/asm-clermont-auvergne.png,TOP14,assets/img/competitions/top14.png
