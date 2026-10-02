@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T20:03:46+00:00",
+  "generated_at": "2026-10-02T23:43:16+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -154,8 +154,8 @@
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292592",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "2",
           "kickoff_utc": "2026-10-02T18:45:00+00:00",
           "kickoff_display": "",
@@ -166,15 +166,15 @@
           "away_club_id": "zebre",
           "home_team": "Cardiff Rugby",
           "away_team": "Zebre Parma",
-          "home_score": null,
-          "away_score": null
+          "home_score": 40,
+          "away_score": 27
         },
         {
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292593",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "2",
           "kickoff_utc": "2026-10-02T18:45:00+00:00",
           "kickoff_display": "",
@@ -185,15 +185,15 @@
           "away_club_id": "stormers",
           "home_team": "Edinburgh Rugby",
           "away_team": "Stormers",
-          "home_score": null,
-          "away_score": null
+          "home_score": 17,
+          "away_score": 13
         },
         {
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292594",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "2",
           "kickoff_utc": "2026-10-02T18:45:00+00:00",
           "kickoff_display": "",
@@ -204,8 +204,8 @@
           "away_club_id": "connacht",
           "home_team": "Benetton Rugby",
           "away_team": "Connacht Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 19,
+          "away_score": 22
         },
         {
           "competition": "URC",
@@ -313,20 +313,20 @@
           "competition": "PREMIERSHIP",
           "source": "premiership_rugbyviz",
           "id": "294913",
-          "status": "second half",
-          "raw_status": "second half",
+          "status": "finished",
+          "raw_status": "result",
           "round": "2",
           "kickoff_utc": "2026-10-02T18:45:00+00:00",
           "kickoff_display": "",
-          "minute": 56,
+          "minute": 80,
           "venue": "The Rec",
           "match_url": "",
           "home_club_id": "bath-rugby",
           "away_club_id": "exeter-chiefs",
           "home_team": "Bath Rugby",
           "away_team": "Exeter Chiefs",
-          "home_score": 26,
-          "away_score": 31
+          "home_score": 40,
+          "away_score": 34
         },
         {
           "competition": "PREMIERSHIP",
