@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T15:25:37+00:00",
+  "generated_at": "2026-10-02T20:03:46+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -313,20 +313,20 @@
           "competition": "PREMIERSHIP",
           "source": "premiership_rugbyviz",
           "id": "294913",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "second half",
+          "raw_status": "second half",
           "round": "2",
           "kickoff_utc": "2026-10-02T18:45:00+00:00",
           "kickoff_display": "",
-          "minute": 0,
+          "minute": 56,
           "venue": "The Rec",
           "match_url": "",
           "home_club_id": "bath-rugby",
           "away_club_id": "exeter-chiefs",
           "home_team": "Bath Rugby",
           "away_team": "Exeter Chiefs",
-          "home_score": null,
-          "away_score": null
+          "home_score": 26,
+          "away_score": 31
         },
         {
           "competition": "PREMIERSHIP",
