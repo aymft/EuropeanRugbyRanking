@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T20:09:09+00:00",
+  "generated_at": "2026-10-03T23:00:35+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -109,8 +109,8 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11850",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J5",
           "kickoff_utc": "2026-10-03T19:00:44+00:00",
           "kickoff_display": "03/10 21h00",
@@ -121,7 +121,7 @@
           "away_club_id": "stade-toulousain",
           "home_team": "Castres Olympique",
           "away_team": "Stade Toulousain",
-          "home_score": 0,
+          "home_score": 7,
           "away_score": 8
         },
         {
@@ -287,8 +287,8 @@
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292598",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "2",
           "kickoff_utc": "2026-10-03T18:45:00+00:00",
           "kickoff_display": "",
@@ -299,8 +299,8 @@
           "away_club_id": "bulls",
           "home_team": "Munster Rugby",
           "away_team": "Bulls",
-          "home_score": null,
-          "away_score": null
+          "home_score": 26,
+          "away_score": 22
         }
       ],
       "error": ""
@@ -370,20 +370,20 @@
           "competition": "PREMIERSHIP",
           "source": "premiership_rugbyviz",
           "id": "294916",
-          "status": "second half",
-          "raw_status": "second half",
+          "status": "finished",
+          "raw_status": "result",
           "round": "2",
           "kickoff_utc": "2026-10-03T18:45:00+00:00",
           "kickoff_display": "",
-          "minute": 61,
+          "minute": 81,
           "venue": "Kingston Park",
           "match_url": "",
           "home_club_id": "newcastle-red-bulls",
           "away_club_id": "leicester-tigers",
           "home_team": "Newcastle Red Bulls",
           "away_team": "Leicester Tigers",
-          "home_score": 12,
-          "away_score": 17
+          "home_score": 19,
+          "away_score": 24
         },
         {
           "competition": "PREMIERSHIP",
