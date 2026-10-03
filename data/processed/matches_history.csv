@@ -78,3 +78,11 @@ urc_graphql,URC,urc_weekend_2026-10-02,292592,cardiff-rugby,zebre,Cardiff Rugby,
 urc_graphql,URC,urc_weekend_2026-10-02,292593,edinburgh,stormers,Edinburgh,Stormers,Edinburgh Rugby,Stormers,home,17,13,finished,
 urc_graphql,URC,urc_weekend_2026-10-02,292594,benetton,connacht,Benetton,Connacht,Benetton Rugby,Connacht Rugby,home,19,22,finished,
 premiership_rugbyviz,PREMIERSHIP,premiership_round_2,294913,bath-rugby,exeter-chiefs,Bath Rugby,Exeter Chiefs,Bath Rugby,Exeter Chiefs,home,40,34,finished,
+lnr_top14,TOP14,j5,11848,union-bordeaux-begles,lyon-ou,Union Bordeaux Bègles,Lyon OU,Union Bordeaux-Bègles,LOU Rugby,home,51,28,finished,https://top14.lnr.fr/feuille-de-match/2026-2027/j5/11848-bordeaux-begles-lyon
+lnr_top14,TOP14,j5,11853,racing-metro-92,usa-perpignan,Racing Métro 92,USA Perpignan,Racing 92,USA Perpignan,home,55,25,finished,https://top14.lnr.fr/feuille-de-match/2026-2027/j5/11853-racing-92-perpignan
+lnr_top14,TOP14,j5,11847,aviron-bayonnais,stade-francais-paris,Aviron Bayonnais,Stade Français Paris,Aviron Bayonnais,Stade Français Paris,home,35,32,finished,https://top14.lnr.fr/feuille-de-match/2026-2027/j5/11847-bayonne-paris
+lnr_top14,TOP14,j5,11849,rc-vannes,section-paloise,RC Vannes,Section Paloise,RC Vannes,Section Paloise,home,40,43,finished,https://top14.lnr.fr/feuille-de-match/2026-2027/j5/11849-vannes-pau
+lnr_top14,TOP14,j5,11851,stade-rochelais,asm-clermont-auvergne,Stade Rochelais,ASM Clermont Auvergne,Stade Rochelais,ASM Clermont,home,38,13,finished,https://top14.lnr.fr/feuille-de-match/2026-2027/j5/11851-la-rochelle-clermont
+urc_graphql,URC,urc_weekend_2026-10-03,292595,lions,ospreys,Lions,Ospreys,Lions,Ospreys,home,35,19,finished,
+urc_graphql,URC,urc_weekend_2026-10-03,292596,dragons,scarlets,Dragons,Scarlets,Dragons RFC,Scarlets,home,38,26,finished,
+premiership_rugbyviz,PREMIERSHIP,premiership_round_2,294914,bristol-bears,northampton-saints,Bristol Bears,Northampton Saints,Bristol Bears,Northampton Saints,home,41,26,finished,
