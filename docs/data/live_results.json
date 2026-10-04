@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T14:24:38+00:00",
+  "generated_at": "2026-10-04T18:14:26+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -389,20 +389,20 @@
           "competition": "PREMIERSHIP",
           "source": "premiership_rugbyviz",
           "id": "294917",
-          "status": "first half",
-          "raw_status": "first half",
+          "status": "finished",
+          "raw_status": "result",
           "round": "2",
           "kickoff_utc": "2026-10-04T14:00:00+00:00",
           "kickoff_display": "",
-          "minute": 18,
+          "minute": 80,
           "venue": "StoneX Stadium",
           "match_url": "",
           "home_club_id": "saracens",
           "away_club_id": "sale-sharks",
           "home_team": "Saracens",
           "away_team": "Sale Sharks",
-          "home_score": 0,
-          "away_score": 7
+          "home_score": 17,
+          "away_score": 21
         }
       ],
       "error": ""
