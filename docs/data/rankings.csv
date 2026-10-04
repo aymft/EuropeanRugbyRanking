@@ -4,7 +4,7 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 3,3,0,leinster,Leinster Rugby,Leinster,1695,1713,-18,assets/img/clubs/leinster.png,URC,assets/img/competitions/urc.svg
 4,4,0,northampton-saints,Northampton Saints,Northampton Saints,1687,1703,-16,assets/img/clubs/northampton-saints.png,PREMIERSHIP,assets/img/competitions/premiership.png
 5,5,0,bath-rugby,Bath Rugby,Bath Rugby,1687,1680,7,assets/img/clubs/bath-rugby.png,PREMIERSHIP,assets/img/competitions/premiership.png
-6,6,0,montpellier-herault-rugby,Montpellier Hérault Rugby,Montpellier Hérault Rugby,1663,1663,0,assets/img/clubs/montpellier-herault-rugby.png,TOP14,assets/img/competitions/top14.png
+6,6,0,montpellier-herault-rugby,Montpellier Hérault Rugby,Montpellier Hérault Rugby,1671,1663,8,assets/img/clubs/montpellier-herault-rugby.png,TOP14,assets/img/competitions/top14.png
 7,7,0,glasgow,Glasgow Warriors,Glasgow,1650,1657,-7,assets/img/clubs/glasgow.png,URC,assets/img/competitions/urc.svg
 8,8,0,bulls,Bulls,Bulls,1629,1644,-15,assets/img/clubs/bulls.png,URC,assets/img/competitions/urc.svg
 9,9,0,leicester-tigers,Leicester Tigers,Leicester Tigers,1617,1615,2,assets/img/clubs/leicester-tigers.png,PREMIERSHIP,assets/img/competitions/premiership.png
@@ -19,7 +19,7 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 18,19,1,munster,Munster Rugby,Munster,1521,1506,15,assets/img/clubs/munster.png,URC,assets/img/competitions/urc.svg
 19,18,-1,asm-clermont-auvergne,ASM Clermont,ASM Clermont Auvergne,1512,1525,-13,assets/img/clubs/asm-clermont-auvergne.png,TOP14,assets/img/competitions/top14.png
 20,21,1,the-sharks,Sharks,The Sharks,1507,1489,18,assets/img/clubs/the-sharks.png,URC,assets/img/competitions/urc.svg
-21,20,-1,rc-toulonnais,RC Toulon,RC Toulonnais,1505,1505,0,assets/img/clubs/rc-toulonnais.png,TOP14,assets/img/competitions/top14.png
+21,20,-1,rc-toulonnais,RC Toulon,RC Toulonnais,1497,1505,-8,assets/img/clubs/rc-toulonnais.png,TOP14,assets/img/competitions/top14.png
 22,24,2,aviron-bayonnais,Aviron Bayonnais,Aviron Bayonnais,1492,1478,14,assets/img/clubs/aviron-bayonnais.png,TOP14,assets/img/competitions/top14.png
 23,28,5,gloucester,Gloucester Rugby,Gloucester,1489,1473,16,assets/img/clubs/gloucester.png,PREMIERSHIP,assets/img/competitions/premiership.png
 24,23,-1,ulster,Ulster Rugby,Ulster,1488,1481,7,assets/img/clubs/ulster.png,URC,assets/img/competitions/urc.svg

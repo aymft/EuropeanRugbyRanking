@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T18:14:26+00:00",
+  "generated_at": "2026-10-04T21:32:00+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -128,10 +128,10 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11852",
-          "status": "scheduled",
-          "raw_status": "not-started",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J5",
-          "kickoff_utc": "2026-10-04T19:05:00+00:00",
+          "kickoff_utc": "2026-10-04T19:07:44+00:00",
           "kickoff_display": "04/10 21h05",
           "minute": null,
           "venue": "",
@@ -140,7 +140,7 @@
           "away_club_id": "rc-toulonnais",
           "home_team": "Montpellier Hérault Rugby",
           "away_team": "RC Toulon",
-          "home_score": 0,
+          "home_score": 28,
           "away_score": 0
         }
       ],

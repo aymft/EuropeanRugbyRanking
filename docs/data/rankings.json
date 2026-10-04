@@ -76,9 +76,9 @@
     "club_id": "montpellier-herault-rugby",
     "team": "Montpellier Hérault Rugby",
     "model_name": "Montpellier Hérault Rugby",
-    "points": 1663,
+    "points": 1671,
     "previous_points": 1663,
-    "points_change": 0,
+    "points_change": 8,
     "logo": "assets/img/clubs/montpellier-herault-rugby.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
@@ -286,9 +286,9 @@
     "club_id": "rc-toulonnais",
     "team": "RC Toulon",
     "model_name": "RC Toulonnais",
-    "points": 1505,
+    "points": 1497,
     "previous_points": 1505,
-    "points_change": 0,
+    "points_change": -8,
     "logo": "assets/img/clubs/rc-toulonnais.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
