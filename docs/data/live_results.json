@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T13:37:24+00:00",
+  "generated_at": "2026-10-09T18:59:07+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -313,20 +313,20 @@
           "competition": "PREMIERSHIP",
           "source": "premiership_rugbyviz",
           "id": "294918",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "first half",
+          "raw_status": "first half",
           "round": "3",
           "kickoff_utc": "2026-10-09T18:45:00+00:00",
           "kickoff_display": "",
-          "minute": 0,
+          "minute": 11,
           "venue": "Mattioli Woods Welford Road",
           "match_url": "",
           "home_club_id": "leicester-tigers",
           "away_club_id": "gloucester",
           "home_team": "Leicester Tigers",
           "away_team": "Gloucester Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 14
         },
         {
           "competition": "PREMIERSHIP",
