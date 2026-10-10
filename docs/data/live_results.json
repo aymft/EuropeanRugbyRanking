@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T18:53:27+00:00",
+  "generated_at": "2026-10-10T21:54:38+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -109,10 +109,10 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11855",
-          "status": "scheduled",
-          "raw_status": "not-started",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J6",
-          "kickoff_utc": "2026-10-10T19:00:00+00:00",
+          "kickoff_utc": "2026-10-10T19:02:23+00:00",
           "kickoff_display": "10/10 21h00",
           "minute": null,
           "venue": "",
@@ -121,8 +121,8 @@
           "away_club_id": "union-bordeaux-begles",
           "home_team": "ASM Clermont",
           "away_team": "Union Bordeaux-Bègles",
-          "home_score": 0,
-          "away_score": 0
+          "home_score": 22,
+          "away_score": 23
         },
         {
           "competition": "TOP14",
@@ -287,8 +287,8 @@
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292607",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "3",
           "kickoff_utc": "2026-10-10T18:45:00+00:00",
           "kickoff_display": "",
@@ -299,8 +299,8 @@
           "away_club_id": "cardiff-rugby",
           "home_team": "Leinster Rugby",
           "away_team": "Cardiff Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 29,
+          "away_score": 5
         }
       ],
       "error": ""
