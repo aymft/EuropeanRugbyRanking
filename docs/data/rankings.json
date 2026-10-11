@@ -202,9 +202,9 @@
     "club_id": "exeter-chiefs",
     "team": "Exeter Chiefs",
     "model_name": "Exeter Chiefs",
-    "points": 1561,
+    "points": 1563,
     "previous_points": 1561,
-    "points_change": 0,
+    "points_change": 2,
     "logo": "assets/img/clubs/exeter-chiefs.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
@@ -295,8 +295,22 @@
   },
   {
     "rank": 22,
+    "previous_rank": 27,
+    "rank_change": 5,
+    "club_id": "sale-sharks",
+    "team": "Sale Sharks",
+    "model_name": "Sale Sharks",
+    "points": 1493,
+    "previous_points": 1483,
+    "points_change": 10,
+    "logo": "assets/img/clubs/sale-sharks.svg",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
+  },
+  {
+    "rank": 23,
     "previous_rank": 22,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "aviron-bayonnais",
     "team": "Aviron Bayonnais",
     "model_name": "Aviron Bayonnais",
@@ -308,9 +322,9 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
-    "rank": 23,
+    "rank": 24,
     "previous_rank": 24,
-    "rank_change": 1,
+    "rank_change": 0,
     "club_id": "ulster",
     "team": "Ulster Rugby",
     "model_name": "Ulster",
@@ -320,20 +334,6 @@
     "logo": "assets/img/clubs/ulster.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
-  },
-  {
-    "rank": 24,
-    "previous_rank": 27,
-    "rank_change": 3,
-    "club_id": "sale-sharks",
-    "team": "Sale Sharks",
-    "model_name": "Sale Sharks",
-    "points": 1483,
-    "previous_points": 1483,
-    "points_change": 0,
-    "logo": "assets/img/clubs/sale-sharks.svg",
-    "league": "PREMIERSHIP",
-    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 25,
@@ -421,22 +421,8 @@
   },
   {
     "rank": 31,
-    "previous_rank": 31,
-    "rank_change": 0,
-    "club_id": "harlequins",
-    "team": "Harlequins",
-    "model_name": "Harlequins",
-    "points": 1458,
-    "previous_points": 1458,
-    "points_change": 0,
-    "logo": "assets/img/clubs/harlequins.png",
-    "league": "PREMIERSHIP",
-    "league_logo": "assets/img/competitions/premiership.png"
-  },
-  {
-    "rank": 32,
     "previous_rank": 32,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "cardiff-rugby",
     "team": "Cardiff Rugby",
     "model_name": "Cardiff Rugby",
@@ -446,6 +432,20 @@
     "logo": "assets/img/clubs/cardiff-rugby.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
+  },
+  {
+    "rank": 32,
+    "previous_rank": 31,
+    "rank_change": -1,
+    "club_id": "harlequins",
+    "team": "Harlequins",
+    "model_name": "Harlequins",
+    "points": 1448,
+    "previous_points": 1458,
+    "points_change": -10,
+    "logo": "assets/img/clubs/harlequins.png",
+    "league": "PREMIERSHIP",
+    "league_logo": "assets/img/competitions/premiership.png"
   },
   {
     "rank": 33,
@@ -566,9 +566,9 @@
     "club_id": "newcastle-red-bulls",
     "team": "Newcastle Red Bulls",
     "model_name": "Newcastle Red Bulls",
-    "points": 1157,
+    "points": 1155,
     "previous_points": 1157,
-    "points_change": 0,
+    "points_change": -2,
     "logo": "assets/img/clubs/newcastle-red-bulls.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
