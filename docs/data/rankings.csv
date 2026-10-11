@@ -1,5 +1,5 @@
 rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,points_change,logo,league,league_logo
-1,1,0,stade-toulousain,Stade Toulousain,Stade Toulousain,1773,1773,0,assets/img/clubs/stade-toulousain.png,TOP14,assets/img/competitions/top14.png
+1,1,0,stade-toulousain,Stade Toulousain,Stade Toulousain,1776,1773,3,assets/img/clubs/stade-toulousain.png,TOP14,assets/img/competitions/top14.png
 2,2,0,union-bordeaux-begles,Union Bordeaux-Bègles,Union Bordeaux Bègles,1740,1733,7,assets/img/clubs/union-bordeaux-begles.png,TOP14,assets/img/competitions/top14.png
 3,4,1,northampton-saints,Northampton Saints,Northampton Saints,1703,1687,16,assets/img/clubs/northampton-saints.png,PREMIERSHIP,assets/img/competitions/premiership.png
 4,3,-1,leinster,Leinster Rugby,Leinster,1701,1695,6,assets/img/clubs/leinster.png,URC,assets/img/competitions/urc.svg
@@ -21,7 +21,7 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 20,19,-1,asm-clermont-auvergne,ASM Clermont,ASM Clermont Auvergne,1505,1512,-7,assets/img/clubs/asm-clermont-auvergne.png,TOP14,assets/img/competitions/top14.png
 21,20,-1,the-sharks,Sharks,The Sharks,1494,1507,-13,assets/img/clubs/the-sharks.png,URC,assets/img/competitions/urc.svg
 22,27,5,sale-sharks,Sale Sharks,Sale Sharks,1493,1483,10,assets/img/clubs/sale-sharks.svg,PREMIERSHIP,assets/img/competitions/premiership.png
-23,22,-1,aviron-bayonnais,Aviron Bayonnais,Aviron Bayonnais,1492,1492,0,assets/img/clubs/aviron-bayonnais.png,TOP14,assets/img/competitions/top14.png
+23,22,-1,aviron-bayonnais,Aviron Bayonnais,Aviron Bayonnais,1489,1492,-3,assets/img/clubs/aviron-bayonnais.png,TOP14,assets/img/competitions/top14.png
 24,24,0,ulster,Ulster Rugby,Ulster,1487,1488,-1,assets/img/clubs/ulster.png,URC,assets/img/competitions/urc.svg
 25,23,-2,gloucester,Gloucester Rugby,Gloucester,1483,1489,-6,assets/img/clubs/gloucester.png,PREMIERSHIP,assets/img/competitions/premiership.png
 26,25,-1,lions,Lions,Lions,1477,1486,-9,assets/img/clubs/lions.png,URC,assets/img/competitions/urc.svg

@@ -6,9 +6,9 @@
     "club_id": "stade-toulousain",
     "team": "Stade Toulousain",
     "model_name": "Stade Toulousain",
-    "points": 1773,
+    "points": 1776,
     "previous_points": 1773,
-    "points_change": 0,
+    "points_change": 3,
     "logo": "assets/img/clubs/stade-toulousain.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
@@ -314,9 +314,9 @@
     "club_id": "aviron-bayonnais",
     "team": "Aviron Bayonnais",
     "model_name": "Aviron Bayonnais",
-    "points": 1492,
+    "points": 1489,
     "previous_points": 1492,
-    "points_change": 0,
+    "points_change": -3,
     "logo": "assets/img/clubs/aviron-bayonnais.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
