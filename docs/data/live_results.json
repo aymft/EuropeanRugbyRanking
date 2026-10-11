@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T21:54:38+00:00",
+  "generated_at": "2026-10-11T13:34:46+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -401,8 +401,8 @@
           "away_club_id": "newcastle-red-bulls",
           "home_team": "Exeter Chiefs",
           "away_team": "Newcastle Red Bulls",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         }
       ],
       "error": ""
