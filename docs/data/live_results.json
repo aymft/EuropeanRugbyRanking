@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T22:15:08+00:00",
+  "generated_at": "2026-10-15T11:58:17+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -44,8 +44,8 @@
           "away_club_id": "union-bordeaux-begles",
           "home_team": "Gloucester Rugby",
           "away_team": "Union Bordeaux-Bègles",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHAMPIONS_CUP",
@@ -279,8 +279,8 @@
           "away_club_id": "usa-perpignan",
           "home_team": "Dragons RFC",
           "away_team": "USA Perpignan",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHALLENGE_CUP",
