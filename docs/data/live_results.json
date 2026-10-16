@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T16:37:25+00:00",
+  "generated_at": "2026-10-16T14:49:04+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -101,8 +101,8 @@
           "away_club_id": "leinster",
           "home_team": "ASM Clermont",
           "away_team": "Leinster Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHAMPIONS_CUP",
@@ -120,8 +120,8 @@
           "away_club_id": "bristol-bears",
           "home_team": "Stormers",
           "away_team": "Bristol Bears",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHAMPIONS_CUP",
@@ -196,8 +196,8 @@
           "away_club_id": "montpellier-herault-rugby",
           "home_team": "Bath Rugby",
           "away_team": "Montpellier Hérault Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHAMPIONS_CUP",
@@ -234,8 +234,8 @@
           "away_club_id": "exeter-chiefs",
           "home_team": "Stade Toulousain",
           "away_team": "Exeter Chiefs",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHAMPIONS_CUP",
@@ -317,8 +317,8 @@
           "away_club_id": "the-sharks",
           "home_team": "LOU Rugby",
           "away_team": "Sharks",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHALLENGE_CUP",
@@ -374,8 +374,8 @@
           "away_club_id": "newcastle-red-bulls",
           "home_team": "Scarlets",
           "away_team": "Newcastle Red Bulls",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHALLENGE_CUP",
@@ -393,8 +393,8 @@
           "away_club_id": "cheetahs",
           "home_team": "Aviron Bayonnais",
           "away_team": "Cheetahs",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHALLENGE_CUP",
@@ -431,8 +431,8 @@
           "away_club_id": "benetton",
           "home_team": "Castres Olympique",
           "away_team": "Benetton Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         }
       ],
       "error": ""
