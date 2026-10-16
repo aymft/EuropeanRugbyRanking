@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T14:49:04+00:00",
+  "generated_at": "2026-10-16T18:26:32+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -158,8 +158,8 @@
           "away_club_id": "lions",
           "home_team": "Stade Rochelais",
           "away_team": "Lions",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHAMPIONS_CUP",
@@ -177,8 +177,8 @@
           "away_club_id": "racing-metro-92",
           "home_team": "Munster Rugby",
           "away_team": "Racing 92",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "competition": "CHAMPIONS_CUP",
