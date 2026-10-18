@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T21:07:58+00:00",
+  "generated_at": "2026-10-18T13:37:07+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -203,20 +203,20 @@
           "competition": "CHAMPIONS_CUP",
           "source": "epcr_rugbyviz",
           "id": "293326",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "second half",
+          "raw_status": "second half",
           "round": "1",
           "kickoff_utc": "2026-10-18T12:00:00+00:00",
           "kickoff_display": "",
-          "minute": 0,
+          "minute": 61,
           "venue": "Stade du Hameau",
           "match_url": "",
           "home_club_id": "section-paloise",
           "away_club_id": "leicester-tigers",
           "home_team": "Section Paloise",
           "away_team": "Leicester Tigers",
-          "home_score": null,
-          "away_score": null
+          "home_score": 27,
+          "away_score": 17
         },
         {
           "competition": "CHAMPIONS_CUP",
@@ -253,8 +253,8 @@
           "away_club_id": "cardiff-rugby",
           "home_team": "Northampton Saints",
           "away_team": "Cardiff Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 0
         }
       ],
       "error": ""
@@ -381,39 +381,39 @@
           "competition": "CHALLENGE_CUP",
           "source": "epcr_rugbyviz",
           "id": "293386",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "second half",
+          "raw_status": "second half",
           "round": "1",
           "kickoff_utc": "2026-10-18T12:00:00+00:00",
           "kickoff_display": "",
-          "minute": 0,
+          "minute": 67,
           "venue": "Stade Jean Dauger",
           "match_url": "",
           "home_club_id": "aviron-bayonnais",
           "away_club_id": "cheetahs",
           "home_team": "Aviron Bayonnais",
           "away_team": "Cheetahs",
-          "home_score": 0,
-          "away_score": 0
+          "home_score": 29,
+          "away_score": 27
         },
         {
           "competition": "CHALLENGE_CUP",
           "source": "epcr_rugbyviz",
           "id": "293388",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "second half",
+          "raw_status": "second half",
           "round": "1",
           "kickoff_utc": "2026-10-18T12:00:00+00:00",
           "kickoff_display": "",
-          "minute": 0,
+          "minute": 72,
           "venue": "Twickenham Stoop",
           "match_url": "",
           "home_club_id": "harlequins",
           "away_club_id": "rc-vannes",
           "home_team": "Harlequins",
           "away_team": "RC Vannes",
-          "home_score": null,
-          "away_score": null
+          "home_score": 50,
+          "away_score": 19
         },
         {
           "competition": "CHALLENGE_CUP",
