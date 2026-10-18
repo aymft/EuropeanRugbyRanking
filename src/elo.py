@@ -6,7 +6,13 @@ after each match.
 """
 
 
-EUROPEAN_COMPETITIONS = {"ChampionsCup", "ChallengeCup"}
+EUROPEAN_COMPETITIONS = {
+    "CHAMPIONS_CUP",
+    "CHALLENGE_CUP",
+    # Legacy identifiers retained for compatibility with older match data.
+    "ChampionsCup",
+    "ChallengeCup",
+}
 
 
 def elo_update(
@@ -36,7 +42,7 @@ def elo_update(
         Score of team B.
     competition : str
         Competition name, for example "TOP14", "Premiership",
-        "URC", "ChampionsCup", or "ChallengeCup".
+        "URC", "CHAMPIONS_CUP", or "CHALLENGE_CUP".
     k_base : float, optional
         Base K-factor controlling the strength of the update.
 

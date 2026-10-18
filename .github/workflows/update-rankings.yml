@@ -34,6 +34,9 @@ jobs:
       - name: Update latest Premiership results
         run: python -m src.update_latest_premiership
 
+      - name: Update latest EPCR results
+        run: python -m src.update_latest_epcr
+
       - name: Update weekend fixtures and live scores
         run: python -m src.update_live_results
 
