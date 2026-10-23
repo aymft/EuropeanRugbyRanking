@@ -6,7 +6,7 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 5,5,0,montpellier-herault-rugby,Montpellier Hérault Rugby,Montpellier Hérault Rugby,1684,1684,0,assets/img/clubs/montpellier-herault-rugby.png,TOP14,assets/img/competitions/top14.png
 6,6,0,glasgow,Glasgow Warriors,Glasgow,1674,1674,0,assets/img/clubs/glasgow.png,URC,assets/img/competitions/urc.svg
 7,7,0,bulls,Bulls,Bulls,1653,1653,0,assets/img/clubs/bulls.png,URC,assets/img/competitions/urc.svg
-8,8,0,bath-rugby,Bath Rugby,Bath Rugby,1644,1644,0,assets/img/clubs/bath-rugby.png,PREMIERSHIP,assets/img/competitions/premiership.png
+8,8,0,bath-rugby,Bath Rugby,Bath Rugby,1620,1644,-24,assets/img/clubs/bath-rugby.png,PREMIERSHIP,assets/img/competitions/premiership.png
 9,9,0,leicester-tigers,Leicester Tigers,Leicester Tigers,1601,1601,0,assets/img/clubs/leicester-tigers.png,PREMIERSHIP,assets/img/competitions/premiership.png
 10,10,0,stade-rochelais,Stade Rochelais,Stade Rochelais,1601,1601,0,assets/img/clubs/stade-rochelais.png,TOP14,assets/img/competitions/top14.png
 11,11,0,section-paloise,Section Paloise,Section Paloise,1596,1596,0,assets/img/clubs/section-paloise.png,TOP14,assets/img/competitions/top14.png
@@ -18,19 +18,19 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 17,17,0,rc-toulonnais,RC Toulon,RC Toulonnais,1525,1525,0,assets/img/clubs/rc-toulonnais.png,TOP14,assets/img/competitions/top14.png
 18,18,0,bristol-bears,Bristol Bears,Bristol Bears,1524,1524,0,assets/img/clubs/bristol-bears.png,PREMIERSHIP,assets/img/competitions/premiership.png
 19,19,0,racing-metro-92,Racing 92,Racing Métro 92,1523,1523,0,assets/img/clubs/racing-metro-92.png,TOP14,assets/img/competitions/top14.png
-20,20,0,the-sharks,Sharks,The Sharks,1510,1510,0,assets/img/clubs/the-sharks.png,URC,assets/img/competitions/urc.svg
-21,21,0,ulster,Ulster Rugby,Ulster,1497,1497,0,assets/img/clubs/ulster.png,URC,assets/img/competitions/urc.svg
-22,22,0,connacht,Connacht Rugby,Connacht,1497,1493,4,assets/img/clubs/connacht.png,URC,assets/img/competitions/urc.svg
-23,23,0,aviron-bayonnais,Aviron Bayonnais,Aviron Bayonnais,1493,1493,0,assets/img/clubs/aviron-bayonnais.png,TOP14,assets/img/competitions/top14.png
-24,24,0,asm-clermont-auvergne,ASM Clermont,ASM Clermont Auvergne,1491,1491,0,assets/img/clubs/asm-clermont-auvergne.png,TOP14,assets/img/competitions/top14.png
-25,25,0,gloucester,Gloucester Rugby,Gloucester,1491,1491,0,assets/img/clubs/gloucester.png,PREMIERSHIP,assets/img/competitions/premiership.png
-26,26,0,sale-sharks,Sale Sharks,Sale Sharks,1477,1477,0,assets/img/clubs/sale-sharks.svg,PREMIERSHIP,assets/img/competitions/premiership.png
-27,27,0,castres-olympique,Castres Olympique,Castres Olympique,1473,1473,0,assets/img/clubs/castres-olympique.png,TOP14,assets/img/competitions/top14.png
-28,29,1,edinburgh,Edinburgh Rugby,Edinburgh,1471,1455,16,assets/img/clubs/edinburgh.svg,URC,assets/img/competitions/urc.svg
+20,20,0,the-sharks,Sharks,The Sharks,1522,1510,12,assets/img/clubs/the-sharks.png,URC,assets/img/competitions/urc.svg
+21,25,4,gloucester,Gloucester Rugby,Gloucester,1515,1491,24,assets/img/clubs/gloucester.png,PREMIERSHIP,assets/img/competitions/premiership.png
+22,21,-1,ulster,Ulster Rugby,Ulster,1497,1497,0,assets/img/clubs/ulster.png,URC,assets/img/competitions/urc.svg
+23,22,-1,connacht,Connacht Rugby,Connacht,1497,1493,4,assets/img/clubs/connacht.png,URC,assets/img/competitions/urc.svg
+24,23,-1,aviron-bayonnais,Aviron Bayonnais,Aviron Bayonnais,1493,1493,0,assets/img/clubs/aviron-bayonnais.png,TOP14,assets/img/competitions/top14.png
+25,24,-1,asm-clermont-auvergne,ASM Clermont,ASM Clermont Auvergne,1491,1491,0,assets/img/clubs/asm-clermont-auvergne.png,TOP14,assets/img/competitions/top14.png
+26,27,1,castres-olympique,Castres Olympique,Castres Olympique,1473,1473,0,assets/img/clubs/castres-olympique.png,TOP14,assets/img/competitions/top14.png
+27,29,2,edinburgh,Edinburgh Rugby,Edinburgh,1471,1455,16,assets/img/clubs/edinburgh.svg,URC,assets/img/competitions/urc.svg
+28,26,-2,sale-sharks,Sale Sharks,Sale Sharks,1456,1477,-21,assets/img/clubs/sale-sharks.svg,PREMIERSHIP,assets/img/competitions/premiership.png
 29,30,1,harlequins,Harlequins,Harlequins,1453,1453,0,assets/img/clubs/harlequins.png,PREMIERSHIP,assets/img/competitions/premiership.png
 30,28,-2,lions,Lions,Lions,1449,1465,-16,assets/img/clubs/lions.png,URC,assets/img/competitions/urc.svg
 31,31,0,lyon-ou,LOU Rugby,Lyon OU,1449,1449,0,assets/img/clubs/lyon-ou.png,TOP14,assets/img/competitions/top14.png
-32,32,0,cardiff-rugby,Cardiff Rugby,Cardiff Rugby,1446,1446,0,assets/img/clubs/cardiff-rugby.png,URC,assets/img/competitions/urc.svg
+32,32,0,cardiff-rugby,Cardiff Rugby,Cardiff Rugby,1434,1446,-12,assets/img/clubs/cardiff-rugby.png,URC,assets/img/competitions/urc.svg
 33,33,0,benetton,Benetton Rugby,Benetton,1406,1406,0,assets/img/clubs/benetton.png,URC,assets/img/competitions/urc.svg
 34,34,0,ospreys,Ospreys,Ospreys,1375,1375,0,assets/img/clubs/ospreys.svg,URC,assets/img/competitions/urc.svg
 35,35,0,scarlets,Scarlets,Scarlets,1365,1365,0,assets/img/clubs/scarlets.png,URC,assets/img/competitions/urc.svg
@@ -39,5 +39,5 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 38,38,0,cheetahs,Cheetahs,Cheetahs,1234,1234,0,assets/img/clubs/cheetahs.png,INVITED,assets/img/competitions/invited.svg
 39,39,0,black-lion,Black Lion,Black Lion,1194,1194,0,assets/img/clubs/black-lion.svg,INVITED,assets/img/competitions/invited.svg
 40,40,0,zebre,Zebre Parma,Zebre,1185,1189,-4,assets/img/clubs/zebre.svg,URC,assets/img/competitions/urc.svg
-41,41,0,newcastle-red-bulls,Newcastle Red Bulls,Newcastle Red Bulls,1147,1147,0,assets/img/clubs/newcastle-red-bulls.png,PREMIERSHIP,assets/img/competitions/premiership.png
+41,41,0,newcastle-red-bulls,Newcastle Red Bulls,Newcastle Red Bulls,1168,1147,21,assets/img/clubs/newcastle-red-bulls.png,PREMIERSHIP,assets/img/competitions/premiership.png
 42,42,0,rc-vannes,RC Vannes,RC Vannes,1134,1134,0,assets/img/clubs/rc-vannes.png,TOP14,assets/img/competitions/top14.png
