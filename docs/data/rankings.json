@@ -141,22 +141,8 @@
   },
   {
     "rank": 11,
-    "previous_rank": 11,
-    "rank_change": 0,
-    "club_id": "section-paloise",
-    "team": "Section Paloise",
-    "model_name": "Section Paloise",
-    "points": 1596,
-    "previous_points": 1596,
-    "points_change": 0,
-    "logo": "assets/img/clubs/section-paloise.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 12,
     "previous_rank": 12,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "stormers",
     "team": "Stormers",
     "model_name": "Stormers",
@@ -166,6 +152,20 @@
     "logo": "assets/img/clubs/stormers.svg",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
+  },
+  {
+    "rank": 12,
+    "previous_rank": 11,
+    "rank_change": -1,
+    "club_id": "section-paloise",
+    "team": "Section Paloise",
+    "model_name": "Section Paloise",
+    "points": 1577,
+    "previous_points": 1596,
+    "points_change": -19,
+    "logo": "assets/img/clubs/section-paloise.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 13,
@@ -197,8 +197,22 @@
   },
   {
     "rank": 15,
+    "previous_rank": 17,
+    "rank_change": 2,
+    "club_id": "rc-toulonnais",
+    "team": "RC Toulon",
+    "model_name": "RC Toulonnais",
+    "points": 1544,
+    "previous_points": 1525,
+    "points_change": 19,
+    "logo": "assets/img/clubs/rc-toulonnais.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
+  },
+  {
+    "rank": 16,
     "previous_rank": 14,
-    "rank_change": -1,
+    "rank_change": -2,
     "club_id": "stade-francais-paris",
     "team": "Stade Français Paris",
     "model_name": "Stade Français Paris",
@@ -210,9 +224,9 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
-    "rank": 16,
+    "rank": 17,
     "previous_rank": 18,
-    "rank_change": 2,
+    "rank_change": 1,
     "club_id": "bristol-bears",
     "team": "Bristol Bears",
     "model_name": "Bristol Bears",
@@ -224,9 +238,9 @@
     "league_logo": "assets/img/competitions/premiership.png"
   },
   {
-    "rank": 17,
+    "rank": 18,
     "previous_rank": 16,
-    "rank_change": -1,
+    "rank_change": -2,
     "club_id": "munster",
     "team": "Munster Rugby",
     "model_name": "Munster",
@@ -236,20 +250,6 @@
     "logo": "assets/img/clubs/munster.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
-  },
-  {
-    "rank": 18,
-    "previous_rank": 17,
-    "rank_change": -1,
-    "club_id": "rc-toulonnais",
-    "team": "RC Toulon",
-    "model_name": "RC Toulonnais",
-    "points": 1525,
-    "previous_points": 1525,
-    "points_change": 0,
-    "logo": "assets/img/clubs/rc-toulonnais.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 19,
@@ -468,9 +468,9 @@
     "club_id": "ospreys",
     "team": "Ospreys",
     "model_name": "Ospreys",
-    "points": 1375,
+    "points": 1385,
     "previous_points": 1375,
-    "points_change": 0,
+    "points_change": 10,
     "logo": "assets/img/clubs/ospreys.svg",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
@@ -510,9 +510,9 @@
     "club_id": "dragons",
     "team": "Dragons RFC",
     "model_name": "Dragons",
-    "points": 1270,
+    "points": 1260,
     "previous_points": 1270,
-    "points_change": 0,
+    "points_change": -10,
     "logo": "assets/img/clubs/dragons.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"

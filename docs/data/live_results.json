@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T19:47:06+00:00",
+  "generated_at": "2026-10-24T21:58:18+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -109,8 +109,8 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11866",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J7",
           "kickoff_utc": "2026-10-24T19:00:56+00:00",
           "kickoff_display": "24/10 21h00",
@@ -121,8 +121,8 @@
           "away_club_id": "section-paloise",
           "home_team": "RC Toulon",
           "away_team": "Section Paloise",
-          "home_score": 24,
-          "away_score": 6
+          "home_score": 41,
+          "away_score": 20
         },
         {
           "competition": "TOP14",
@@ -287,8 +287,8 @@
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292615",
-          "status": "in-play",
-          "raw_status": "in-play",
+          "status": "finished",
+          "raw_status": "result",
           "round": "4",
           "kickoff_utc": "2026-10-24T18:00:00+00:00",
           "kickoff_display": "",
@@ -299,8 +299,8 @@
           "away_club_id": "dragons",
           "home_team": "Ospreys",
           "away_team": "Dragons RFC",
-          "home_score": null,
-          "away_score": null
+          "home_score": 31,
+          "away_score": 14
         }
       ],
       "error": ""
