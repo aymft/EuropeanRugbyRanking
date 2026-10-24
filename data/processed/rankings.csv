@@ -1,7 +1,7 @@
 rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,points_change,logo,league,league_logo
 1,1,0,stade-toulousain,Stade Toulousain,Stade Toulousain,1782,1781,1,assets/img/clubs/stade-toulousain.png,TOP14,assets/img/competitions/top14.png
 2,2,0,union-bordeaux-begles,Union Bordeaux-Bègles,Union Bordeaux Bègles,1732,1732,0,assets/img/clubs/union-bordeaux-begles.png,TOP14,assets/img/competitions/top14.png
-3,3,0,leinster,Leinster Rugby,Leinster,1715,1715,0,assets/img/clubs/leinster.png,URC,assets/img/competitions/urc.svg
+3,3,0,leinster,Leinster Rugby,Leinster,1720,1715,5,assets/img/clubs/leinster.png,URC,assets/img/competitions/urc.svg
 4,5,1,montpellier-herault-rugby,Montpellier Hérault Rugby,Montpellier Hérault Rugby,1693,1684,9,assets/img/clubs/montpellier-herault-rugby.png,TOP14,assets/img/competitions/top14.png
 5,4,-1,northampton-saints,Northampton Saints,Northampton Saints,1688,1709,-21,assets/img/clubs/northampton-saints.png,PREMIERSHIP,assets/img/competitions/premiership.png
 6,6,0,glasgow,Glasgow Warriors,Glasgow,1680,1674,6,assets/img/clubs/glasgow.png,URC,assets/img/competitions/urc.svg
@@ -11,12 +11,12 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 10,10,0,stade-rochelais,Stade Rochelais,Stade Rochelais,1601,1601,0,assets/img/clubs/stade-rochelais.png,TOP14,assets/img/competitions/top14.png
 11,11,0,section-paloise,Section Paloise,Section Paloise,1596,1596,0,assets/img/clubs/section-paloise.png,TOP14,assets/img/competitions/top14.png
 12,12,0,stormers,Stormers,Stormers,1595,1591,4,assets/img/clubs/stormers.svg,URC,assets/img/competitions/urc.svg
-13,13,0,exeter-chiefs,Exeter Chiefs,Exeter Chiefs,1558,1558,0,assets/img/clubs/exeter-chiefs.png,PREMIERSHIP,assets/img/competitions/premiership.png
-14,15,1,saracens,Saracens,Saracens,1554,1554,0,assets/img/clubs/saracens.svg,PREMIERSHIP,assets/img/competitions/premiership.png
+13,15,2,saracens,Saracens,Saracens,1554,1554,0,assets/img/clubs/saracens.svg,PREMIERSHIP,assets/img/competitions/premiership.png
+14,13,-1,exeter-chiefs,Exeter Chiefs,Exeter Chiefs,1546,1558,-12,assets/img/clubs/exeter-chiefs.png,PREMIERSHIP,assets/img/competitions/premiership.png
 15,14,-1,stade-francais-paris,Stade Français Paris,Stade Français Paris,1542,1555,-13,assets/img/clubs/stade-francais-paris.png,TOP14,assets/img/competitions/top14.png
-16,16,0,munster,Munster Rugby,Munster,1535,1535,0,assets/img/clubs/munster.png,URC,assets/img/competitions/urc.svg
-17,17,0,rc-toulonnais,RC Toulon,RC Toulonnais,1525,1525,0,assets/img/clubs/rc-toulonnais.png,TOP14,assets/img/competitions/top14.png
-18,18,0,bristol-bears,Bristol Bears,Bristol Bears,1524,1524,0,assets/img/clubs/bristol-bears.png,PREMIERSHIP,assets/img/competitions/premiership.png
+16,18,2,bristol-bears,Bristol Bears,Bristol Bears,1536,1524,12,assets/img/clubs/bristol-bears.png,PREMIERSHIP,assets/img/competitions/premiership.png
+17,16,-1,munster,Munster Rugby,Munster,1530,1535,-5,assets/img/clubs/munster.png,URC,assets/img/competitions/urc.svg
+18,17,-1,rc-toulonnais,RC Toulon,RC Toulonnais,1525,1525,0,assets/img/clubs/rc-toulonnais.png,TOP14,assets/img/competitions/top14.png
 19,20,1,the-sharks,Sharks,The Sharks,1522,1510,12,assets/img/clubs/the-sharks.png,URC,assets/img/competitions/urc.svg
 20,25,5,gloucester,Gloucester Rugby,Gloucester,1515,1491,24,assets/img/clubs/gloucester.png,PREMIERSHIP,assets/img/competitions/premiership.png
 21,19,-2,racing-metro-92,Racing 92,Racing Métro 92,1514,1523,-9,assets/img/clubs/racing-metro-92.png,TOP14,assets/img/competitions/top14.png
