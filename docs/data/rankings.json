@@ -20,9 +20,9 @@
     "club_id": "union-bordeaux-begles",
     "team": "Union Bordeaux-Bègles",
     "model_name": "Union Bordeaux Bègles",
-    "points": 1732,
+    "points": 1742,
     "previous_points": 1732,
-    "points_change": 0,
+    "points_change": 10,
     "logo": "assets/img/clubs/union-bordeaux-begles.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
@@ -127,22 +127,8 @@
   },
   {
     "rank": 10,
-    "previous_rank": 10,
-    "rank_change": 0,
-    "club_id": "stade-rochelais",
-    "team": "Stade Rochelais",
-    "model_name": "Stade Rochelais",
-    "points": 1601,
-    "previous_points": 1601,
-    "points_change": 0,
-    "logo": "assets/img/clubs/stade-rochelais.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 11,
     "previous_rank": 12,
-    "rank_change": 1,
+    "rank_change": 2,
     "club_id": "stormers",
     "team": "Stormers",
     "model_name": "Stormers",
@@ -152,6 +138,20 @@
     "logo": "assets/img/clubs/stormers.svg",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
+  },
+  {
+    "rank": 11,
+    "previous_rank": 10,
+    "rank_change": -1,
+    "club_id": "stade-rochelais",
+    "team": "Stade Rochelais",
+    "model_name": "Stade Rochelais",
+    "points": 1591,
+    "previous_points": 1601,
+    "points_change": -10,
+    "logo": "assets/img/clubs/stade-rochelais.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 12,
