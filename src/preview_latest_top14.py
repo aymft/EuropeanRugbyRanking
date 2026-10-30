@@ -10,77 +10,21 @@ Useful to check:
 - which statuses are used by the LNR website before/after matches.
 """
 
-import html
-import json
-import re
-from urllib.request import Request, urlopen
-
-from src.season_config import TOP14_RESULTS_URL
+from src.scrapers.top14_scraper import (
+    extract_current_week,
+    extract_matches,
+    fetch_top14_page,
+)
 from src.team_registry import (
     get_display_name,
     normalize_team_name,
 )
 
 
-def fetch_top14_page() -> str:
-    request = Request(
-        TOP14_RESULTS_URL,
-        headers={
-            "User-Agent": (
-                "Mozilla/5.0 EuropeanRugbyRanking/0.1 "
-                "(compatible; research scraper)"
-            )
-        },
-    )
-
-    with urlopen(request, timeout=30) as response:
-        return response.read().decode("utf-8", errors="replace")
-
-
-def extract_current_week(raw_html: str) -> dict:
-    current_week_match = re.search(
-        r"<score-slider\b[^>]*:current-week='([^']+)'",
-        raw_html,
-        flags=re.DOTALL,
-    )
-
-    if current_week_match:
-        return json.loads(html.unescape(current_week_match.group(1)))
-
-    weeks_match = re.search(
-        r"<score-slider\b[^>]*:weeks='([^']+)'",
-        raw_html,
-        flags=re.DOTALL,
-    )
-
-    if not weeks_match:
-        raise RuntimeError("Could not find score-slider week data.")
-
-    weeks = json.loads(html.unescape(weeks_match.group(1)))
-
-    if not weeks:
-        raise RuntimeError("The score-slider weeks list is empty.")
-
-    return weeks[0]
-
-
-def extract_matches(raw_html: str) -> list[dict]:
-    match = re.search(
-        r"<score-slider\b[^>]*:matches='([^']+)'",
-        raw_html,
-        flags=re.DOTALL,
-    )
-
-    if not match:
-        raise RuntimeError("Could not find score-slider :matches data.")
-
-    return json.loads(html.unescape(match.group(1)))
-
-
 def format_score(match: dict) -> str:
     score = match.get("score") or []
 
-    if len(score) == 2:
+    if match.get("status") in {"finished", "live"} and len(score) == 2:
         return f"{score[0]} - {score[1]}"
 
     return "vs"

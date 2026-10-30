@@ -11,13 +11,13 @@ It is designed to be run once per weekend.
 """
 
 import csv
-import html
-import json
-import re
 from pathlib import Path
-from urllib.request import Request, urlopen
 
-from src.season_config import TOP14_RESULTS_URL
+from src.scrapers.top14_scraper import (
+    extract_current_week,
+    extract_matches,
+    fetch_top14_page,
+)
 from src.team_registry import (
     get_display_name,
     get_model_name,
@@ -50,73 +50,6 @@ FIELDNAMES = [
 ]
 
 
-def fetch_top14_page() -> str:
-    """
-    Download the current official TOP 14 fixtures/results page.
-    """
-
-    request = Request(
-        TOP14_RESULTS_URL,
-        headers={
-            "User-Agent": (
-                "Mozilla/5.0 EuropeanRugbyRanking/0.1 "
-                "(compatible; research scraper)"
-            )
-        },
-    )
-
-    with urlopen(request, timeout=30) as response:
-        return response.read().decode("utf-8", errors="replace")
-
-
-def extract_current_week(raw_html: str) -> dict:
-    """
-    Extract current week metadata from score-slider.
-    """
-
-    current_week_match = re.search(
-        r"<score-slider\b[^>]*:current-week='([^']+)'",
-        raw_html,
-        flags=re.DOTALL,
-    )
-
-    if current_week_match:
-        return json.loads(html.unescape(current_week_match.group(1)))
-
-    weeks_match = re.search(
-        r"<score-slider\b[^>]*:weeks='([^']+)'",
-        raw_html,
-        flags=re.DOTALL,
-    )
-
-    if not weeks_match:
-        raise RuntimeError("Could not find score-slider week data.")
-
-    weeks = json.loads(html.unescape(weeks_match.group(1)))
-
-    if not weeks:
-        raise RuntimeError("The score-slider weeks list is empty.")
-
-    return weeks[0]
-
-
-def extract_score_slider_matches(raw_html: str) -> list[dict]:
-    """
-    Extract raw match dictionaries from score-slider.
-    """
-
-    match = re.search(
-        r"<score-slider\b[^>]*:matches='([^']+)'",
-        raw_html,
-        flags=re.DOTALL,
-    )
-
-    if not match:
-        raise RuntimeError("Could not find score-slider :matches data.")
-
-    return json.loads(html.unescape(match.group(1)))
-
-
 def parse_finished_matches(raw_html: str) -> list[dict]:
     """
     Parse finished TOP 14 matches into match-history rows.
@@ -124,7 +57,7 @@ def parse_finished_matches(raw_html: str) -> list[dict]:
 
     current_week = extract_current_week(raw_html)
     round_slug = current_week.get("slug", "")
-    raw_matches = extract_score_slider_matches(raw_html)
+    raw_matches = extract_matches(raw_html)
 
     parsed_matches = []
 
@@ -215,6 +148,7 @@ def append_new_matches(existing_rows: list[dict], latest_rows: list[dict]) -> tu
 
         if key not in existing_keys:
             new_rows.append(row)
+            existing_keys.add(key)
 
     updated_rows = existing_rows + new_rows
 
@@ -225,7 +159,7 @@ def main() -> None:
     raw_html = fetch_top14_page()
 
     current_week = extract_current_week(raw_html)
-    raw_matches = extract_score_slider_matches(raw_html)
+    raw_matches = extract_matches(raw_html)
     statuses = sorted({match.get("status", "unknown") for match in raw_matches})
 
     latest_matches = parse_finished_matches(raw_html)

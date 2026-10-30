@@ -11,10 +11,9 @@ It is designed to be run once per weekend.
 """
 
 import csv
-import json
 from pathlib import Path
-from urllib.request import Request, urlopen
 
+from src.rugbyviz_feed import fetch_rugbyviz_matches
 from src.season_config import PREMIERSHIP_FEED_URL, PREMIERSHIP_FIXTURES_URL
 from src.team_registry import (
     get_display_name,
@@ -48,23 +47,10 @@ FIELDNAMES = [
 
 
 def fetch_premiership_matches() -> list[dict]:
-    request = Request(
-        PREMIERSHIP_FEED_URL,
-        headers={
-            "Accept": "application/json,text/plain,*/*",
-            "User-Agent": "Mozilla/5.0 EuropeanRugbyRanking/0.1",
-            "Origin": "https://premiershiprugby.com",
-            "Referer": PREMIERSHIP_FIXTURES_URL,
-        },
+    return fetch_rugbyviz_matches(
+        feed_url=PREMIERSHIP_FEED_URL,
+        fixtures_url=PREMIERSHIP_FIXTURES_URL,
     )
-
-    with urlopen(request, timeout=30) as response:
-        data = json.load(response)
-
-    if data.get("status") != "success":
-        raise RuntimeError(f"Unexpected feed status: {data.get('status')}")
-
-    return data.get("data") or []
 
 
 def select_latest_completed_round(matches: list[dict]) -> list[dict]:
@@ -161,6 +147,7 @@ def append_new_matches(
 
         if key not in existing_keys:
             new_rows.append(row)
+            existing_keys.add(key)
 
     updated_rows = existing_rows + new_rows
 

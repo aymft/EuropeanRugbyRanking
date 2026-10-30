@@ -4,11 +4,8 @@
 SEASON_LABEL = "2026-2027"
 
 # Ligue Nationale de Rugby (TOP 14)
-TOP14_SEASON_ID = 14522
-TOP14_RESULTS_URL = (
-    "https://top14.lnr.fr/calendrier-et-resultats"
-    f"?day=all&season={TOP14_SEASON_ID}"
-)
+TOP14_SEASON_ID = 30
+TOP14_RESULTS_URL = "https://top14.lnr.fr/calendrier-et-resultats"
 
 # United Rugby Championship
 URC_SEASON_ID = 202601

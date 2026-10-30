@@ -25,16 +25,27 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Run pipeline regression tests
+        run: python -m unittest discover -v
+
       - name: Update latest TOP 14 results
+        id: update_top14
+        continue-on-error: true
         run: python -m src.update_latest_top14
 
       - name: Update latest URC results
+        id: update_urc
+        continue-on-error: true
         run: python -m src.update_latest_urc
 
       - name: Update latest Premiership results
+        id: update_premiership
+        continue-on-error: true
         run: python -m src.update_latest_premiership
 
       - name: Update latest EPCR results
+        id: update_epcr
+        continue-on-error: true
         run: python -m src.update_latest_epcr
 
       - name: Update weekend fixtures and live scores
@@ -59,3 +70,14 @@ jobs:
           else
             echo "No ranking update to commit."
           fi
+
+      - name: Report source update failures
+        if: >-
+          always() &&
+          (steps.update_top14.outcome == 'failure' ||
+           steps.update_urc.outcome == 'failure' ||
+           steps.update_premiership.outcome == 'failure' ||
+           steps.update_epcr.outcome == 'failure')
+        run: |
+          echo "At least one source updater failed; successful sources were still published."
+          exit 1

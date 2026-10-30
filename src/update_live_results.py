@@ -8,16 +8,20 @@ This file is independent from the Elo ranking pipeline.
 It does not modify matches_history.csv.
 """
 
+from __future__ import annotations
+
 import json
 from datetime import datetime, time, timedelta, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
-from src.preview_latest_top14 import (
+from src.rugbyviz_feed import fetch_rugbyviz_matches
+from src.scrapers.top14_scraper import (
     extract_current_week,
     extract_matches,
     fetch_top14_page,
+    get_match_kickoff_iso,
 )
 from src.season_config import (
     EPCR_CHALLENGE_CUP_FEED_URL,
@@ -208,23 +212,10 @@ def sort_matches(matches: list[dict]) -> list[dict]:
 # ---------------------------------------------------------------------------
 
 def fetch_premiership_matches() -> list[dict]:
-    request = Request(
-        PREMIERSHIP_FEED_URL,
-        headers={
-            "Accept": "application/json,text/plain,*/*",
-            "User-Agent": "Mozilla/5.0 EuropeanRugbyRanking/0.1",
-            "Origin": "https://premiershiprugby.com",
-            "Referer": PREMIERSHIP_FIXTURES_URL,
-        },
+    return fetch_rugbyviz_matches(
+        feed_url=PREMIERSHIP_FEED_URL,
+        fixtures_url=PREMIERSHIP_FIXTURES_URL,
     )
-
-    with urlopen(request, timeout=30) as response:
-        data = json.load(response)
-
-    if data.get("status") != "success":
-        raise RuntimeError(f"Unexpected Premiership feed status: {data.get('status')}")
-
-    return data.get("data") or []
 
 
 def build_premiership_live_results() -> list[dict]:
@@ -234,6 +225,7 @@ def build_premiership_live_results() -> list[dict]:
     for match in raw_matches:
         kickoff = parse_iso_datetime(match.get("date"))
         raw_status = match.get("status")
+        status = normalize_status(raw_status)
         home = match.get("homeTeam") or {}
         away = match.get("awayTeam") or {}
         venue = match.get("venue") or {}
@@ -252,8 +244,12 @@ def build_premiership_live_results() -> list[dict]:
                 away_team=away_name,
                 home_club_id=home_club_id,
                 away_club_id=away_club_id,
-                home_score=home.get("score"),
-                away_score=away.get("score"),
+                home_score=(
+                    home.get("score") if status in {"live", "finished"} else None
+                ),
+                away_score=(
+                    away.get("score") if status in {"live", "finished"} else None
+                ),
                 minute=match.get("minute"),
                 venue=venue.get("name"),
             )
@@ -267,23 +263,7 @@ def build_premiership_live_results() -> list[dict]:
 # ---------------------------------------------------------------------------
 
 def fetch_epcr_matches(feed_url: str, fixtures_url: str) -> list[dict]:
-    request = Request(
-        feed_url,
-        headers={
-            "Accept": "application/json,text/plain,*/*",
-            "User-Agent": "Mozilla/5.0 EuropeanRugbyRanking/0.1",
-            "Origin": "https://www.epcrugby.com",
-            "Referer": fixtures_url,
-        },
-    )
-
-    with urlopen(request, timeout=30) as response:
-        data = json.load(response)
-
-    if data.get("status") != "success":
-        raise RuntimeError(f"Unexpected EPCR feed status: {data.get('status')}")
-
-    return data.get("data") or []
+    return fetch_rugbyviz_matches(feed_url, fixtures_url)
 
 
 def build_epcr_live_results(
@@ -297,6 +277,7 @@ def build_epcr_live_results(
 
     for match in raw_matches:
         kickoff = parse_iso_datetime(match.get("date"))
+        status = normalize_status(match.get("status"))
         home = match.get("homeTeam") or {}
         away = match.get("awayTeam") or {}
         venue = match.get("venue") or {}
@@ -319,8 +300,12 @@ def build_epcr_live_results(
                 away_team=away_name,
                 home_club_id=home_club_id,
                 away_club_id=away_club_id,
-                home_score=home.get("score"),
-                away_score=away.get("score"),
+                home_score=(
+                    home.get("score") if status in {"live", "finished"} else None
+                ),
+                away_score=(
+                    away.get("score") if status in {"live", "finished"} else None
+                ),
                 minute=match.get("minute"),
                 venue=venue.get("name"),
             )
@@ -473,9 +458,10 @@ def build_top14_live_results() -> list[dict]:
         home = match.get("hosting_club") or {}
         away = match.get("visiting_club") or {}
         score = match.get("score") or []
-        timer = match.get("timer") or {}
-        kickoff_raw = timer.get("firstPeriodStartDate")
+        kickoff_raw = get_match_kickoff_iso(match)
         kickoff = parse_iso_datetime(kickoff_raw)
+        status = normalize_status(match.get("status"))
+        has_score = len(score) == 2 and status in {"live", "finished"}
         home_club_id, home_name = normalize_team("lnr_top14", home.get("name"))
         away_club_id, away_name = normalize_team("lnr_top14", away.get("name"))
 
@@ -496,8 +482,8 @@ def build_top14_live_results() -> list[dict]:
                 away_team=away_name,
                 home_club_id=home_club_id,
                 away_club_id=away_club_id,
-                home_score=int(score[0]) if len(score) == 2 else None,
-                away_score=int(score[1]) if len(score) == 2 else None,
+                home_score=int(score[0]) if has_score else None,
+                away_score=int(score[1]) if has_score else None,
                 match_url=match.get("link"),
             )
         )

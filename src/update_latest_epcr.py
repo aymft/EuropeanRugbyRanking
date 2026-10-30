@@ -8,10 +8,9 @@ This script:
 """
 
 import csv
-import json
 from pathlib import Path
-from urllib.request import Request, urlopen
 
+from src.rugbyviz_feed import fetch_rugbyviz_matches
 from src.season_config import (
     EPCR_CHALLENGE_CUP_FEED_URL,
     EPCR_CHALLENGE_CUP_FIXTURES_URL,
@@ -61,23 +60,7 @@ EPCR_FEEDS = (
 
 
 def fetch_epcr_matches(feed_url: str, fixtures_url: str) -> list[dict]:
-    request = Request(
-        feed_url,
-        headers={
-            "Accept": "application/json,text/plain,*/*",
-            "User-Agent": "Mozilla/5.0 EuropeanRugbyRanking/0.1",
-            "Origin": "https://www.epcrugby.com",
-            "Referer": fixtures_url,
-        },
-    )
-
-    with urlopen(request, timeout=30) as response:
-        data = json.load(response)
-
-    if data.get("status") != "success":
-        raise RuntimeError(f"Unexpected EPCR feed status: {data.get('status')}")
-
-    return data.get("data") or []
+    return fetch_rugbyviz_matches(feed_url, fixtures_url)
 
 
 def is_completed_match(match: dict) -> bool:
@@ -147,11 +130,14 @@ def append_new_matches(
         (row["source"], row["match_id"])
         for row in existing_rows
     }
-    new_rows = [
-        row
-        for row in latest_rows
-        if (row["source"], row["match_id"]) not in existing_keys
-    ]
+    new_rows = []
+
+    for row in latest_rows:
+        key = (row["source"], row["match_id"])
+
+        if key not in existing_keys:
+            new_rows.append(row)
+            existing_keys.add(key)
 
     return existing_rows + new_rows, new_rows
 
