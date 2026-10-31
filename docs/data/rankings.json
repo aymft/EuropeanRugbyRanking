@@ -132,9 +132,9 @@
     "club_id": "stormers",
     "team": "Stormers",
     "model_name": "Stormers",
-    "points": 1595,
+    "points": 1606,
     "previous_points": 1595,
-    "points_change": 0,
+    "points_change": 11,
     "logo": "assets/img/clubs/stormers.svg",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
@@ -286,31 +286,17 @@
     "club_id": "racing-metro-92",
     "team": "Racing 92",
     "model_name": "Racing Métro 92",
-    "points": 1514,
+    "points": 1502,
     "previous_points": 1514,
-    "points_change": 0,
+    "points_change": -12,
     "logo": "assets/img/clubs/racing-metro-92.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 22,
-    "previous_rank": 23,
-    "rank_change": 1,
-    "club_id": "ulster",
-    "team": "Ulster Rugby",
-    "model_name": "Ulster",
-    "points": 1491,
-    "previous_points": 1491,
-    "points_change": 0,
-    "logo": "assets/img/clubs/ulster.png",
-    "league": "URC",
-    "league_logo": "assets/img/competitions/urc.svg"
-  },
-  {
-    "rank": 23,
     "previous_rank": 22,
-    "rank_change": -1,
+    "rank_change": 0,
     "club_id": "connacht",
     "team": "Connacht Rugby",
     "model_name": "Connacht",
@@ -322,9 +308,9 @@
     "league_logo": "assets/img/competitions/urc.svg"
   },
   {
-    "rank": 24,
+    "rank": 23,
     "previous_rank": 24,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "castres-olympique",
     "team": "Castres Olympique",
     "model_name": "Castres Olympique",
@@ -336,9 +322,37 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
+    "rank": 24,
+    "previous_rank": 28,
+    "rank_change": 4,
+    "club_id": "asm-clermont-auvergne",
+    "team": "ASM Clermont",
+    "model_name": "ASM Clermont Auvergne",
+    "points": 1482,
+    "previous_points": 1470,
+    "points_change": 12,
+    "logo": "assets/img/clubs/asm-clermont-auvergne.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
+  },
+  {
     "rank": 25,
+    "previous_rank": 23,
+    "rank_change": -2,
+    "club_id": "ulster",
+    "team": "Ulster Rugby",
+    "model_name": "Ulster",
+    "points": 1480,
+    "previous_points": 1491,
+    "points_change": -11,
+    "logo": "assets/img/clubs/ulster.png",
+    "league": "URC",
+    "league_logo": "assets/img/competitions/urc.svg"
+  },
+  {
+    "rank": 26,
     "previous_rank": 25,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "aviron-bayonnais",
     "team": "Aviron Bayonnais",
     "model_name": "Aviron Bayonnais",
@@ -350,9 +364,9 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
-    "rank": 26,
+    "rank": 27,
     "previous_rank": 26,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "harlequins",
     "team": "Harlequins",
     "model_name": "Harlequins",
@@ -364,9 +378,9 @@
     "league_logo": "assets/img/competitions/premiership.png"
   },
   {
-    "rank": 27,
+    "rank": 28,
     "previous_rank": 27,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "edinburgh",
     "team": "Edinburgh Rugby",
     "model_name": "Edinburgh",
@@ -376,20 +390,6 @@
     "logo": "assets/img/clubs/edinburgh.svg",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
-  },
-  {
-    "rank": 28,
-    "previous_rank": 28,
-    "rank_change": 0,
-    "club_id": "asm-clermont-auvergne",
-    "team": "ASM Clermont",
-    "model_name": "ASM Clermont Auvergne",
-    "points": 1470,
-    "previous_points": 1470,
-    "points_change": 0,
-    "logo": "assets/img/clubs/asm-clermont-auvergne.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 29,
