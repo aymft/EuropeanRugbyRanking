@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T20:40:36+00:00",
+  "generated_at": "2026-10-31T00:04:57+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -154,8 +154,8 @@
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292616",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "5",
           "kickoff_utc": "2026-10-30T19:45:00+00:00",
           "kickoff_display": "",
@@ -166,15 +166,15 @@
           "away_club_id": "leinster",
           "home_team": "Connacht Rugby",
           "away_team": "Leinster Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 5,
+          "away_score": 50
         },
         {
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292617",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "5",
           "kickoff_utc": "2026-10-30T19:45:00+00:00",
           "kickoff_display": "",
@@ -185,8 +185,8 @@
           "away_club_id": "lions",
           "home_team": "Glasgow Warriors",
           "away_team": "Lions",
-          "home_score": null,
-          "away_score": null
+          "home_score": 29,
+          "away_score": 20
         },
         {
           "competition": "URC",
@@ -313,20 +313,20 @@
           "competition": "PREMIERSHIP",
           "source": "premiership_rugbyviz",
           "id": "294928",
-          "status": "first half",
-          "raw_status": "first half",
+          "status": "finished",
+          "raw_status": "result",
           "round": "5",
           "kickoff_utc": "2026-10-30T19:45:00+00:00",
           "kickoff_display": "",
-          "minute": 40,
+          "minute": 82,
           "venue": "Ashton Gate",
           "match_url": "",
           "home_club_id": "bristol-bears",
           "away_club_id": "leicester-tigers",
           "home_team": "Bristol Bears",
           "away_team": "Leicester Tigers",
-          "home_score": null,
-          "away_score": null
+          "home_score": 16,
+          "away_score": 22
         },
         {
           "competition": "PREMIERSHIP",
