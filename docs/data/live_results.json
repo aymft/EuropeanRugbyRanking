@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T19:53:11+00:00",
+  "generated_at": "2026-10-31T22:55:07+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -90,10 +90,10 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11868",
-          "status": "scheduled",
-          "raw_status": "not-started",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J8",
-          "kickoff_utc": "2026-10-31T20:00:00+00:00",
+          "kickoff_utc": "2026-10-31T20:00:38+00:00",
           "kickoff_display": "31/10 21h00",
           "minute": null,
           "venue": "",
@@ -102,8 +102,8 @@
           "away_club_id": "rc-toulonnais",
           "home_team": "USA Perpignan",
           "away_team": "RC Toulon",
-          "home_score": null,
-          "away_score": null
+          "home_score": 24,
+          "away_score": 25
         },
         {
           "competition": "TOP14",
@@ -287,8 +287,8 @@
           "competition": "URC",
           "source": "urc_graphql",
           "id": "292623",
-          "status": "scheduled",
-          "raw_status": "fixture",
+          "status": "finished",
+          "raw_status": "result",
           "round": "5",
           "kickoff_utc": "2026-10-31T19:45:00+00:00",
           "kickoff_display": "",
@@ -299,8 +299,8 @@
           "away_club_id": "cardiff-rugby",
           "home_team": "Ospreys",
           "away_team": "Cardiff Rugby",
-          "home_score": null,
-          "away_score": null
+          "home_score": 0,
+          "away_score": 26
         }
       ],
       "error": ""
