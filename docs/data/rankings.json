@@ -6,9 +6,9 @@
     "club_id": "stade-toulousain",
     "team": "Stade Toulousain",
     "model_name": "Stade Toulousain",
-    "points": 1782,
+    "points": 1756,
     "previous_points": 1782,
-    "points_change": 0,
+    "points_change": -26,
     "logo": "assets/img/clubs/stade-toulousain.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
@@ -146,9 +146,9 @@
     "club_id": "section-paloise",
     "team": "Section Paloise",
     "model_name": "Section Paloise",
-    "points": 1577,
+    "points": 1603,
     "previous_points": 1577,
-    "points_change": 0,
+    "points_change": 26,
     "logo": "assets/img/clubs/section-paloise.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
