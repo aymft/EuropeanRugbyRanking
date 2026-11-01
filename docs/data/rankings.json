@@ -43,8 +43,22 @@
   },
   {
     "rank": 4,
+    "previous_rank": 4,
+    "rank_change": 0,
+    "club_id": "montpellier-herault-rugby",
+    "team": "Montpellier Hérault Rugby",
+    "model_name": "Montpellier Hérault Rugby",
+    "points": 1700,
+    "previous_points": 1693,
+    "points_change": 7,
+    "logo": "assets/img/clubs/montpellier-herault-rugby.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
+  },
+  {
+    "rank": 5,
     "previous_rank": 5,
-    "rank_change": 1,
+    "rank_change": 0,
     "club_id": "northampton-saints",
     "team": "Northampton Saints",
     "model_name": "Northampton Saints",
@@ -54,20 +68,6 @@
     "logo": "assets/img/clubs/northampton-saints.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
-  },
-  {
-    "rank": 5,
-    "previous_rank": 4,
-    "rank_change": -1,
-    "club_id": "montpellier-herault-rugby",
-    "team": "Montpellier Hérault Rugby",
-    "model_name": "Montpellier Hérault Rugby",
-    "points": 1693,
-    "previous_points": 1693,
-    "points_change": 0,
-    "logo": "assets/img/clubs/montpellier-herault-rugby.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 6,
@@ -323,22 +323,8 @@
   },
   {
     "rank": 24,
-    "previous_rank": 24,
-    "rank_change": 0,
-    "club_id": "castres-olympique",
-    "team": "Castres Olympique",
-    "model_name": "Castres Olympique",
-    "points": 1486,
-    "previous_points": 1486,
-    "points_change": 0,
-    "logo": "assets/img/clubs/castres-olympique.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 25,
     "previous_rank": 28,
-    "rank_change": 3,
+    "rank_change": 4,
     "club_id": "asm-clermont-auvergne",
     "team": "ASM Clermont",
     "model_name": "ASM Clermont Auvergne",
@@ -350,9 +336,9 @@
     "league_logo": "assets/img/competitions/top14.png"
   },
   {
-    "rank": 26,
+    "rank": 25,
     "previous_rank": 23,
-    "rank_change": -3,
+    "rank_change": -2,
     "club_id": "ulster",
     "team": "Ulster Rugby",
     "model_name": "Ulster",
@@ -362,6 +348,20 @@
     "logo": "assets/img/clubs/ulster.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
+  },
+  {
+    "rank": 26,
+    "previous_rank": 24,
+    "rank_change": -2,
+    "club_id": "castres-olympique",
+    "team": "Castres Olympique",
+    "model_name": "Castres Olympique",
+    "points": 1479,
+    "previous_points": 1486,
+    "points_change": -7,
+    "logo": "assets/img/clubs/castres-olympique.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 27,

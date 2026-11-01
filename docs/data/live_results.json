@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T15:09:39+00:00",
+  "generated_at": "2026-11-01T19:38:14+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -109,8 +109,8 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11872",
-          "status": "live",
-          "raw_status": "live",
+          "status": "finished",
+          "raw_status": "finished",
           "round": "J8",
           "kickoff_utc": "2026-11-01T14:00:36+00:00",
           "kickoff_display": "01/11 15h00",
@@ -121,8 +121,8 @@
           "away_club_id": "castres-olympique",
           "home_team": "Montpellier Hérault Rugby",
           "away_team": "Castres Olympique",
-          "home_score": 29,
-          "away_score": 3
+          "home_score": 69,
+          "away_score": 10
         },
         {
           "competition": "TOP14",
