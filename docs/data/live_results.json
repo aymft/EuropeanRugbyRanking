@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T01:54:40+00:00",
+  "generated_at": "2026-11-07T15:07:04+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -14,10 +14,10 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11881",
-          "status": "scheduled",
-          "raw_status": "not-started",
+          "status": "live",
+          "raw_status": "live",
           "round": "J9",
-          "kickoff_utc": "2026-11-07T13:30:00+00:00",
+          "kickoff_utc": "2026-11-07T13:30:45+00:00",
           "kickoff_display": "07/11 14h30",
           "minute": null,
           "venue": "",
@@ -26,8 +26,8 @@
           "away_club_id": "asm-clermont-auvergne",
           "home_team": "Stade Toulousain",
           "away_team": "ASM Clermont",
-          "home_score": null,
-          "away_score": null
+          "home_score": 25,
+          "away_score": 13
         },
         {
           "competition": "TOP14",
