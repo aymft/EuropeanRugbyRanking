@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T19:23:08+00:00",
+  "generated_at": "2026-11-08T15:28:56+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
@@ -109,10 +109,10 @@
           "competition": "TOP14",
           "source": "lnr_top14",
           "id": "11875",
-          "status": "scheduled",
-          "raw_status": "not-started",
+          "status": "live",
+          "raw_status": "live",
           "round": "J9",
-          "kickoff_utc": "2026-11-08T14:00:00+00:00",
+          "kickoff_utc": "2026-11-08T14:00:40+00:00",
           "kickoff_display": "08/11 15h00",
           "minute": null,
           "venue": "",
@@ -121,8 +121,8 @@
           "away_club_id": "union-bordeaux-begles",
           "home_team": "RC Vannes",
           "away_team": "Union Bordeaux-Bègles",
-          "home_score": null,
-          "away_score": null
+          "home_score": 10,
+          "away_score": 9
         },
         {
           "competition": "TOP14",
