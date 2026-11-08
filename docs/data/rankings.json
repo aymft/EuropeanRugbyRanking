@@ -15,22 +15,8 @@
   },
   {
     "rank": 2,
-    "previous_rank": 2,
-    "rank_change": 0,
-    "club_id": "union-bordeaux-begles",
-    "team": "Union Bordeaux-Bègles",
-    "model_name": "Union Bordeaux Bègles",
-    "points": 1745,
-    "previous_points": 1745,
-    "points_change": 0,
-    "logo": "assets/img/clubs/union-bordeaux-begles.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
-  },
-  {
-    "rank": 3,
     "previous_rank": 3,
-    "rank_change": 0,
+    "rank_change": 1,
     "club_id": "leinster",
     "team": "Leinster Rugby",
     "model_name": "Leinster",
@@ -40,6 +26,20 @@
     "logo": "assets/img/clubs/leinster.png",
     "league": "URC",
     "league_logo": "assets/img/competitions/urc.svg"
+  },
+  {
+    "rank": 3,
+    "previous_rank": 2,
+    "rank_change": -1,
+    "club_id": "union-bordeaux-begles",
+    "team": "Union Bordeaux-Bègles",
+    "model_name": "Union Bordeaux Bègles",
+    "points": 1721,
+    "previous_points": 1745,
+    "points_change": -24,
+    "logo": "assets/img/clubs/union-bordeaux-begles.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
   },
   {
     "rank": 4,
@@ -547,8 +547,22 @@
   },
   {
     "rank": 40,
+    "previous_rank": 42,
+    "rank_change": 2,
+    "club_id": "rc-vannes",
+    "team": "RC Vannes",
+    "model_name": "RC Vannes",
+    "points": 1175,
+    "previous_points": 1151,
+    "points_change": 24,
+    "logo": "assets/img/clubs/rc-vannes.png",
+    "league": "TOP14",
+    "league_logo": "assets/img/competitions/top14.png"
+  },
+  {
+    "rank": 41,
     "previous_rank": 40,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "zebre",
     "team": "Zebre Parma",
     "model_name": "Zebre",
@@ -560,9 +574,9 @@
     "league_logo": "assets/img/competitions/urc.svg"
   },
   {
-    "rank": 41,
+    "rank": 42,
     "previous_rank": 41,
-    "rank_change": 0,
+    "rank_change": -1,
     "club_id": "newcastle-red-bulls",
     "team": "Newcastle Red Bulls",
     "model_name": "Newcastle Red Bulls",
@@ -572,19 +586,5 @@
     "logo": "assets/img/clubs/newcastle-red-bulls.png",
     "league": "PREMIERSHIP",
     "league_logo": "assets/img/competitions/premiership.png"
-  },
-  {
-    "rank": 42,
-    "previous_rank": 42,
-    "rank_change": 0,
-    "club_id": "rc-vannes",
-    "team": "RC Vannes",
-    "model_name": "RC Vannes",
-    "points": 1151,
-    "previous_points": 1151,
-    "points_change": 0,
-    "logo": "assets/img/clubs/rc-vannes.png",
-    "league": "TOP14",
-    "league_logo": "assets/img/competitions/top14.png"
   }
 ]
