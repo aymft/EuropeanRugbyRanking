@@ -10,7 +10,7 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 9,9,0,bath-rugby,Bath Rugby,Bath Rugby,1625,1625,0,assets/img/clubs/bath-rugby.png,PREMIERSHIP,assets/img/competitions/premiership.png
 10,11,1,section-paloise,Section Paloise,Section Paloise,1608,1603,5,assets/img/clubs/section-paloise.png,TOP14,assets/img/competitions/top14.png
 11,10,-1,stormers,Stormers,Stormers,1606,1606,0,assets/img/clubs/stormers.svg,URC,assets/img/competitions/urc.svg
-12,12,0,stade-rochelais,Stade Rochelais,Stade Rochelais,1573,1573,0,assets/img/clubs/stade-rochelais.png,TOP14,assets/img/competitions/top14.png
+12,12,0,stade-rochelais,Stade Rochelais,Stade Rochelais,1580,1573,7,assets/img/clubs/stade-rochelais.png,TOP14,assets/img/competitions/top14.png
 13,14,1,rc-toulonnais,RC Toulon,RC Toulonnais,1568,1552,16,assets/img/clubs/rc-toulonnais.png,TOP14,assets/img/competitions/top14.png
 14,13,-1,stade-francais-paris,Stade Français Paris,Stade Français Paris,1544,1560,-16,assets/img/clubs/stade-francais-paris.png,TOP14,assets/img/competitions/top14.png
 15,15,0,the-sharks,Sharks,The Sharks,1537,1537,0,assets/img/clubs/the-sharks.png,URC,assets/img/competitions/urc.svg
@@ -24,7 +24,7 @@ rank,previous_rank,rank_change,club_id,team,model_name,points,previous_points,po
 23,23,0,connacht,Connacht Rugby,Connacht,1486,1486,0,assets/img/clubs/connacht.png,URC,assets/img/competitions/urc.svg
 24,25,1,ulster,Ulster Rugby,Ulster,1480,1480,0,assets/img/clubs/ulster.png,URC,assets/img/competitions/urc.svg
 25,24,-1,asm-clermont-auvergne,ASM Clermont,ASM Clermont Auvergne,1479,1482,-3,assets/img/clubs/asm-clermont-auvergne.png,TOP14,assets/img/competitions/top14.png
-26,27,1,aviron-bayonnais,Aviron Bayonnais,Aviron Bayonnais,1474,1474,0,assets/img/clubs/aviron-bayonnais.png,TOP14,assets/img/competitions/top14.png
+26,27,1,aviron-bayonnais,Aviron Bayonnais,Aviron Bayonnais,1467,1474,-7,assets/img/clubs/aviron-bayonnais.png,TOP14,assets/img/competitions/top14.png
 27,26,-1,castres-olympique,Castres Olympique,Castres Olympique,1465,1479,-14,assets/img/clubs/castres-olympique.png,TOP14,assets/img/competitions/top14.png
 28,28,0,lyon-ou,LOU Rugby,Lyon OU,1465,1469,-4,assets/img/clubs/lyon-ou.png,TOP14,assets/img/competitions/top14.png
 29,29,0,cardiff-rugby,Cardiff Rugby,Cardiff Rugby,1453,1453,0,assets/img/clubs/cardiff-rugby.png,URC,assets/img/competitions/urc.svg

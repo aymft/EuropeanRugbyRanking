@@ -160,9 +160,9 @@
     "club_id": "stade-rochelais",
     "team": "Stade Rochelais",
     "model_name": "Stade Rochelais",
-    "points": 1573,
+    "points": 1580,
     "previous_points": 1573,
-    "points_change": 0,
+    "points_change": 7,
     "logo": "assets/img/clubs/stade-rochelais.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
@@ -356,9 +356,9 @@
     "club_id": "aviron-bayonnais",
     "team": "Aviron Bayonnais",
     "model_name": "Aviron Bayonnais",
-    "points": 1474,
+    "points": 1467,
     "previous_points": 1474,
-    "points_change": 0,
+    "points_change": -7,
     "logo": "assets/img/clubs/aviron-bayonnais.png",
     "league": "TOP14",
     "league_logo": "assets/img/competitions/top14.png"
