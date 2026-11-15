@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-08T23:17:11+00:00",
+  "generated_at": "2026-11-15T23:32:21+00:00",
   "refresh_seconds": 120,
   "source_refresh_seconds": 300,
   "timezone": "Europe/Paris",
-  "weekend_start": "2026-11-12T23:00:00+00:00",
-  "weekend_end": "2026-11-15T23:00:00+00:00",
+  "weekend_start": "2026-11-19T23:00:00+00:00",
+  "weekend_end": "2026-11-22T23:00:00+00:00",
   "competitions": [
     {
       "code": "TOP14",
